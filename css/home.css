@@ -1,0 +1,12 @@
+.intro {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: justify;
+    color: rgb(65, 63, 63);
+}
+
+.float-left-margin {
+    float: left;
+    margin: 10px;
+}
