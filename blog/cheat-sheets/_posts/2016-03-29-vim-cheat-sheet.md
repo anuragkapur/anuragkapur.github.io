@@ -11,3 +11,11 @@ categories: cheat-sheets
 ## Move to top of file
 
     gg
+
+# Operations
+
+## Replace spaces with new lines
+
+    :%s/ /^M/g    
+
+The `^M` is typed using Ctrl-V-Enter
