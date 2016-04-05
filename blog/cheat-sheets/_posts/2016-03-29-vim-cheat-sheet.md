@@ -12,6 +12,11 @@ categories: cheat-sheets
 
     gg
 
+## Remove all lines
+
+    :0
+    dG
+
 # Operations
 
 ## Replace spaces with new lines
