@@ -11,3 +11,5 @@ My github.io website. I use this space to
 ### Special categories
 
 * highlight - show on homepage
+* blog - every post should have this category. Don't have a good use for this
+at the moment but I suspect it will come in handy at some point ;)
