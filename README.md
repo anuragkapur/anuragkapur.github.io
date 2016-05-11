@@ -11,3 +11,4 @@ My github.io website. I use this space to
 ### Special categories
 
 * highlight - show on homepage
+* conferences
