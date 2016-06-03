@@ -5,6 +5,13 @@ Contents
 - [Billing operations](#billing-operations)
 - [Payments](#payments)
 - [Zuora 360](#zuora-360)
+- [Zuora APIs](#zuora-apis)
+	- [SOAP Snippets](#soap-snippets)
+		- [Login](#login)
+		- [Get product rate plan Id from product](#get-product-rate-plan-id-from-product)
+		- [Create an amendment in subscription associated with an account](#create-an-amendment-in-subscription-associated-with-an-account)
+		- [Get query used to create an export from UI](#get-query-used-to-create-an-export-from-ui)
+		- [Create new export](#create-new-export)
 - [Useful links](#useful-links)
 
 <!-- /TOC -->
@@ -41,7 +48,7 @@ Invoice received on 27 Feb will be for 1 jan to 1 feb amount
     - Payment errors can be seen in the payments section associated with an
     account
     - Also visible under reporting section. Reporting -> Data Exports
-* Payment method updater
+* [Payment method updater](https://knowledgecenter.zuora.com/CB_Billing/L_Payment_Methods/D_Payment_Method_Updater)
     - Handles updates to customer payment method information, example new card
     numbers when the previous expires
     - Only available with certain gateways
@@ -57,9 +64,11 @@ Invoice received on 27 Feb will be for 1 jan to 1 feb amount
   - Invoice
   - ...
 
-# SOAP Snippets
+# Zuora APIs
 
-## Login
+## SOAP Snippets
+
+### Login
 
     <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns2="http://object.api.zuora.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://api.zuora.com/">
         <SOAP-ENV:Body>
@@ -70,7 +79,7 @@ Invoice received on 27 Feb will be for 1 jan to 1 feb amount
         </SOAP-ENV:Body>
     </SOAP-ENV:Envelope>
 
-## Get product rate plan Id from product
+### Get product rate plan Id from product
 
     <x:Envelope xmlns:x="http://schemas.xmlsoap.org/soap/envelope/" xmlns:api="http://api.zuora.com/">
         <x:Header>
@@ -89,7 +98,7 @@ Invoice received on 27 Feb will be for 1 jan to 1 feb amount
         </x:Body>
     </x:Envelope>
 
-## Create an amendment in subscription associated with an account    
+### Create an amendment in subscription associated with an account    
 
     <x:Envelope xmlns:x="http://schemas.xmlsoap.org/soap/envelope/" xmlns:api="http://api.zuora.com/" xmlns:ns2="http://object.api.zuora.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://api.zuora.com/">
         <x:Header>
@@ -131,7 +140,7 @@ Invoice received on 27 Feb will be for 1 jan to 1 feb amount
         </x:Body>
     </x:Envelope>  
 
-## Get query used to create an export from UI
+### Get query used to create an export from UI
 
     <x:Envelope xmlns:x="http://schemas.xmlsoap.org/soap/envelope/" xmlns:api="http://api.zuora.com/">
         <x:Header>
@@ -150,7 +159,7 @@ Invoice received on 27 Feb will be for 1 jan to 1 feb amount
         </x:Body>
     </x:Envelope>
 
-## Create new export
+### Create new export
 
     <x:Envelope xmlns:x="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns2="http://object.api.zuora.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://api.zuora.com/" xmlns:api="http://api.zuora.com/" xmlns:obj="http://object.api.zuora.com/">
         <x:Header>
@@ -171,7 +180,7 @@ Invoice received on 27 Feb will be for 1 jan to 1 feb amount
      </ns1:zObjects>
     </ns1:create>
         </x:Body>
-    </x:Envelope>    
+    </x:Envelope>
 
 # Useful links
 * [Training Agenda](https://docs.google.com/presentation/d/1Y6pNkygApiSHYHPQWdxfmnls6t-5zYL30Mnq9AmMoFM/edit?ts=57288e0b#slide=id.p10)
