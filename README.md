@@ -12,3 +12,9 @@ My github.io website. I use this space to
 
 * highlight - show on homepage
 * conferences
+
+## Running locally
+
+```shell
+$ jekyll serve
+```
