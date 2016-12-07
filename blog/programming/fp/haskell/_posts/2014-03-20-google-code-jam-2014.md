@@ -31,7 +31,7 @@ My solutions are in my [Github repo](https://github.com/anuragkapur/Google-Code-
 
 Source: [https://code.google.com/codejam/contest/2974486/scoreboard?c=2974486#sp=7951](Source: https://code.google.com/codejam/contest/2974486/scoreboard?c=2974486#sp=7951)
 
-# Round 1c Update
+# Round 1c Update
 
 In short, disappointment again! :( Wasn’t able to compete in Round 1a and 1b as I was travelling. This meant, I only had one chance to compete and I failed.
 
