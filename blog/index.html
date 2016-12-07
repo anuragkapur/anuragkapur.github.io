@@ -9,6 +9,15 @@ title: Blog
     <h1 class="page-heading">Posts</h1>
 
     <div class="span4">
+      <h2>Engineering and Architecture</h2>
+      <ul class="post-list">
+        {% for post in site.categories.engineering %}
+        {% include post-list-item.html %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="span4">
       <h2>Programming</h2>
       <ul class="post-list">
         {% for post in site.categories.programming %}
