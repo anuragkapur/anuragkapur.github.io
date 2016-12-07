@@ -9,7 +9,7 @@
 title: Anurag Kapur
 email: anurag@beancrunch.com
 description: > # this means to ignore newlines until "baseurl:"
-  Software Engineer; Aspiring Startup Guy; Hacker; Tech Architecture; Rowing; F-16 Pilot (not); Beer; London; Oxford;
+  Software Engineer; Hacker; Tech Architecture; Rowing; F-16 Pilot (not); Beer; London; Oxford;
   New Delhi;
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.anuragkapur.com" # the base hostname & protocol for your site
