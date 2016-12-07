@@ -2,9 +2,9 @@
 layout: post
 title:  "Reflections from QCon London 2015"
 date:   2015-03-11 12:00:00 +0000   
-categories: highlight
-teaser: Reflections from QCon London
+categories: conferences highlight
 permalink: /blog/reflections-from-qcon-london-2015
+teaser: Reflections from QCon London
 img-url: /assets/blog/training/reflections-from-qcon-longon-2015/qcon-2015.jpg
 ---
 
