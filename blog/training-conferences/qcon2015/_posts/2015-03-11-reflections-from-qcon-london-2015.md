@@ -4,7 +4,7 @@ title:  "Reflections from QCon London 2015"
 date:   2015-03-11 12:00:00 +0000   
 categories: conferences highlight
 permalink: /blog/reflections-from-qcon-london-2015
-teaser: Reflections from QCon London
+teaser: My highlights from the this year's QCon - Randy Shoup's talk on Architecture at scale, driving standards, traits of an effective Architect and more
 img-url: /assets/blog/training/reflections-from-qcon-longon-2015/qcon-2015.jpg
 ---
 
