@@ -21,6 +21,15 @@ Countdown to start of Qualification Round
 
 Watch this space for updates as the event progresses! Excited!
 
+# Qualification Round Update
+
+Done and dusted. Qualified with 55 points, successfully solving 3 out of 4 problems.
+
+My solutions are in my [Github repo](https://github.com/anuragkapur/Google-Code-Jam/tree/master/src/main/java/com/anuragkapur/gcj2014)
+
+![](/assets/blog/programming/google-code-jam-2014/gcj3.png)
+
+Source: [https://code.google.com/codejam/contest/2974486/scoreboard?c=2974486#sp=7951](Source: https://code.google.com/codejam/contest/2974486/scoreboard?c=2974486#sp=7951)
 
 # Round 1c Update
 
@@ -33,13 +42,3 @@ Key would be to not lose focus as the year progresses and compete in 2015 with p
 The following on the wall in my room should act as a daily reminder. Very disappointed, but I only have myself to blame. No excuses.
 
 ![](/assets/blog/programming/google-code-jam-2014/gcj2.jpg)
-
-# Qualification Round Update
-
-Done and dusted. Qualified with 55 points, successfully solving 3 out of 4 problems.
-
-My solutions are in my [Github repo](https://github.com/anuragkapur/Google-Code-Jam/tree/master/src/main/java/com/anuragkapur/gcj2014)
-
-![](/assets/blog/programming/google-code-jam-2014/gcj3.png)
-
-Source: [https://code.google.com/codejam/contest/2974486/scoreboard?c=2974486#sp=7951](Source: https://code.google.com/codejam/contest/2974486/scoreboard?c=2974486#sp=7951)
