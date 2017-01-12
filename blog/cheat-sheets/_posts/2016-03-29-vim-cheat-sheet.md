@@ -11,6 +11,14 @@ categories: cheat-sheets
 ## Move to top of file
 
     gg
+    
+## Move to last line in file
+
+    G
+    
+## Move to last character in file
+
+    G$
 
 ## Remove all lines
 
