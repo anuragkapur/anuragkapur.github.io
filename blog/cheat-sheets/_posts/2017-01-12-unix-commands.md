@@ -6,12 +6,12 @@ date:   2017-01-12 10:37:00 +0000
 categories: cheat-sheets
 ---
 
-# Find PID using a given port number
+## Find PID using a given port number
 ```shell
 lsof -i :6234
 ```
 
-# Find disk usage per directory
+## Find disk usage per directory
 ```shell
 find . -maxdepth 1 -type d -exec du -sh {} \;
 ```
@@ -20,12 +20,12 @@ or
 find . -maxdepth 1 -type d | xargs du -sh
 ```
 
-# Measure response time with curl
+## Measure response time with curl
 ```shell
 $ curl -o /dev/null -s -w %{time_total} http://www.example.com/
 ```
 
-# Simple load testing shell script
+## Simple load testing shell script
 ```shell
 #!/bin/bash
 
