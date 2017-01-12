@@ -20,11 +20,6 @@ categories: cheat-sheets
 
     G$
 
-## Remove all lines
-
-    :0
-    dG
-
 # Operations
 
 ## Replace spaces with new lines
@@ -32,3 +27,12 @@ categories: cheat-sheets
     :%s/ /^M/g    
 
 The `^M` is typed using Ctrl-V-Enter
+
+## Remove all lines
+
+    :0
+    dG
+    
+## Delete all chars from cursor to end of line
+
+    d$
