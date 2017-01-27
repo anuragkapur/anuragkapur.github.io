@@ -10,5 +10,5 @@ categories: cheat-sheets
 
 ## Delete remote branch
 ```shell
-$ git branch -dr <branch name>
+$ git push origin --delete <branch-name>
 ```
