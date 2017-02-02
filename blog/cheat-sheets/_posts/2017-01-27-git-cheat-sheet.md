@@ -6,6 +6,14 @@ date:   2017-01-27 12:09:26 +0000
 categories: cheat-sheets
 ---
 
+# Commits, reverts etc
+
+## Revert commited changes to a single file
+```shell
+$ git checkout <revision number to revert to> <file path>
+$ git commit
+```
+
 # Branches
 
 ## Delete remote branch
