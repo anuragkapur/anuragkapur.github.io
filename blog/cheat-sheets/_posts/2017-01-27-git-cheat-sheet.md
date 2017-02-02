@@ -20,3 +20,14 @@ $ git commit
 ```shell
 $ git push origin --delete <branch-name>
 ```
+
+# Forks
+
+## Update fork from origin
+```shell
+$ git remote add upstream <remote-repo-url>
+$ git fetch upstream
+$ git checkout master
+$ git pull
+$ git merge upstream/master
+```
