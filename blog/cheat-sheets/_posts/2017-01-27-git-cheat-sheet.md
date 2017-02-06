@@ -21,6 +21,13 @@ $ git commit
 $ git push origin --delete <branch-name>
 ```
 
+## Rename local and remote branch
+```shell
+git branch -m old_branch_name new_branch_name
+git push origin :old_branch_name
+git push --set-upstream origin new_branch_name
+```
+
 # Forks
 
 ## Update fork from origin
