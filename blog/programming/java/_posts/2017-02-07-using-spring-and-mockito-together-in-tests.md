@@ -3,7 +3,6 @@ layout: post
 title:  "Spring and Mockito in Junits"
 date:   2017-02-07 16:30:00 +0000   
 categories: highlight programming
-tags: spring mockito junit java programming
 teaser: Getting Spring and Mockito to work happily together in JUnits
 ---  
 
