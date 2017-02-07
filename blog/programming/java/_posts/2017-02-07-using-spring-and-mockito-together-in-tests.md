@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "Spring and Mockito in Junits"
