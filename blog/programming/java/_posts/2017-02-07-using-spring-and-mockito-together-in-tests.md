@@ -8,6 +8,7 @@ teaser: Getting Spring and Mockito to work happily together in JUnits
 
 # Problem statement
 Given a Test class using sprint Junit runner
+
 ```java
 @RunWith(SpringJUnit4ClassRunner.class)
 public class MyTest {
@@ -20,6 +21,7 @@ public class MyTest {
 And you want to use Mockito, you can't use the MockitoJunitRunner annotation. So what do you do?
 
 # Solution
+
 ```java
 @Before
 public void setup() {
