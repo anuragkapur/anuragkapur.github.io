@@ -20,6 +20,11 @@ or
 find . -maxdepth 1 -type d | xargs du -sh
 ```
 
+## Delete all files more than x days old
+```shell
+find /path/to/directory/ -mindepth 1 -mtime +5 -delete
+```
+
 ## Measure response time with curl
 ```shell
 $ curl -o /dev/null -s -w %{time_total} http://www.example.com/
