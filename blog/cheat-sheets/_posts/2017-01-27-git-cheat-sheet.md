@@ -14,6 +14,11 @@ $ git checkout <revision number to revert to> <file path>
 $ git commit
 ```
 
+## Revert merge commit
+```shell
+git revert -m 1 [sha_of_merge_commit]
+```
+
 # Branches
 
 ## Delete remote branch
