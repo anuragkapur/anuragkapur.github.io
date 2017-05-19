@@ -6,7 +6,8 @@ date:   2016-09-27 22:11:26 +0000
 categories: cheat-sheets
 ---
 
-## Brew
+## Brew
+
 ### List installed brew packages
 ```shell
 brew list
