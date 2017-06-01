@@ -138,9 +138,9 @@ Example: `System.getenv('key')`
 Secure config is not stored in the source code repo and deployed manually to the heroku app. Again, just like the 
 generic app config described in the previous section, we plan to implement a tool that deploys secure config from a 
 secure location - __secret git repo / last pass / secure server location__ directly to the config variables section of 
-the Heroku app.
+the Heroku app.     
 
-## Global Traffic Management
+## Global Traffic Management
 
 For High Availability and fault tolerance we like are apps to be available in more than one region primarily for 
 resilience and less importantly for performance and latency reasons. We like geo-routing client requests to the nearest 
