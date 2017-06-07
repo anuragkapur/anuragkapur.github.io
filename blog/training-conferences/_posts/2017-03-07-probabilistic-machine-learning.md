@@ -4,7 +4,7 @@ title:  "Probabilistic Machine Learning - Introduction"
 date:   2017-03-07 12:00:00 +0000   
 categories: highlight conferences
 teaser: An introductory lecture on probabilistic machine learning at University of Oxford. 
-img-url: assets/blog/training/probabilistic-machine-learning/ou-strachey-lecture-march-2017.png
+img-url: /assets/blog/training/probabilistic-machine-learning/ou-strachey-lecture-march-2017.png
 ---
 
 # Probabilistic machine learning - foundations and frontiers
