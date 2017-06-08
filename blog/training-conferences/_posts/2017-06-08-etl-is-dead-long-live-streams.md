@@ -11,9 +11,10 @@ My notes from the webinar: [https://www.confluent.io/online-talk/etl-is-dead-lon
 
 * Traditional model involved: Operational DB, data warehouse and data flowing from operational to the warehouse no
 more than a few times a day
-* Single server DBs being replaced by distributed data platforms
-* More data sources, ex: logs, sensors, metrics, not just relational data
-* Faster data processing is needed
+* Challenges of traditional approach
+  - Single server DBs being replaced by distributed data platforms
+  - More data sources, ex: logs, sensors, metrics, not just relational data
+  - Faster data processing is needed
 * Vision architecture:
 ![](/assets/blog/training/etl-is-dead/img1.png)
 * Traditional ETL drawbacks
@@ -21,10 +22,10 @@ more than a few times a day
   - Data cleansing and curation is manual and error-prone
   - Operationally expensive
   - Batch processing paradigm
-* Early take on real-tome ETL = Enterprise Application Integration (EAI)
+* Early take on real-tome ETL = Enterprise Application Integration (EAI), involved
   - ESBs
   - MQs
-  - didn't scale
+  - but they didn't scale
   - ![](/assets/blog/training/etl-is-dead/img2.png)
 * Event centric thinking
 ![](/assets/blog/training/etl-is-dead/img3.png)
