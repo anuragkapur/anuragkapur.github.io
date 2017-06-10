@@ -6,7 +6,7 @@ My github.io website. I use this space to
 * capture study, conference, reading notes on a variety of topics
 * link to content from other sources, so that this site can act as a central table of contents
 
-## Using categories for posts
+## Using categories for posts
 
 ### Special categories
 
@@ -17,4 +17,10 @@ My github.io website. I use this space to
 
 ```shell
 $ jekyll serve
+```
+
+### Install jekyll
+
+```sbtshell
+$ sudo gem install jekyll
 ```
