@@ -7,7 +7,7 @@ teaser: Looking back into traditional ETL architecture and how Kafka based strea
 img-url: /assets/blog/training/etl-is-dead/img.png
 ---
 
-My notes from the webinar: [https://www.confluent.io/online-talk/etl-is-dead-long-live-streams/](https://www.confluent.io/online-talk/etl-is-dead-long-live-streams/2017-06-08-etl-is-dead-long-live-streams.md)
+My notes from the webinar: [ETL is dead; Long live streams](https://vimeo.com/220846693/305dfdb663?mkt_tok=eyJpIjoiTXpVNFlUVmpNVEkzT0RsayIsInQiOiJmbCthcWZFN05jMWtuMkxMcGprd2xZT3dXZDlFT1B4anplMk9BQlJNSE9BR0I3S1hBZkR1NmRCUVNFdnJsNHdWNWZ1UHZOUnVybHlmWkNzSzN6WnlyXC9VRmlIWWxNRFErbW1oTHVXZHdUazhacnZjNHdSXC85QnNWU1hRT0w5NGJUIn0%3D)
 
 * Traditional model involved: Operational DB, data warehouse and data flowing from operational to the warehouse no
 more than a few times a day
