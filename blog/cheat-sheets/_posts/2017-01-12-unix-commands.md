@@ -25,6 +25,11 @@ find . -maxdepth 1 -type d | xargs du -sh
 find /path/to/directory/ -mindepth 1 -mtime +5 -delete
 ```
 
+## Delete everything except files with given extension
+```shell
+$ find . ! -name "*.jar" | xargs rm -rf
+```
+
 ## Measure response time with curl
 ```shell
 $ curl -o /dev/null -s -w %{time_total} http://www.example.com/
