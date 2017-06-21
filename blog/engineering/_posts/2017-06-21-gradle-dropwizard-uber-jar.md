@@ -4,6 +4,7 @@ title:  "Dropwizard runnable jar with Gradle"
 date:   2017-06-21 10:50:00 +0000   
 categories: engineering
 teaser: Unlike Maven Shade plugin, building a runnable Dropwizard application jar with Gradle isn't as straightforward as I initially thought
+img-url: /assets/blog/engineering/gradle-dropwizard-uber-jar/dropwizard.png
 ---  
 
 ## Requirement
@@ -18,7 +19,7 @@ sources (example: /src/test/java)
 
 ### Approach 1 - did not work
 Wanted to avoid using 3rd party plugins so built an uber jar as follows
-```json
+```
 task packageTests(type: Jar) {
     manifest {
         attributes 'Main-Class': 'example.MyDropwizardAppMain'
