@@ -2,9 +2,8 @@
 layout: post
 title:  "Dropwizard runnable jar with Gradle"
 date:   2017-06-21 10:50:00 +0000   
-categories: engineering java gradle
-teaser: Unlike Maven Shade plugin, building a runnable Dropwizard application
-jar with Gradle isn't as straightforward as I initially thought
+categories: engineering
+teaser: Unlike Maven Shade plugin, building a runnable Dropwizard application jar with Gradle isn't as straightforward as I initially thought
 ---  
 
 ## Requirement
