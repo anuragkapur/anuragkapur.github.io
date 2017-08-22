@@ -12,3 +12,9 @@ categories: cheat-sheets
 ```bash
 $ psql -h <hostname> -p <port> -U <user> <db_name>
 ```
+
+## Show tables - psql cli
+```bash
+\dt
+```
+
