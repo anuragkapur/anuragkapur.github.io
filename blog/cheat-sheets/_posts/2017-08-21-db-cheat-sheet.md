@@ -18,3 +18,23 @@ $ psql -h <hostname> -p <port> -U <user> <db_name>
 \dt
 ```
 
+# MongoDB
+
+## Connect to a DB
+```bash
+$ mongo --host localhost -u <username> --authenticationDatabase <dbname> -p <paassword>
+```
+
+## Switch/Use DB
+```bash
+> use admin;
+switched to db admin
+```
+
+## Show collections in DB
+```bash
+> show collections;
+mycollection
+system.users
+system.version
+```
