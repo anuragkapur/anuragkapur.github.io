@@ -36,6 +36,13 @@ $ find . ! -name "*.jar" | xargs rm -rf
 $ curl -o /dev/null -s -w %{time_total} http://www.example.com/
 ```
 
+# Utilities
+
+## Download file using curl
+```shell
+$ curl -O <url>
+```
+
 ## Simple load testing shell script
 ```shell
 #!/bin/bash
