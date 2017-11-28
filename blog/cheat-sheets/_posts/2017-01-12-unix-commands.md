@@ -58,3 +58,10 @@ do
   echo "${fastlyTime},${awsGatewayTime}" >> responsetimes.log
 done
 ```
+
+# CentOS
+## Manage network interfaces
+```shell
+$ nmtui
+```
+
