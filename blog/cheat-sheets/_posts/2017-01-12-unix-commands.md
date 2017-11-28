@@ -65,3 +65,10 @@ done
 $ nmtui
 ```
 
+# Ubuntu
+```shell
+mkdir $HOME/Shared
+/usr/bin/vmhgfs-fuse -o auto_unmount .host:/ $HOME/Shared
+```
+
+
