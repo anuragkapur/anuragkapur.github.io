@@ -43,3 +43,10 @@ $ git checkout master
 $ git pull
 $ git merge upstream/master
 ```
+
+# Git submodules
+## Init and update submodules
+```shell
+$ git submodule init
+$ git submodule update
+```
