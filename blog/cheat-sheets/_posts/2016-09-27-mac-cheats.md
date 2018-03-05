@@ -17,6 +17,12 @@ brew list
 ```shell
 brew uninstall <package_name>
 ```
+### List services
+```bash
+$ brew services list
+Name  Status  User        Plist
+redis started anuragkapur /Users/anuragkapur/Library/LaunchAgents/homebrew.mxcl.redis.plist
+```
 
 ## Disable apple security that prevents packages by unidentified developers from being opened (tested on macOS Sierra)
 
