@@ -44,6 +44,7 @@ $ curl -O <url>
 ```
 
 ## Simple load testing shell script
+Measures time in seconds
 ```shell
 #!/bin/bash
 
