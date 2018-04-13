@@ -18,6 +18,11 @@ $ psql -h <hostname> -p <port> -U <user> <db_name>
 \dt
 ```
 
+## Import .dump
+```bash
+psql -U <user> <db_name> < <PATH TO DUMP>
+```
+
 # MongoDB
 
 ## Connect to a DB
