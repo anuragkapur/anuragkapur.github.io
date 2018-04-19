@@ -38,6 +38,16 @@ $ curl -o /dev/null -s -w %{time_total} http://www.example.com/
 
 # Utilities
 
+## SSH tunnel - forward traffic from a specific localhost port to a specific remote host and port
+```shell
+ssh -L <localhost_port>:<remote_host>:<remote_port> <username>@<tunnel_server>
+```
+
+## SSH tunnel - forward traffic from a specific localhost port to remote host
+```shell
+ssh -D <localhost_port> -C -q -N <username>@<tunnel_server>
+```
+
 ## Download file using curl
 ```shell
 $ curl -O <url>
