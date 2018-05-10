@@ -15,8 +15,8 @@ by Venkat Subramaniam
 * Using stream the structure of sequential code is identical to the structure of cocurrent code
     - enhances readability, debugability, testability
 * Mutability and parallel don't go together
-* ![java-streams-paralle-sequential](/assets/blog/training/devoxxuk2018/devoxx - 2.png) 
-- last one (the one before the terminal operation) wins
+* ![java-streams-paralle-sequential](/assets/blog/training/devoxxuk2018/devoxx-2.png) 
+    - last one (the one before the terminal operation) wins
 * <insert pic> - paralleStream uses Common FJP
 * Some methods are inherently ordered
 * Some methods are unordered but may have an ordered counterpart
