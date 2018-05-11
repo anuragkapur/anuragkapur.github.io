@@ -19,6 +19,11 @@ $ git commit
 git revert -m 1 [sha_of_merge_commit]
 ```
 
+## Correct commit message that hasn't been pushed yet
+```shell
+git commit --amend
+```
+
 # Branches
 
 ## Delete remote branch
