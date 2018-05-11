@@ -15,7 +15,7 @@ by Venkat Subramaniam
 * Using stream the structure of sequential code is identical to the structure of cocurrent code
     - enhances readability, debugability, testability
 * Mutability and parallel don't go together
-* Last terminal operation wins 
+* Last terminal operation wins     
 ![java-streams-parallel-sequential](/assets/blog/training/devoxxuk2018/devoxx-2.png) 
 * Parallel stream uses Connon FJP 
 ![java-streams-fjp](/assets/blog/training/devoxxuk2018/devoxx-3.png) 
