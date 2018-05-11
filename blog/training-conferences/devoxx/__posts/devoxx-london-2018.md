@@ -17,7 +17,7 @@ by Venkat Subramaniam
 * Mutability and parallel don't go together
 * Last terminal operation wins     
 ![java-streams-parallel-sequential](/assets/blog/training/devoxxuk2018/devoxx-2.png) 
-* Parallel stream uses Connon FJP 
+* Parallel stream uses Connon FJP     
 ![java-streams-fjp](/assets/blog/training/devoxxuk2018/devoxx-3.png) 
 * Some methods are inherently ordered
 * Some methods are unordered but may have an ordered counterpart
@@ -47,7 +47,7 @@ expected result
 
 ## CompletableFutures
 * Non-blocking
-* Stream | CompletableFuture
+* Stream | CompletableFuture    
 ![java-streams-completable-future](/assets/blog/training/devoxxuk2018/devoxx-6.png)
 * Callbacks
     - lacks consistency: first param data or error? no consistency
@@ -61,7 +61,7 @@ expected result
     - failure/error is like data
 * CompletableFuture is Java is Promises in JavaScript
     - have stages
-    - evert stage takes a CF and returns a CF
+    - evert stage takes a CF and returns a CF    
 ![java-streams-completable-future](/assets/blog/training/devoxxuk2018/devoxx-8.png)
 * `future.get()` is a bad idea as it is a blocking call
 * Futures use the main thread when running something on a separate thread isn't necessary/valuable
@@ -116,11 +116,11 @@ lazy val x = compute(2)
 * How do we do lazy evaluation in Java?
     - Lambdas are a level of indirection
     - ![java-lazy-evaluation-lambda](/assets/blog/training/devoxxuk2018/devoxx-9.png)
-    - Lombok also provides a `@Lazy` annotation
-* ![java-streams](/assets/blog/training/devoxxuk2018/devoxx-10.png)
-* Lambdas are stateless; closures carry __immutable__ state
+    - Lombok also provides a `@Lazy` annotation    
+![java-streams](/assets/blog/training/devoxxuk2018/devoxx-10.png)
+* Lambdas are stateless; closures carry __immutable__ state    
 ![java-lambda-closures](/assets/blog/training/devoxxuk2018/devoxx-11.png)
-* Lazy evaluation at display
+* Lazy evaluation at display    
 ![java-lambda-lazy-evaluation](/assets/blog/training/devoxxuk2018/devoxx-12.png)
 
 # Kotlin for Java Programmers
@@ -146,7 +146,7 @@ by Venkat Subramaniam
     - Expressions over statements
     - Default method args
 * Classes are closed by default
-* Pattern matching
+* Pattern matching     
 ![kotlin-pattern-matching](/assets/blog/training/devoxxuk2018/devoxx-13.png)
 
 # Springing into Kotlin
@@ -160,7 +160,7 @@ by Mark Heckler
 # Handling Data in Distributed Systems
 
 * Avoid DB transactions
-    - replace db transaction with logical transaction
+    - replace db transaction with logical transaction    
 ![logical-transactions](/assets/blog/training/devoxxuk2018/devoxx-14.png)
 * DB and schema changes
     - add fields
@@ -169,5 +169,5 @@ by Mark Heckler
     - remove fields
         * don't touch DB, just stop using it in code
     - complete schema or DB change
-        * feature toggle
+        * feature toggle    
 ![db-schema-migration](/assets/blog/training/devoxxuk2018/devoxx-15.png)
