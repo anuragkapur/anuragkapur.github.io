@@ -15,9 +15,10 @@ by Venkat Subramaniam
 * Using stream the structure of sequential code is identical to the structure of cocurrent code
     - enhances readability, debugability, testability
 * Mutability and parallel don't go together
-* ![java-streams-paralle-sequential](/assets/blog/training/devoxxuk2018/devoxx-2.png) 
-    - last one (the one before the terminal operation) wins
-* <insert pic> - paralleStream uses Common FJP
+* Last terminal operation wins 
+![java-streams-parallel-sequential](/assets/blog/training/devoxxuk2018/devoxx-2.png) 
+* Parallel stream uses Connon FJP 
+![java-streams-fjp](/assets/blog/training/devoxxuk2018/devoxx-3.png) 
 * Some methods are inherently ordered
 * Some methods are unordered but may have an ordered counterpart
 ```java
@@ -27,7 +28,7 @@ forEachOrdered(System.out::println); // doesn't guarantee ordering unless the st
 * filter and map can run in parallel
 * reduce - (aka foldLeft) - runs as expected in parallel iff initial value = identity value, if not you may not get
 expected result
-    - <insert pic>
+    - ![java-streams-paralle-sequential](/assets/blog/training/devoxxuk2018/devoxx-5.png)
     - monoid ??
 * How many threads
     - How many threads can I create? // bad question
@@ -47,7 +48,7 @@ expected result
 ## CompletableFutures
 * Non-blocking
 * Stream | CompletableFuture
-<insert pic>
+![java-streams-completable-future](/assets/blog/training/devoxxuk2018/devoxx-6.png)
 * Callbacks
     - lacks consistency: first param data or error? no consistency
     - hard to compose: callback chain or callback hell
@@ -61,7 +62,7 @@ expected result
 * CompletableFuture is Java is Promises in JavaScript
     - have stages
     - evert stage takes a CF and returns a CF
-* <insert pic>
+![java-streams-completable-future](/assets/blog/training/devoxxuk2018/devoxx-8.png)
 * `future.get()` is a bad idea as it is a blocking call
 * Futures use the main thread when running something on a separate thread isn't necessary/valuable
 * Methods
@@ -114,13 +115,13 @@ lazy val x = compute(2)
 ```
 * How do we do lazy evaluation in Java?
     - Lambdas are a level of indirection
-    - <insert pic>
+    - ![java-lazy-evaluation-lambda](/assets/blog/training/devoxxuk2018/devoxx-9.png)
     - Lombok also provides a `@Lazy` annotation
-* <insert pic>
+* ![java-streams](/assets/blog/training/devoxxuk2018/devoxx-10.png)
 * Lambdas are stateless; closures carry __immutable__ state
-<insert pic>
+![java-lambda-closures](/assets/blog/training/devoxxuk2018/devoxx-11.png)
 * Lazy evaluation at display
-<insert pic>
+![java-lambda-lazy-evaluation](/assets/blog/training/devoxxuk2018/devoxx-12.png)
 
 # Kotlin for Java Programmers
 
@@ -144,5 +145,29 @@ by Venkat Subramaniam
     ```
     - Expressions over statements
     - Default method args
+* Classes are closed by default
 * Pattern matching
-<insert pic>
+![kotlin-pattern-matching](/assets/blog/training/devoxxuk2018/devoxx-13.png)
+
+# Springing into Kotlin
+
+by Mark Heckler
+
+* Java to Kotlin migration
+    - start with the pojos
+* Intellij has auto-conversion support for Java to Kotlin migration
+
+# Handling Data in Distributed Systems
+
+* Avoid DB transactions
+    - replace db transaction with logical transaction
+![logical-transactions](/assets/blog/training/devoxxuk2018/devoxx-14.png)
+* DB and schema changes
+    - add fields
+        * for metadata (non indexed fields), use blobs such as json
+        * for searchable/indexed fields, use another table and join by primary key
+    - remove fields
+        * don't touch DB, just stop using it in code
+    - complete schema or DB change
+        * feature toggle
+![db-schema-migration](/assets/blog/training/devoxxuk2018/devoxx-15.png)
