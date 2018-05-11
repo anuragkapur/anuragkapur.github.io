@@ -1,3 +1,13 @@
+---
+layout: post
+title:  "Devoxx UK 2018"
+date:   2018-05-11 12:00:00 +0000   
+categories: highlight conferences
+teaser: Notes from talks featuring Venkat Subramaniam and Mark Heckler among others  
+permalink: /blog/devoxx-uk-2018
+img-url: /assets/blog/training/devoxxuk2018/devoxx.png
+---
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
