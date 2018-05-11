@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Parallel and Asynchronous Programming with Streams and Completable Future](#parallel-and-asynchronous-programming-with-streams-and-completable-future)
+  - [Parallel vs Asynchronous](#parallel-vs-asynchronous)
+  - [Parallel Streams](#parallel-streams)
+  - [Streams | Reactive streams](#streams--reactive-streams)
+  - [CompletableFutures](#completablefutures)
+  - [References](#references)
+- [Reactive Spring Deep Dive](#reactive-spring-deep-dive)
+  - [References](#references-1)
+- [Exploring the Real Power of Streams](#exploring-the-real-power-of-streams)
+- [Kotlin for Java Programmers](#kotlin-for-java-programmers)
+- [Springing into Kotlin](#springing-into-kotlin)
+- [Handling Data in Distributed Systems](#handling-data-in-distributed-systems)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Parallel and Asynchronous Programming with Streams and Completable Future
 
 by Venkat Subramaniam
