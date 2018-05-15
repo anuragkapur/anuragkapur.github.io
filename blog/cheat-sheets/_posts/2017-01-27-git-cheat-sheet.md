@@ -8,7 +8,7 @@ categories: cheat-sheets
 
 # Commits, reverts etc
 
-## Revert commited changes to a single file
+## Revert committed changes to a single file
 ```shell
 $ git checkout <revision number to revert to> <file path>
 $ git commit
