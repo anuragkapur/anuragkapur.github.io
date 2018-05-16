@@ -36,3 +36,25 @@ The `^M` is typed using Ctrl-V-Enter
 ## Delete all chars from cursor to end of line
 
     d$
+    
+## Copy paste line
+```shell
+Y ("yank")
+p ("put below")
+P ("put above")
+```
+
+## Copy paste several lines
+```shell
+11yy ("yank 11 lines")
+p ("put below")
+P ("put above")
+```
+
+## Move line
+```shell
+dd ("delete")
+p ("put below")
+P ("put above")
+```
+    
