@@ -53,6 +53,11 @@ ssh -D <localhost_port> -C -q -N <username>@<tunnel_server>
 $ curl -O <url>
 ```
 
+## Upload file using curl
+```shell
+$ curl --verbose -F 'file=@"/tmp/myFile.txt"' http://localhost:3000/api/myFileEndpoint
+```
+
 ## Simple load testing shell script
 Measures time in seconds
 ```shell
