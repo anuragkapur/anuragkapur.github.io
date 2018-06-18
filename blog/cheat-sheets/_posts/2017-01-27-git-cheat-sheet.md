@@ -24,6 +24,11 @@ git revert -m 1 [sha_of_merge_commit]
 git commit --amend
 ```
 
+## Correct commit message after pushing to remote
+```shell
+git rebase -i HEAD~n
+```
+
 # Branches
 
 ## Delete remote branch
