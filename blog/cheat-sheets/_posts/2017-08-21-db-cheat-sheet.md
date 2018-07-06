@@ -16,9 +16,15 @@ $ psql -h <hostname> -p <port> -U <user> <db_name>
 ## Create User and DB
 ```bash
 $ psql -U <username>
+DROP DATABASE <dbname>;
 CREATE USER <username> WITH PASSWORD '<password>';
 CREATE DATABASE <dbname> OWNER <username>;
 CREATE DATABASE optimization OWNER tactical;
+```
+
+## Drop DB
+```bash
+$ dropdb -U <username> <dbname>
 ```
 
 ## Show tables - psql cli
@@ -26,9 +32,26 @@ CREATE DATABASE optimization OWNER tactical;
 \dt
 ```
 
+## Quit postgres prompt
+```bash
+postgres-> \q
+```
+
+## Generate dump
+```bash
+pg_dump -h <server_hostname> -U <username>  -f db.dump <db_name>
+```
+
 ## Import .dump
 ```bash
-psql -U <user> <db_name> < <PATH TO DUMP>
+psql -h <server_hostname> -U <user> <db_name> < <PATH TO DUMP>
+```
+
+# Redis
+
+## Flush all keys
+```bash
+$ redis-cli -c -h $redis_endpoint -p $port flushall
 ```
 
 # MongoDB
