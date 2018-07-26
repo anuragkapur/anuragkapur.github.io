@@ -22,11 +22,14 @@ git revert -m 1 [sha_of_merge_commit]
 ## Correct commit message that hasn't been pushed yet
 ```shell
 git commit --amend
+# Ref: https://help.github.com/articles/changing-a-commit-message/
 ```
 
 ## Correct commit message after pushing to remote
 ```shell
 git rebase -i HEAD~n
+git push --force
+# Ref: https://help.github.com/articles/changing-a-commit-message/
 ```
 
 # Branches
