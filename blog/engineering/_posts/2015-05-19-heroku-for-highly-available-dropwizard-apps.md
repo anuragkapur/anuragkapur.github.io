@@ -8,6 +8,21 @@ permalink: /blog/heroku-for-highly-available-dropwizard-apps
 img-url: /assets/blog/engineering/heroku-for-highly-available-dropwizard-apps/heroku1.png
 ---
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Introduction](#introduction)
+- [Motivation](#motivation)
+- [Usage Pattern](#usage-pattern)
+  - [Build and Release](#build-and-release)
+  - [Secure Config](#secure-config)
+  - [Global Traffic Management](#global-traffic-management)
+  - [Monitoring and Alerting](#monitoring-and-alerting)
+- [Lightning Talk Slide Deck](#lightning-talk-slide-deck)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ![](/assets/blog/engineering/heroku-for-highly-available-dropwizard-apps/heroku1.png)
  
 # Introduction
