@@ -87,4 +87,9 @@ mkdir $HOME/Shared
 /usr/bin/vmhgfs-fuse -o auto_unmount .host:/ $HOME/Shared
 ```
 
+# AWS CLI
+## S3 copy
+```shell
+aws s3 cp s3://<bucket-name>/<path-to-file> /tmp/. --region=eu-central-1
+```
 
