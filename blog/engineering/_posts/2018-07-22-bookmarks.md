@@ -12,8 +12,11 @@ permalink: /blog/bookmarks
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Programming](#programming)
+  - [JVM](#jvm)
+    - [Reactive programming](#reactive-programming)
   - [Javascript](#javascript)
   - [Misc](#misc)
+- [Architecture](#architecture)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -31,3 +34,7 @@ permalink: /blog/bookmarks
 ## Misc
 * [ASCII table](https://www.asciitable.com/)
 * [Unicode and encoding basics](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+
+# Architecture
+* [Microservices](https://martinfowler.com/articles/microservices.html)
+* [Breaking monolith into Microservices](https://martinfowler.com/articles/break-monolith-into-microservices.html)
