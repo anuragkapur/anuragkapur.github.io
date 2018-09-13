@@ -24,6 +24,7 @@ permalink: /blog/bookmarks
 # Programming
 ## JVM
 ### Reactive programming
+* [Reactive Manifesto](https://www.reactivemanifesto.org/)
 * [Reactive programming in Java](https://spring.io/blog/2016/06/07/notes-on-reactive-programming-part-i-the-reactive-landscape#reactive-programming-in-java)
 * [Reactive programming in the netflix API with RxJava](https://medium.com/netflix-techblog/reactive-programming-in-the-netflix-api-with-rxjava-7811c3a1496a)
 * [Spring Web - Reactive](https://docs.spring.io/spring/docs/5.0.8.RELEASE/spring-framework-reference/web-reactive.html)
@@ -38,3 +39,4 @@ permalink: /blog/bookmarks
 # Architecture
 * [Microservices](https://martinfowler.com/articles/microservices.html)
 * [Breaking monolith into Microservices](https://martinfowler.com/articles/break-monolith-into-microservices.html)
+* [12 Factor App](https://12factor.net/)
