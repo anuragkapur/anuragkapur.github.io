@@ -30,3 +30,11 @@ redis started anuragkapur /Users/anuragkapur/Library/LaunchAgents/homebrew.mxcl.
 $ sudo spctl --master-disable
 $ sudo spctl --master-enable
 ```
+
+## Utilities
+
+### Find process using a specific port
+```bash
+$ sudo lsof -i tcp:8080
+```
+
