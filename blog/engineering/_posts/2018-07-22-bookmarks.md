@@ -14,6 +14,7 @@ permalink: /blog/bookmarks
 - [Programming](#programming)
   - [JVM](#jvm)
     - [Reactive programming](#reactive-programming)
+    - [Testing](#testing)
   - [Javascript](#javascript)
   - [Misc](#misc)
 - [Architecture](#architecture)
@@ -27,7 +28,11 @@ permalink: /blog/bookmarks
 * [Reactive Manifesto](https://www.reactivemanifesto.org/)
 * [Reactive programming in Java](https://spring.io/blog/2016/06/07/notes-on-reactive-programming-part-i-the-reactive-landscape#reactive-programming-in-java)
 * [Reactive programming in the netflix API with RxJava](https://medium.com/netflix-techblog/reactive-programming-in-the-netflix-api-with-rxjava-7811c3a1496a)
-* [Spring Web - Reactive](https://docs.spring.io/spring/docs/5.0.8.RELEASE/spring-framework-reference/web-reactive.html)
+* [Spring Web - Reactive](https://docs.spring.io/spring/docs/5.0.9.RELEASE/spring-framework-reference/web-reactive.html)
+* [Reactive Spring 5 Demo Video](https://www.infoq.com/presentations/reactive-spring-5)
+
+### Testing
+* [Spring - Web Testing](https://spring.io/guides/gs/testing-web/)
 
 ## Javascript
 * [A re-introduction to javascript (JS Tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
