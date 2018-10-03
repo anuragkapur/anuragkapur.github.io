@@ -21,7 +21,6 @@ permalink: /blog/bookmarks
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-
 # Programming
 ## JVM
 ### Reactive programming
@@ -45,3 +44,5 @@ permalink: /blog/bookmarks
 * [Microservices](https://martinfowler.com/articles/microservices.html)
 * [Breaking monolith into Microservices](https://martinfowler.com/articles/break-monolith-into-microservices.html)
 * [12 Factor App](https://12factor.net/)
+* [Serverless, FaaS, PaaS, Containers](https://martinfowler.com/articles/serverless.html)
+* [Defining Serverless](https://blog.symphonia.io/defining-serverless-part-1-704d72bc8a32)
