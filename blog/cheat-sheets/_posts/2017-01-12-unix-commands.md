@@ -58,6 +58,16 @@ $ curl -O <url>
 $ curl --verbose -F 'file=@"/tmp/myFile.txt"' http://localhost:3000/api/myFileEndpoint
 ```
 
+## Rename all files in a directory with sequential numbers
+```bash
+a=1
+for i in *.jpg; do
+  new=$(printf "erg-%02d.jpg" "$a") #04 pad to length of 4
+  mv -i -- "$i" "$new"
+  let a=a+1
+done
+```
+
 ## Simple load testing shell script
 Measures time in seconds
 ```shell
