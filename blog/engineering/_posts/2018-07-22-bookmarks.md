@@ -29,6 +29,8 @@ permalink: /blog/bookmarks
 * [Reactive programming in the netflix API with RxJava](https://medium.com/netflix-techblog/reactive-programming-in-the-netflix-api-with-rxjava-7811c3a1496a)
 * [Spring Web - Reactive](https://docs.spring.io/spring/docs/5.0.9.RELEASE/spring-framework-reference/web-reactive.html)
 * [Reactive Spring 5 Demo Video](https://www.infoq.com/presentations/reactive-spring-5)
+### Java 8
+* [Effective use of Optionals](https://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html)
 
 ### Testing
 * [Spring - Web Testing](https://spring.io/guides/gs/testing-web/)
