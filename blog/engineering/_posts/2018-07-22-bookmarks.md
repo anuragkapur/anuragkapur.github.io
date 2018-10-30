@@ -18,6 +18,8 @@ permalink: /blog/bookmarks
   - [Javascript](#javascript)
   - [Misc](#misc)
 - [Architecture](#architecture)
+- [Agile Engineering Practices](#agile-engineering-practices)
+  - [Testing](#testing-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -51,3 +53,7 @@ permalink: /blog/bookmarks
 * [12 Factor App](https://12factor.net/)
 * [Serverless, FaaS, PaaS, Containers](https://martinfowler.com/articles/serverless.html)
 * [Defining Serverless](https://blog.symphonia.io/defining-serverless-part-1-704d72bc8a32)
+
+# Agile Engineering Practices
+## Testing
+* [Practical Testing Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
