@@ -33,6 +33,7 @@ permalink: /blog/bookmarks
 * [Spring Web - Reactive](https://docs.spring.io/spring/docs/5.0.9.RELEASE/spring-framework-reference/web-reactive.html)
 * [Reactive Spring 5 Demo Video](https://www.infoq.com/presentations/reactive-spring-5)
 * [Project Reactor - Reference Guide](http://projectreactor.io/docs/core/release/reference/)
+
 ### Java 8
 * [Effective use of Optionals](https://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html)
 
@@ -48,11 +49,22 @@ permalink: /blog/bookmarks
 * [Unicode and encoding basics](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
 
 # Architecture
+## Microservices
 * [Microservices](https://martinfowler.com/articles/microservices.html)
 * [Breaking monolith into Microservices](https://martinfowler.com/articles/break-monolith-into-microservices.html)
+
+## CQRS
+* [CQRS - Martin Fowler](https://martinfowler.com/bliki/CQRS.html)
+* [CQRS - Microsoft Design Patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)
+* [Clarified CQRS](http://udidahan.com/2009/12/09/clarified-cqrs/)
+* [CQRS - Greg Young](http://codebetter.com/gregyoung/2010/02/16/cqrs-task-based-uis-event-sourcing-agh/)
+* [CQRS and Event Sourcing - Greg Young; Video](https://www.youtube.com/watch?v=JHGkaShoyNs)
+
+## Misc
 * [12 Factor App](https://12factor.net/)
 * [Serverless, FaaS, PaaS, Containers](https://martinfowler.com/articles/serverless.html)
 * [Defining Serverless](https://blog.symphonia.io/defining-serverless-part-1-704d72bc8a32)
+* [Freedom of Kubernetes - Kris Nova; Video](https://www.safaribooksonline.com/videos/velocity-conference/9781492025931/9781492025931-video323597)
 
 # Agile Engineering Practices
 ## Testing
