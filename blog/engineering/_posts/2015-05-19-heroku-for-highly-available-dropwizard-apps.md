@@ -10,7 +10,7 @@ img-url: /assets/blog/engineering/heroku-for-highly-available-dropwizard-apps/he
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**Table of Contents**
 
 - [Introduction](#introduction)
 - [Motivation](#motivation)
@@ -30,7 +30,7 @@ img-url: /assets/blog/engineering/heroku-for-highly-available-dropwizard-apps/he
 This post documents how we are using Heroku for HA [Dropwizard](http://www.dropwizard.io/) based java applications at my
 workplace.
 
-It is worth noting, that while I have used Heroku in side projects and hacks, this is my first experience in using it 
+It is worth noting, that while I have used Heroku in side projects and hacks, this is my first experience of using it 
 for a business critical app.
 
 # Motivation
