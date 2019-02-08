@@ -6,6 +6,32 @@ date:   2017-01-12 10:37:00 +0000
 categories: cheat-sheets
 ---
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [System administration](#system-administration)
+  - [Find PID using a given port number](#find-pid-using-a-given-port-number)
+  - [Find disk usage per directory](#find-disk-usage-per-directory)
+  - [Delete all files more than x days old](#delete-all-files-more-than-x-days-old)
+  - [Delete everything except files with given extension](#delete-everything-except-files-with-given-extension)
+  - [Measure response time with curl](#measure-response-time-with-curl)
+- [Utilities](#utilities)
+  - [SSH tunnel - forward traffic from a specific localhost port to a specific remote host and port](#ssh-tunnel---forward-traffic-from-a-specific-localhost-port-to-a-specific-remote-host-and-port)
+  - [SSH tunnel - forward traffic from a specific localhost port to remote host - can also be used to setup SOCS proxy](#ssh-tunnel---forward-traffic-from-a-specific-localhost-port-to-remote-host---can-also-be-used-to-setup-socs-proxy)
+  - [Download file using curl](#download-file-using-curl)
+  - [Upload file using curl](#upload-file-using-curl)
+  - [Rename all files in a directory with sequential numbers](#rename-all-files-in-a-directory-with-sequential-numbers)
+  - [Simple load testing shell script](#simple-load-testing-shell-script)
+- [CentOS](#centos)
+  - [Manage network interfaces](#manage-network-interfaces)
+- [Ubuntu](#ubuntu)
+- [AWS CLI](#aws-cli)
+  - [S3 copy](#s3-copy)
+  - [S3 upload object](#s3-upload-object)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # System administration
 ## Find PID using a given port number
 ```shell
@@ -98,8 +124,12 @@ mkdir $HOME/Shared
 ```
 
 # AWS CLI
-## S3 copy
+## S3 copy/download
 ```shell
 aws s3 cp s3://<bucket-name>/<path-to-file> /tmp/. --region=eu-central-1
 ```
 
+## S3 upload object
+```shell
+ aws s3 cp /Users/anuragkapur/Desktop/hello-world.txt s3://<bucket-name>/ --profile <cli-credentials-profile-name>
+ ```
