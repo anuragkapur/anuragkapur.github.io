@@ -27,9 +27,19 @@ CREATE DATABASE optimization OWNER tactical;
 $ dropdb -U <username> <dbname>
 ```
 
+## Show schemas - psql cli
+```bash
+\dn
+```
+
 ## Show tables - psql cli
 ```bash
 \dt
+```
+
+## Show tables in a schema
+```bash
+\dt <schema_name>.
 ```
 
 ## Quit postgres prompt
