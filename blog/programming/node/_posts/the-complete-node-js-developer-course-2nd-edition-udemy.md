@@ -68,6 +68,10 @@ npm install <package-name> --global
 
 * nodemon - dev utility to automatically restart app when there are code changes        
 https://www.npmjs.com/package/nodemon 
+  -  nodemon - doesn't watch template (hbs) files by default, include them using
+  ```
+  nodemon server.js -e js, hbs
+  ```
 
 * Accessing command line args
 ```javascript
@@ -147,3 +151,30 @@ const user = {
 
 user.sayHiAlt();
 ```
+
+# Web Server and Application Deployment
+
+https://github.com/anuragkapur/udemy-node-web-server contains example code using the following:
+
+* [Express](https://www.npmjs.com/package/express)
+  - Middleware is called in order of declaration in the code
+    - The files under `/public` are still rendered in the following code, even though we have setup the middleware
+    to render a maintenance page in the code sample below:
+    ```javascript
+    const server = express();
+   
+    hbs.registerPartials(__dirname + '/views/partials');
+    server.use(express.static('public'));
+    server.set('view engine', 'hbs');
+    // maintenance middleware
+    server.use((req, res, next) => {
+      res.render('maintenance.hbs', {
+        pageTitle: 'Maintenance Page'
+      });
+    });
+    ```
+    To remedy this, simply move the call to `server.use(express.static('public'))` to after the maintenance middleware
+    declaration.
+* [Handlebars](https://www.npmjs.com/package/hbs)
+  - Partials for sharing code across html templates, example for header/footer code
+  - Helper functions   
