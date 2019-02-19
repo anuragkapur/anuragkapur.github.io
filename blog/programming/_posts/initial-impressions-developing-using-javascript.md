@@ -13,6 +13,9 @@ Webstorm IDE)
     server.use(express.static('public'));
     server.set('view engine', 'hbs');
     ```
+    Same with jest assertion methods, but this can be addressed using steps described here:
+    https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000357324-Get-rid-of-Unresolved-function-method-variable-warning-in-Jest-test-files
+    ![](/assets/blog/programming/jest-expect-webstorm-settings.png)
 *     
   
   
