@@ -43,6 +43,17 @@ module.exports.addNote = () => {
 }
 ```
 
+```javascript
+add = (a, b) => a + b;
+
+square = x => x * x;
+
+module.exports = {
+  add,
+  square
+};
+```
+
 * String formatting with variables (ES6)
 ```javascript
 console.log(`Sum of numbers = ${result}`);
@@ -62,6 +73,9 @@ npm install <package-name> --save
 
 // install as a global utility - doesn't add to the project specific package.json
 npm install <package-name> --global 
+
+// install as a dev dependency only
+npm install <package-name> --save-dev
 ```
 
 * node_modules directory shouldn't be committed to git
@@ -178,3 +192,23 @@ https://github.com/anuragkapur/udemy-node-web-server contains example code using
 * [Handlebars](https://www.npmjs.com/package/hbs)
   - Partials for sharing code across html templates, example for header/footer code
   - Helper functions   
+  
+# Testing Node Applications
+
+http://mochajs.org/    
+https://github.com/anuragkapur/udemy-node-tests
+
+* Using `nodemon` to run tests automatically when a file changes
+    ```
+    nodemon --exec 'npm test'
+    ```
+    Or, add the following script to the `package.json` file
+    ```json
+    "test-watch": "nodemon --exec \"npm test\""
+    ```
+    and then in the bash shell,
+    ```
+    $ npm run test-watch
+    ```
+
+* Assertion library - [Expect](https://github.com/mjackson/expect)
