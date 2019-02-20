@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Node.js Fundamentals](#nodejs-fundamentals)
+- [Web Server and Application Deployment](#web-server-and-application-deployment)
+- [Testing Node Applications](#testing-node-applications)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Node.js Fundamentals
 
 * Requiring your own files
@@ -212,3 +222,29 @@ https://github.com/anuragkapur/udemy-node-tests
     ```
 
 * Assertion library - [Expect](https://github.com/mjackson/expect)
+
+* Testing async methods - using `done()`
+```javascript
+it('should square the number asynchronously', (done) => {
+  utils.asyncSquare(3, (result) => {
+    expect(result).toBe(9).toBeA('number');
+    done();
+  })
+});
+```
+
+* [Supertest](https://github.com/visionmedia/supertest) - Express app testing library
+```javascript
+it('should get users and the response should contain expected user in users array', (done) => {
+  request(app)
+    .get('/users')
+    .expect(200)
+    .expect((response) => {
+      expect(response.body).toInclude({
+        name: 'Anurag Kapur',
+        location: 'London'
+      })
+    })
+    .end(done);
+});
+```  
