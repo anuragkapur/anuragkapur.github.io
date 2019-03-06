@@ -8,6 +8,13 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+# Introduction
+Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O
+model that makes it lightweight and efficient.
+
+[Official Course PDF Guide](/assets/blog/programming/node/PDF-Guide-Node-Andrew-Mead-v3.pdf)    
+[Official Documentation](https://nodejs.org/en/docs/)
+
 # Node.js Fundamentals
 
 * Requiring your own files
@@ -176,6 +183,12 @@ const user = {
 user.sayHiAlt();
 ```
 
+* Object Destructuring
+```javascript
+var user = {name: 'Anurag Kapur', location: 'London'};
+var {name, location} = user;
+```
+
 # Web Server and Application Deployment
 
 https://github.com/anuragkapur/udemy-node-web-server contains example code using the following:
@@ -272,3 +285,7 @@ it('should get users and the response should contain expected user in users arra
       });
     });
     ```
+    
+# MongoDB, Mongo0se and Rest API
+
+* [MongoDB Node.js driver](https://mongodb.github.io/node-mongodb-native/)
