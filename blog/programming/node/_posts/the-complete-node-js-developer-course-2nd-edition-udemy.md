@@ -13,7 +13,7 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js 
 model that makes it lightweight and efficient.
 
 [Official Course PDF Guide](/assets/blog/programming/node/PDF-Guide-Node-Andrew-Mead-v3.pdf)    
-[Official Documentation](https://nodejs.org/en/docs/)
+[Official Documentation](https://nodejs.org/en/docs/ )
 
 # Node.js Fundamentals
 
@@ -147,8 +147,9 @@ node inspect <filename>
   - `debugger;` add this to application code to add a break point
 
 * Debugging via chrome dev tools
+Add `debugger` statement to relevant line of code to act as a break point,    
 ```
-node --inspect-brk <filename>
+node inspect <filename>
 ```
 Next, go to chrome://inspect
 
