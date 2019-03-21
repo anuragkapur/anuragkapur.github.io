@@ -13,7 +13,10 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js 
 model that makes it lightweight and efficient.
 
 [Official Course PDF Guide](/assets/blog/programming/node/PDF-Guide-Node-Andrew-Mead-v3.pdf)    
-[Official Documentation](https://nodejs.org/en/docs/ )
+[Official Documentation](https://nodejs.org/en/docs/)
+
+JavaScript is a single threaded programming language. However, node.js uses other threads using C++ behind the scenes to
+provide non-blocking capabilities such as handling callbacks and promises.
 
 # Node.js Fundamentals
 
@@ -156,7 +159,7 @@ Next, go to chrome://inspect
 * ES6 arrow functions don't bind to the `this` keyword
 ```javascript
 const user = {
-    name: 'Anurag',
+    name: 'Anurag', 
     sayHi: () => {
         console.log(`Hi, I'm ${this.name}`);
     }
@@ -189,6 +192,10 @@ user.sayHiAlt();
 var user = {name: 'Anurag Kapur', location: 'London'};
 var {name, location} = user;
 ```
+
+# Asynchronous Programming
+* All functions get added to call stack before execution
+* Event loop pushes items from the Callback queue to the call stack, only when the call stack is empty
 
 # Web Server and Application Deployment
 
