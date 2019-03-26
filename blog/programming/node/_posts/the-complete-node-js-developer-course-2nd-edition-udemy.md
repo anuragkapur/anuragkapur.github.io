@@ -2,9 +2,12 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+- [Introduction](#introduction)
 - [Node.js Fundamentals](#nodejs-fundamentals)
+- [Asynchronous Programming](#asynchronous-programming)
 - [Web Server and Application Deployment](#web-server-and-application-deployment)
 - [Testing Node Applications](#testing-node-applications)
+- [MongoDB, Mongoose and Rest API](#mongodb-mongoose-and-rest-api)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -195,7 +198,25 @@ var {name, location} = user;
 
 # Asynchronous Programming
 * All functions get added to call stack before execution
-* Event loop pushes items from the Callback queue to the call stack, only when the call stack is empty
+* Event loop pushes items from the Callback queue to the call stack, only when the call stack is empty 
+* Promises provide clearer semantics and code readability compared to callbacks
+```javascript
+// typical callback usage
+doWorkCallback((error, result) => {
+   if (error) {
+       return console.log(error);
+   } 
+   
+   console.log(result);
+});
+
+// typical promise usage
+doWOrkPromise.then((result) => {
+   console.log(result); 
+}).catch((error) => {
+    console.log(error);
+});
+```
 
 # Web Server and Application Deployment
 
@@ -294,6 +315,6 @@ it('should get users and the response should contain expected user in users arra
     });
     ```
     
-# MongoDB, Mongo0se and Rest API
+# MongoDB, Mongoose and Rest API
 
 * [MongoDB Node.js driver](https://mongodb.github.io/node-mongodb-native/)
