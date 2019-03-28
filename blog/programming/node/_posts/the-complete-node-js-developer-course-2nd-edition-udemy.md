@@ -217,6 +217,17 @@ doWOrkPromise.then((result) => {
     console.log(error);
 });
 ```
+* Promise chaining instead of nesting
+```javascript
+add(1, 2).then((sum) => { 
+    console.log(sum);  // Will print 3 return add(sum, 4)
+    return add(sum, 4);
+}).then((sum2) => {
+    console.log(sum2); // Will print 7
+}).catch((e) => {
+    console.log(e);
+});
+```
 
 # Web Server and Application Deployment
 
