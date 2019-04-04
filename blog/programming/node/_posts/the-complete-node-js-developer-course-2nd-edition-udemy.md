@@ -371,3 +371,19 @@ userSchema.virtual('todos', {
 
 user.populate('todos').execPopulate();
 ```
+* Add automatic timestamps to docs
+```javascript
+const todoSchema = new Schema(
+    {
+        description: {
+            type: String,
+            trim: true,
+            required: true
+        }
+    }, {
+        timestamps: true
+    }
+);
+
+const Todo = mongoose.model('Todo', todoSchema);
+```
