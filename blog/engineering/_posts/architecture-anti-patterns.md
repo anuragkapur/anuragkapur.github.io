@@ -11,3 +11,11 @@
 * https://martinfowler.com/bliki/IntegrationDatabase.html
 * http://www.ben-morris.com/a-shared-database-is-still-an-anti-pattern-no-matter-what-the-justification/
 * http://microservices.io/patterns/data/database-per-service.html
+* Page - 41, Chapter 4 - Building Microservices - Sam Newman
+
+## Onion Architecture
+
+* Chapter 3, Building Microservices - Sam Newman
+
+## Anemic Domain Model
+https://www.martinfowler.com/bliki/AnemicDomainModel.html
