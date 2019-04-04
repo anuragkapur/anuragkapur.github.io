@@ -266,6 +266,14 @@ https://github.com/anuragkapur/udemy-node-web-server contains example code using
 * [Handlebars](https://www.npmjs.com/package/hbs)
   - Partials for sharing code across html templates, example for header/footer code
   - Helper functions   
+* Express Middleware    
+  - Like servlet filters in java
+  ```javascript
+  app.use((req, res, next) => {
+    // do something useful with the req and/or res
+    next();
+  });
+  ```
   
 # Testing Node Applications
 
@@ -340,3 +348,26 @@ it('should get users and the response should contain expected user in users arra
 # MongoDB, Mongoose and Rest API
 
 * [MongoDB Node.js driver](https://mongodb.github.io/node-mongodb-native/)
+* Object/Document relationships
+```javascript
+const Todo = mongoose.model('Todo', {
+    description: {
+        type: String,
+        trim: true,
+        required: true
+    },
+    owner: {
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: 'User'
+    }
+});
+
+userSchema.virtual('todos', {
+    ref: 'Todo',
+    localField: '_id',
+    foreignField: 'owner'
+});
+
+user.populate('todos').execPopulate();
+```
