@@ -278,6 +278,8 @@ https://github.com/anuragkapur/udemy-node-web-server contains example code using
 # Testing Node Applications
 
 http://mochajs.org/    
+https://jestjs.io/      
+https://www.npmjs.com/package/supertest     
 https://github.com/anuragkapur/udemy-node-tests
 
 * Using `nodemon` to run tests automatically when a file changes
@@ -320,6 +322,8 @@ it('should get users and the response should contain expected user in users arra
     .end(done);
 });
 ```
+
+* Mocking node modules using jest - https://jestjs.io/docs/en/manual-mocks
 
 * Spies for unit testing
     - [Rewire](https://www.npmjs.com/package/rewire)  
