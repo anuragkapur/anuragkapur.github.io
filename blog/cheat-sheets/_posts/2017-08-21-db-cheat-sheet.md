@@ -66,6 +66,8 @@ $ redis-cli -c -h $redis_endpoint -p $port flushall
 
 # MongoDB
 
+Ref: [Mongo Shell reference](https://docs.mongodb.com/manual/reference/mongo-shell/)
+
 ## Connect to a DB
 ```bash
 $ mongo --host localhost -u <username> --authenticationDatabase <dbname> -p <paassword>
