@@ -25,12 +25,14 @@ git commit --amend
 # Ref: https://help.github.com/articles/changing-a-commit-message/
 ```
 
-## Correct commit message after pushing to remote
+## Rewrite history after pushing to remote
 ```shell
 git rebase -i HEAD~n
 git push --force
-# Ref: https://help.github.com/articles/changing-a-commit-message/
 ```
+Ref:     
+https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History        
+https://help.github.com/articles/changing-a-commit-message/
 
 # Branches
 
@@ -44,6 +46,13 @@ $ git push origin --delete <branch-name>
 git branch -m old_branch_name new_branch_name
 git push origin :old_branch_name
 git push --set-upstream origin new_branch_name
+```
+
+# Tags
+
+## Push tag to remote
+```shell
+git push origin v2.44.0
 ```
 
 # Forks
