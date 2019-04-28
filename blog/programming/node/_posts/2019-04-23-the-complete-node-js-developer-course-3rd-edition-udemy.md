@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "The Complete Node.js Developer Course"
+date:   2019-04-28 14:00:00 +0000   
+categories: programming javascript
+teaser: Notes from the Node.js developer course offered by Andrew Mead on Udemy. 
+img-url: /assets/blog/programming/node/UC-4QNQ9KI2.jpg
+---
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
@@ -8,6 +17,8 @@
 - [Web Server and Application Deployment](#web-server-and-application-deployment)
 - [Testing Node Applications](#testing-node-applications)
 - [MongoDB, Mongoose and Rest API](#mongodb-mongoose-and-rest-api)
+- [Handling File Uploads](#handling-file-uploads)
+- [Realtime Applications](#realtime-applications)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -196,7 +207,11 @@ var user = {name: 'Anurag Kapur', location: 'London'};
 var {name, location} = user;
 ```
 
+* Working with time
+https://momentjs.com/ 
+
 # Asynchronous Programming
+
 * All functions get added to call stack before execution
 * Event loop pushes items from the Callback queue to the call stack, only when the call stack is empty 
 * Promises provide clearer semantics and code readability compared to callbacks
@@ -391,3 +406,26 @@ const todoSchema = new Schema(
 
 const Todo = mongoose.model('Todo', todoSchema);
 ```
+
+# Handling File Uploads
+
+* Express ecosystem library - [Multer](https://github.com/expressjs/multer)
+* Sample code implemented - https://github.com/anuragkapur/udemy-node-todo-api/blob/106eec6ef6898a442ab4b85905b9e9fe9ea0183c/src/router/users.js#L81 
+
+# Realtime Applications
+
+https://github.com/anuragkapur/udemy-node-chat-app    
+
+* On the client, `socket.emit` emits an event to the server. On the server, both `socket.emit` and `io.emit` can be 
+used. `socket.emit` sends an event to that specific client, while `io.emit` sends an event to all connected clients.
+
+* Events can be broadcasted from the server using `socket.broadcast.emit`. This event will get sent to all sockets 
+except the one that broadcasted the event.
+```javascript
+io.on('connection', (socket) => {
+    socket.broadcast.emit('message', 'A new user has joined!')
+})
+```
+
+* Socket.io rooms
+https://socket.io/docs/rooms-and-namespaces/#Rooms   
