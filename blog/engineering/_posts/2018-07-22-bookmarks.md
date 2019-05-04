@@ -14,10 +14,15 @@ permalink: /blog/bookmarks
 - [Programming](#programming)
   - [JVM](#jvm)
     - [Reactive programming](#reactive-programming)
+    - [Java 8](#java-8)
     - [Testing](#testing)
   - [Javascript](#javascript)
   - [Misc](#misc)
+  - [GraphQL](#graphql)
 - [Architecture](#architecture)
+  - [Microservices](#microservices)
+  - [CQRS](#cqrs)
+  - [Misc](#misc-1)
 - [Agile Engineering Practices](#agile-engineering-practices)
   - [Testing](#testing-1)
 
@@ -47,6 +52,9 @@ permalink: /blog/bookmarks
 ## Misc
 * [ASCII table](https://www.asciitable.com/)
 * [Unicode and encoding basics](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+
+## GraphQL
+* [GraphQL tutorials](https://www.howtographql.com)
 
 # Architecture
 ## Microservices
