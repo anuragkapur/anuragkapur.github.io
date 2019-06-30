@@ -68,10 +68,13 @@ permalink: /blog/bookmarks
 * [CQRS - Greg Young](http://codebetter.com/gregyoung/2010/02/16/cqrs-task-based-uis-event-sourcing-agh/)
 * [CQRS and Event Sourcing - Greg Young; Video](https://www.youtube.com/watch?v=JHGkaShoyNs)
 
-## Misc
-* [12 Factor App](https://12factor.net/)
+## Serverless
 * [Serverless, FaaS, PaaS, Containers](https://martinfowler.com/articles/serverless.html)
 * [Defining Serverless](https://blog.symphonia.io/defining-serverless-part-1-704d72bc8a32)
+* [3 Tips to Control the Cost of AWS Lambda](https://medium.com/thundra/3-tips-to-control-the-cost-of-aws-lambda-7996055d0f52)
+
+## Misc
+* [12 Factor App](https://12factor.net/)
 * [Freedom of Kubernetes - Kris Nova; Video](https://www.safaribooksonline.com/videos/velocity-conference/9781492025931/9781492025931-video323597)
 
 # Agile Engineering Practices
