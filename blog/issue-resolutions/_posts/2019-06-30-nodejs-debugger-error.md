@@ -20,11 +20,11 @@ SyntaxError: Unexpected identifier
 ```
 
 ## Resolution
-assets/blog/issue-resolutions/nodejs-debugger-error-babel-fix.png
+![](Webstorm debug configuration)assets/blog/issue-resolutions/nodejs-debugger-error-babel-fix.png
 
 ## Ref
-* https://intellij-support.jetbrains.com/hc/en-us/community/posts/203373470-How-to-make-Webstorm-2016-2-debug-work-with-ES6-and-babel
-* https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000380044--node-debug-and-node-debug-brk-are-invalid-Please-use-node-inspect-or-node-inspect-brk-instead
+* [](https://intellij-support.jetbrains.com/hc/en-us/community/posts/203373470-How-to-make-Webstorm-2016-2-debug-work-with-ES6-and-babel)
+* [](https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000380044--node-debug-and-node-debug-brk-are-invalid-Please-use-node-inspect-or-node-inspect-brk-instead)
 
 
 
