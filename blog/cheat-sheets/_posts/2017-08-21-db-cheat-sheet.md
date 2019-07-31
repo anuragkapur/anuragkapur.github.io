@@ -86,3 +86,83 @@ mycollection
 system.users
 system.version
 ```
+
+## Copy docs from remote db collection into current db
+```javascript
+db.getSiblingDB("remotedb").runCommand(
+    { 
+        cloneCollection: "remotedb.curriculumNodes",
+        from: "remote.host:27017",
+        query: {  }
+    }
+)
+```
+
+## Copy database
+```javascript
+db.copyDatabase("original-db-name", "original-db-name-backup")
+```
+
+## Delete docs from collection that don't match criteria
+```javascript
+db.getCollection('usergroup').deleteMany({uuid: {$nin: ['b068c3ac-6a1d-4500-9121-18a6ef980b71']}})
+```
+
+## Export collection
+```
+mongoexport --db test --collection traffic --out traffic.json
+```
+
+## Find docs that have a certain attribute defined
+```javascript
+db.getCollection('user').find({google: {$exists: true}})
+```
+
+## Sort in reverse natural order (most recently created first)
+```javascript
+db.getCollection('session').find({}).sort({$natural: -1})
+```
+
+# Neo4j
+## Delete all nodes
+```
+match (n) detach delete n
+```
+
+## List all nodes
+```
+match (n) return n
+```
+
+## Count nodes
+```
+match (n:Person) return count(n) as count
+```
+
+## Find nodes with a property value
+```
+match (n:Student) where n.name = 'Anurag' return n
+```
+
+## Find nodes with a specific attribute and relationship attribute
+```
+match (subject)-[:IS_SUBJECT_OF*]->(curriculum) 
+where 
+curriculum.name='Philippines Curriculum' and 
+subject.importKey='29/05/19 philippines curriculum' 
+return subject
+```
+
+## Find nodes with a specific attribute and a path (of may length 3) to a node with certain attribute
+```
+match (n)-[*0..3]->(curriculum:Curriculum) 
+where 
+curriculum.name='Philippines Curriculum' and 
+n.importKey='29/05/19 philippines curriculum' 
+detach delete n
+```
+OR
+```
+match(n { importKey:"29/05/19 philippines curriculum"}) - [* 0..3] -> (curriculum: Curriculum {uuid:"lol"})
+detach delete n
+```
