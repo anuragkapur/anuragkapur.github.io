@@ -111,6 +111,11 @@ do
 done
 ```
 
+## Sort file in a directory by name and print size and file name
+```shell
+ls -ltr | sort -k 9 | awk '{print $5":"$9}'
+```
+
 # CentOS
 ## Manage network interfaces
 ```shell
@@ -131,5 +136,10 @@ aws s3 cp s3://<bucket-name>/<path-to-file> /tmp/. --region=eu-central-1
 
 ## S3 upload object
 ```shell
- aws s3 cp /Users/anuragkapur/Desktop/hello-world.txt s3://<bucket-name>/ --profile <cli-credentials-profile-name>
- ```
+aws s3 cp /Users/anuragkapur/Desktop/hello-world.txt s3://<bucket-name>/ --profile <cli-credentials-profile-name>
+```
+
+## EB get saved config
+```shell
+eb config get NAME
+```
