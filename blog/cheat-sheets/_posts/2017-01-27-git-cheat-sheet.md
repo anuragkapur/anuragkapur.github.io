@@ -34,6 +34,18 @@ Ref:
 https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History        
 https://help.github.com/articles/changing-a-commit-message/
 
+## Force pull from remote
+```shell
+git fetch --all
+git reset --hard origin/master
+git pull origin master
+```
+
+## Git pull allowing unrelated histories
+```shell
+git pull --allow-unrelated-histories
+```
+
 # Branches
 
 ## Delete remote branch
@@ -50,10 +62,25 @@ git push --set-upstream origin new_branch_name
 
 # Tags
 
+## Create tag
+```shell
+git tag v1.7.1
+```
+
 ## Push tag to remote
 ```shell
 git push origin v2.44.0
 ```
+
+## Delete remote tag
+```shell
+git push --delete origin v1.7.1
+```
+
+## Delete local tag
+```shell
+git tag --delete v1.7.1
+``` 
 
 # Forks
 
