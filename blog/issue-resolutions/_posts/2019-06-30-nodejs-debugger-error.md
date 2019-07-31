@@ -20,7 +20,7 @@ SyntaxError: Unexpected identifier
 ```
 
 ## Resolution
-![Webstorm debug configuration](assets/blog/issue-resolutions/nodejs-debugger-error-babel-fix.png)
+![Webstorm debug configuration](/assets/blog/issue-resolutions/nodejs-debugger-error-babel-fix.png)
 
 ## Ref
 * [https://intellij-support.jetbrains.com/hc/en-us/community/posts/203373470-How-to-make-Webstorm-2016-2-debug-work-with-ES6-and-babel](https://intellij-support.jetbrains.com/hc/en-us/community/posts/203373470-How-to-make-Webstorm-2016-2-debug-work-with-ES6-and-babel)
