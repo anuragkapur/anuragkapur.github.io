@@ -1,8 +1,8 @@
----
+    ---
 layout: post
 title:  "Spring boot class hotswap in IntelliJ"
 date:   2018-06-3 19:15:00 +0000   
-categories: engineering
+categories: programming
 teaser: Enabling hot swap of classes in a spring boot application with IntelliJ Idea IDE
 ---  
 
