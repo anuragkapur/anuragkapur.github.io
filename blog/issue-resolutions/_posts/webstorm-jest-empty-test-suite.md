@@ -1,0 +1,1 @@
+https://github.com/facebook/jest/issues/7875
