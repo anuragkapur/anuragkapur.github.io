@@ -17,18 +17,23 @@ categories: cheat-sheets
   - [Delete everything except files with given extension](#delete-everything-except-files-with-given-extension)
   - [Measure response time with curl](#measure-response-time-with-curl)
 - [Utilities](#utilities)
+  - [SSL Keys](#ssl-keys)
+    - [Convert .p12 to .key](#convert-p12-to-key)
+    - [Convert .crt to .pem](#convert-crt-to-pem)
   - [SSH tunnel - forward traffic from a specific localhost port to a specific remote host and port](#ssh-tunnel---forward-traffic-from-a-specific-localhost-port-to-a-specific-remote-host-and-port)
   - [SSH tunnel - forward traffic from a specific localhost port to remote host - can also be used to setup SOCS proxy](#ssh-tunnel---forward-traffic-from-a-specific-localhost-port-to-remote-host---can-also-be-used-to-setup-socs-proxy)
   - [Download file using curl](#download-file-using-curl)
   - [Upload file using curl](#upload-file-using-curl)
   - [Rename all files in a directory with sequential numbers](#rename-all-files-in-a-directory-with-sequential-numbers)
   - [Simple load testing shell script](#simple-load-testing-shell-script)
+  - [Sort file in a directory by name and print size and file name](#sort-file-in-a-directory-by-name-and-print-size-and-file-name)
 - [CentOS](#centos)
   - [Manage network interfaces](#manage-network-interfaces)
 - [Ubuntu](#ubuntu)
 - [AWS CLI](#aws-cli)
-  - [S3 copy](#s3-copy)
+  - [S3 copy/download](#s3-copydownload)
   - [S3 upload object](#s3-upload-object)
+  - [EB get saved config](#eb-get-saved-config)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -63,6 +68,18 @@ $ curl -o /dev/null -s -w %{time_total} http://www.example.com/
 ```
 
 # Utilities
+
+## SSL Keys
+
+### Convert .p12 to .key
+```shell
+openssl pkcs12 -in private_key.p12 -nodes -out private.key -nocerts
+```
+
+### Convert .crt to .pem
+```shell
+openssl x509 -in STAR_quizalize_com.crt -out STAR_quizalize_com.pem -outform PEM
+```
 
 ## SSH tunnel - forward traffic from a specific localhost port to a specific remote host and port
 ```shell
