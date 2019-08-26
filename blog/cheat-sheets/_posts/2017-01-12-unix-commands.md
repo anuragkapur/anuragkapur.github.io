@@ -160,3 +160,8 @@ aws s3 cp /Users/anuragkapur/Desktop/hello-world.txt s3://<bucket-name>/ --profi
 ```shell
 eb config get NAME
 ```
+
+## Cloud Watch - Describe Subscription Filters
+```shell
+aws logs describe-subscription-filters --log-group-name myLogGroup
+```
