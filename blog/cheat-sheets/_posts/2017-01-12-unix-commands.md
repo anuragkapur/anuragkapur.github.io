@@ -163,5 +163,10 @@ eb config get NAME
 
 ## Cloud Watch - Describe Subscription Filters
 ```shell
-aws logs describe-subscription-filters --log-group-name myLogGroup
+aws logs describe-subscription-filters --log-group-name myLogGroup --region ap-southeast-1
+```
+
+## Cloud Watch - Update Subscription Filter
+```shell
+aws logs put-subscription-filter --log-group-name myLogGroup --filter-name myFilterName --filter-pattern "{($.userId = *) || ($.data[0].userId = * )}" --destination-arn destinationArn --region eu-central-1 
 ```
