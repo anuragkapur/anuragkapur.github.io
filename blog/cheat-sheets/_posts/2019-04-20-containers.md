@@ -113,6 +113,11 @@ kubectl get pods -n prod | grep Evicted | awk '{print $1}' | xargs kubectl delet
 kb exec -it stag-spitafields-6f755588dc-vrldn sh
 ```
 
+## Get service info (including FQDN)
+```shell
+kubectl get service ecsdemo-frontend -o wides
+```
+
 ## Working with horizontal pod auto-scaler
 
 Ref: https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/
