@@ -62,6 +62,11 @@ docker cp <containerId>:/file/path/within/container /host/path/targets
 kubectl get pods -o wide
 ```
 
+### Ger pods filtered by a label
+```shell
+kb get nodes --show-labels --selector=kubernetes.io/lifecycle=spot
+````
+
 ## Watch pod status
 ```shell
 watch -n 1 -x kubectl get pods -n prod
@@ -115,7 +120,7 @@ kb exec -it stag-spitafields-6f755588dc-vrldn sh
 
 ## Get service info (including FQDN)
 ```shell
-kubectl get service ecsdemo-frontend -o wides
+kubectl get service ecsdemo-frontend -o wide
 ```
 
 ## Working with horizontal pod auto-scaler
