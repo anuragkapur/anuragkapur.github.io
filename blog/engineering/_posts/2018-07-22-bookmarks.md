@@ -22,9 +22,11 @@ permalink: /blog/bookmarks
 - [Architecture](#architecture)
   - [Microservices](#microservices)
   - [CQRS](#cqrs)
+  - [Serverless](#serverless)
   - [Misc](#misc-1)
 - [Agile Engineering Practices](#agile-engineering-practices)
   - [Testing](#testing-1)
+- [Digital Marketing](#digital-marketing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -80,3 +82,6 @@ permalink: /blog/bookmarks
 # Agile Engineering Practices
 ## Testing
 * [Practical Testing Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
+
+# Digital Marketing
+* [Digital Marketing Primer](https://www.analyticsvidhya.com/blog/2018/12/guide-digital-marketing-analytics/)
