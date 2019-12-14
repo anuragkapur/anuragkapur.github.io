@@ -75,7 +75,7 @@ permalink: /
               post.title }}</h4></a>
             <p>{{ post.teaser }} <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">Read
               more...</a></p>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} | <a href="/blog/{{post.tags}}">{{post.tags}}</a></span>
             <hr>
           </li>
           {% endfor %}
