@@ -2,7 +2,7 @@
 layout: post
 title:  "Zuora Subscriptions Platform"
 date:   2016-05-09 12:00:00 +0000   
-categories: highlight engineering
+categories: engineering
 tags: engineering
 teaser: Notes from 2 day training course for the Zuora subscription payments platform
 ---
