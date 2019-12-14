@@ -3,6 +3,7 @@ layout: post
 title:  "Security Principles Refresher"
 date:   2014-12-08 12:00:00 +0000   
 categories: highlight engineering
+tags: engineering
 teaser: Refresher on information security principles for developers
 permalink: /blog/security-principles-refresher
 img-url: /assets/blog/engineering/security-principles-refresher/spr1.png

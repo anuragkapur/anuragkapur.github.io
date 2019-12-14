@@ -3,6 +3,7 @@ layout: post
 title:  "Bookmarks"
 date:   2018-07-22 22:14:00 +0000   
 categories: engineering
+tags: engineering
 teaser: Useful bookmarks - a collection of engineering related online resources
 permalink: /blog/bookmarks
 ---

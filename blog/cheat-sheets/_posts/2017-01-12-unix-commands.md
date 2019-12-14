@@ -4,6 +4,7 @@ title:  "Unix commands cheat sheet"
 teaser: Cheat sheet for misc unix commands
 date:   2017-01-12 10:37:00 +0000
 categories: cheat-sheets
+tags: cheat-sheets
 ---
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->

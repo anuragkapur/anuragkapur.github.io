@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Containers cheat sheet"
-teaser: Containers cheat sheet - docker, kubernetes, ekss
+teaser: Containers cheat sheet - docker, kubernetes, eks
 date:   2019-04-20 00:00:00 +0000
 categories: cheat-sheets
+tags: cheat-sheets
 ---
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->

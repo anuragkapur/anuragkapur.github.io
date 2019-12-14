@@ -3,12 +3,13 @@ layout: post
 title:  "Google Code Jam 2017"
 date:   2017-04-09 23:00:00 +0000   
 categories: highlight programming
+tags: programming
 teaser: Summary of my participation in annual Google code jam event
 permalink: /blog/google-code-jam-2017
 img-url: /assets/blog/programming/google-code-jam-2014/gcj1.gif
 ---
 
-After having to skip participation last year, I was very close to having skip again this year due to time sensitive 
+After having to skip participation last year, I was very close to having to skip again this year due to time sensitive 
 commitments. I knew, I would not be able to compete in Round 1, post the qualification round this year. Nevertheless, 
 participated in the qualification round, which, as always, was fun!
 

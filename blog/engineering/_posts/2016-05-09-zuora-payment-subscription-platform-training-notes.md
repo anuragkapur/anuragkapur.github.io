@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "Zuora Subscriptions Platform"
+date:   2016-05-09 12:00:00 +0000   
+categories: highlight engineering
+tags: engineering
+teaser: Notes from 2 day training course for the Zuora subscription payments platform
+---
+
 Contents
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Jenkins maven job failure"
 date:   2016-03-10 16:37:00 +0000   
 categories: jenkins ci issue-resolution
+tags: issue-resolutions
 teaser: Debugging mysterious maven job failure in jenkins
 ---  
 

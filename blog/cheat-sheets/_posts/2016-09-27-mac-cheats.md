@@ -4,6 +4,7 @@ title:  "MacOS cheats"
 teaser: Cheat sheet for MacOS
 date:   2016-09-27 22:11:26 +0000
 categories: cheat-sheets
+tags: cheat-sheets
 ---
 
 ## Brew

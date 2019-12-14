@@ -3,6 +3,7 @@ layout: post
 title:  "Heroku for Highly Available Dropwizard Apps"
 date:   2015-05-19 12:00:00 +0000   
 categories: highlight engineering
+tags: engineering
 teaser: How we use Heroku for HA dropwizrd apps in Production
 permalink: /blog/heroku-for-highly-available-dropwizard-apps
 img-url: /assets/blog/engineering/heroku-for-highly-available-dropwizard-apps/heroku1.png

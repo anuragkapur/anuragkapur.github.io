@@ -3,6 +3,7 @@ layout: post
 title:  "Google Code Jam 2014"
 date:   2014-03-20 12:00:00 +0000   
 categories: highlight programming
+tags: programming
 teaser: Summary of my participation in annual Google code jam event
 permalink: /blog/google-code-jam-2014
 img-url: /assets/blog/programming/google-code-jam-2014/gcj1.gif

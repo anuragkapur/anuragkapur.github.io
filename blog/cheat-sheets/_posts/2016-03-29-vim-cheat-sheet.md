@@ -4,6 +4,7 @@ title:  "VIM cheat sheet"
 teaser: Cheat sheet for the vim editor
 date:   2016-03-08 22:11:26 +0000
 categories: cheat-sheets
+tags: cheat-sheets
 ---
 
 # Moving around

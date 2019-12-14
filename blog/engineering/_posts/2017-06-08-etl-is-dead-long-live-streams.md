@@ -2,7 +2,8 @@
 layout: post
 title:  "ETL is dead; Long live streams"
 date:   2017-06-08 18:00:00 +0000   
-categories: highlight conferences
+categories: highlight engineering
+tags: engineering
 teaser: Looking back into traditional ETL architecture and how Kafka based stream processing makes things better 
 img-url: /assets/blog/training/etl-is-dead/img.png
 ---

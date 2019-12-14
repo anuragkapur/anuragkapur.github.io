@@ -4,7 +4,34 @@ title:  "GIT cheat sheet"
 teaser: Cheat sheet for the GIT command line
 date:   2017-01-27 12:09:26 +0000
 categories: cheat-sheets
+tags: cheat-sheets
 ---
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Commits, reverts etc](#commits-reverts-etc)
+  - [Revert committed changes to a single file](#revert-committed-changes-to-a-single-file)
+  - [Revert merge commit](#revert-merge-commit)
+  - [Correct commit message that hasn't been pushed yet](#correct-commit-message-that-hasnt-been-pushed-yet)
+  - [Rewrite history after pushing to remote](#rewrite-history-after-pushing-to-remote)
+  - [Force pull from remote](#force-pull-from-remote)
+  - [Git pull allowing unrelated histories](#git-pull-allowing-unrelated-histories)
+- [Branches](#branches)
+  - [Delete remote branch](#delete-remote-branch)
+  - [Rename local and remote branch](#rename-local-and-remote-branch)
+- [Tags](#tags)
+  - [Create tag](#create-tag)
+  - [Push tag to remote](#push-tag-to-remote)
+  - [Delete remote tag](#delete-remote-tag)
+  - [Delete local tag](#delete-local-tag)
+- [Forks](#forks)
+  - [Update fork from origin](#update-fork-from-origin)
+- [Git submodules](#git-submodules)
+  - [Init and update submodules](#init-and-update-submodules)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Commits, reverts etc
 

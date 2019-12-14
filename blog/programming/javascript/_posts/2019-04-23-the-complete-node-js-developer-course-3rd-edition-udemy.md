@@ -3,6 +3,7 @@ layout: post
 title:  "The Complete Node.js Developer Course"
 date:   2019-04-28 14:00:00 +0000   
 categories: programming javascript
+tags: programming
 teaser: Notes from the Node.js developer course offered by Andrew Mead on Udemy. 
 img-url: /assets/blog/programming/node/UC-4QNQ9KI2.jpg
 ---

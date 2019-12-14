@@ -2,7 +2,8 @@
 layout: post
 title:  "Datastax Cassandra Summit 2016"
 date:   2016-04-19 12:00:00 +0000
-categories: conferences highlight
+categories: engineering highlight
+tags: engineering
 permalink: /blog/datastax-summit-2016
 teaser: My notes from Datastax Cassandra Summit
 img-url: /assets/blog/training/dse-summit/dse.png

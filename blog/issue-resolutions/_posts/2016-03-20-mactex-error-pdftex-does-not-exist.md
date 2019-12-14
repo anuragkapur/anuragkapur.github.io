@@ -3,6 +3,7 @@ layout: post
 title:  "Mactex error - pdftex does not exist"
 date:   2016-03-20 13:04:00 +0000
 categories: tex maxtex texshop issue-resolution
+tags: issue-resolutions
 teaser: Debugging mactex error while generating pdf file using texshop
 ---
 

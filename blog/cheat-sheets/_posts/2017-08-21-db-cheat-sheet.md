@@ -4,7 +4,44 @@ title:  "Database commands cheat sheet"
 teaser: Cheat sheet for various DB commands
 date:   2017-08-21 17:04:00 +0000
 categories: cheat-sheets
+tags: cheat-sheets
 ---
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [PostgreSQL](#postgresql)
+  - [Connect via psql](#connect-via-psql)
+  - [Create User and DB](#create-user-and-db)
+  - [Drop DB](#drop-db)
+  - [Show schemas - psql cli](#show-schemas---psql-cli)
+  - [Show tables - psql cli](#show-tables---psql-cli)
+  - [Show tables in a schema](#show-tables-in-a-schema)
+  - [Quit postgres prompt](#quit-postgres-prompt)
+  - [Generate dump](#generate-dump)
+  - [Import .dump](#import-dump)
+- [Redis](#redis)
+  - [Flush all keys](#flush-all-keys)
+- [MongoDB](#mongodb)
+  - [Connect to a DB](#connect-to-a-db)
+  - [Switch/Use DB](#switchuse-db)
+  - [Show collections in DB](#show-collections-in-db)
+  - [Copy docs from remote db collection into current db](#copy-docs-from-remote-db-collection-into-current-db)
+  - [Copy database](#copy-database)
+  - [Delete docs from collection that don't match criteria](#delete-docs-from-collection-that-dont-match-criteria)
+  - [Export collection](#export-collection)
+  - [Find docs that have a certain attribute defined](#find-docs-that-have-a-certain-attribute-defined)
+  - [Sort in reverse natural order (most recently created first)](#sort-in-reverse-natural-order-most-recently-created-first)
+- [Neo4j](#neo4j)
+  - [Delete all nodes](#delete-all-nodes)
+  - [List all nodes](#list-all-nodes)
+  - [Count nodes](#count-nodes)
+  - [Find nodes with a property value](#find-nodes-with-a-property-value)
+  - [Find nodes with a specific attribute and relationship attribute](#find-nodes-with-a-specific-attribute-and-relationship-attribute)
+  - [Find nodes with a specific attribute and a path (of may length 3) to a node with certain attribute](#find-nodes-with-a-specific-attribute-and-a-path-of-may-length-3-to-a-node-with-certain-attribute)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # PostgreSQL
 

@@ -5,72 +5,23 @@ title: Blog
 
 <div class="container-fluid">
 
-    <div class="row-fluid">
-        <div class="span12">
-            <h4 class="navbar-link">
-                <a href="#conferencesTrainingsTalks">Conferences, Trainings, Talks</a> |
-                <a href="#engineeringAndArchitecture">Engineering and Architecture</a> |
-                <a href="#programming">Programming</a> |
-                <a href="#issueResolutionLogs">Issue Resolution Logs</a> |
-                <a href="#cheatSheets">Cheat Sheets</a>
-            </h4>
-        </div>
+  <div class="row-fluid">
+    <h3 class="page-heading">Posts, Notes and Scribbles</h3>
+    <div class="span8">
+      <ul class="post-list">
+        {% assign odd = "true" %}
+        {% for post in site.posts %}
+<!--        {% if odd == "true" %}-->
+<!--        {% assign odd = "false" %}-->
+<!--        {% else odd == "false" %}-->
+<!--        {% assign odd = "true" %}-->
+<!--        {% endif %}-->
+        {% include post-list-item.html %}
+        {% endfor %}
+      </ul>
     </div>
-
-    <div class="row-fluid">
-        <div class="span12">
-            <h3 class="page-heading"><a id="conferencesTrainingsTalks">Conferences, Trainings, Talks</a></h3>
-            <ul class="post-list">
-                {% for post in site.categories.conferences %}
-                {% include post-list-item.html %}
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-    <div class="row-fluid">
-        <div class="span12">
-            <h2><a id="engineeringAndArchitecture">Engineering and Architecture</a></h2>
-            <ul class="post-list">
-                {% for post in site.categories.engineering %}
-                {% include post-list-item.html %}
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-    <div class="row-fluid">
-        <div class="span12">
-            <h2><a id="programming">Programming</a></h2>
-            <ul class="post-list">
-                {% for post in site.categories.programming %}
-                {% include post-list-item.html %}
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-    <div class="row-fluid">
-        <div class="span12">
-            <h2><a id="issueResolutionLogs">Issue resolution logs</a></h2>
-            <ul class="post-list">
-                {% for post in site.categories.issue-resolution %}
-                {% include post-list-item.html %}
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-    <div class="row-fluid">
-        <div class="span12">
-            <h2><a id="cheatSheets">Cheat sheets</a></h2>
-            <ul class="post-list">
-                {% for post in site.categories.cheat-sheets %}
-                {% include post-list-item.html %}
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-
-    <div class="row-fluid">
-        <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-    </div>
-    </div>
-
+  </div>
+  <div class="row-fluid">
+    <p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
 </div>

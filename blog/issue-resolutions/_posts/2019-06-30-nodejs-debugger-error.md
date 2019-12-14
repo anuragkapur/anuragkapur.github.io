@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Webstorm node.js debugger error when using ES6 and babel"
+title:  "Node.js debugger error when using ES6 and babel"
 date:   2019-06-30 00:00:00 +0000   
-categories: node babel issue-resolution
-teaser: Solution to Unexpected Identifier error when debugging a ES6 node.js app in Webstorm
+categories: issue-resolutions
+tags: issue-resolutions
+teaser: Solution to Unexpected Identifier error when debugging a ES6 node.js app in Webstorm IDE
 ---  
 
 ## Issue
