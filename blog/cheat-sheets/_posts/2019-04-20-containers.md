@@ -81,6 +81,11 @@ aws ecr get-login --region eu-west-2 --no-include-email
 docker pull 678422363581.dkr.ecr.eu-west-2.amazonaws.com/api:v1.7.1
 ```   
 
+## Push image to container registry
+```shell script
+docker push anuragkapur/node-docker-hello-world
+```
+
 ## Copy file from container to localhost
 ```shell script
 docker cp <containerId>:/file/path/within/container /host/path/targets
