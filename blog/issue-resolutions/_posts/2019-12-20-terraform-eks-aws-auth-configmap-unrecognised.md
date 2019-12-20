@@ -42,8 +42,5 @@ module "eks-cluster" {
 }
 ```
 
-![Webstorm debug configuration](/assets/blog/issue-resolutions/nodejs-debugger-error-babel-fix.png)
-
-
 
 
