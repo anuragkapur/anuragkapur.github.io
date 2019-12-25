@@ -1,6 +1,6 @@
 <li>
     {% if post.img-url %}
-        <img src="{{ post.img-url }}" width="90" height="90" class="float-left-margin"/>
+        <img src="{{ post.img-url }}" width="80" height="80" class="float-left-margin"/>
     {% endif %}
     <h3>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
