@@ -6,5 +6,6 @@
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h3>
     <p>{{ post.teaser }} <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">Read more...</a></p>
-    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> | <a href="/blog/{{post.tags}}">{{post.tags}}</a>
+    <span class="post-meta">Last updated: {{ post.date | date: "%b %-d, %Y" }}</span> | <a href="/blog/{{post.tags}}">{{post.tags}}</a>
+    <hr>
 </li>
