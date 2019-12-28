@@ -6,6 +6,7 @@ categories: programming javascript highlight
 tags: programming
 teaser: My JavaScript reference guide, created when taking courses, experimenting and coming across stuff during projects 
 img-url: /assets/blog/programming/js.jpg
+permalink: /blog/js-reference-guide
 ---
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->

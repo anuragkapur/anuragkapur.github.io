@@ -6,6 +6,7 @@ categories: engineering highlight
 tags: engineering
 teaser: Comparing PaaS and Serverless cloud services for web services
 img-url: /assets/blog/engineering/paas-serverless/lambda-heroku.png
+permalink: /blog/high-level-comparison-paas-serverless
 ---
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
