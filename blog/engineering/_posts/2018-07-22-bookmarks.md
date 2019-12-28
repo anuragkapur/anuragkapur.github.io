@@ -51,6 +51,7 @@ permalink: /blog/bookmarks
 
 ## Javascript
 * [A re-introduction to javascript (JS Tutorial)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)
+* [Webstorm - prettier setup](https://prettier.io/docs/en/webstorm.html#running-prettier-on-save-using-file-watcher)
 
 ## Misc
 * [ASCII table](https://www.asciitable.com/)
