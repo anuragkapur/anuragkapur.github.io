@@ -5,7 +5,7 @@ date:   2019-12-28 00:00:00 +0000
 categories: programming javascript
 tags: programming
 teaser: My default reference project configuration (prettier, eslint etc) for JS projects 
-img-url: /assets/blog/programming/js.jpg
+img-url: /assets/blog/programming/js-project-config.jpg
 permalink: /blog/js-project-reference-config
 ---
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
