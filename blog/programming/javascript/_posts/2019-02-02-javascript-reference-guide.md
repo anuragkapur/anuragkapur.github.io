@@ -304,7 +304,7 @@ placeholder object that can be interrogated to know what's happening with the ba
     ```
 * Problem: Each time we create a new user we allocate memory for all our data and functions. But functions are just
 copies = memory wasted!
-* Benefit: Simple and easty to reason about
+* Benefit: Simple and easy to reason about
 
 ### Approach 2: Using the prototype chain
 * ```javascript
