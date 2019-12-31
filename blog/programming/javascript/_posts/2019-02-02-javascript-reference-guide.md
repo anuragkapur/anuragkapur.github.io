@@ -2,7 +2,7 @@
 layout: post
 title:  "JavaScript Reference Guide"
 date:   2019-08-16 00:00:00 +0000   
-categories: programming javascript highlight
+categories: programming javascript
 tags: programming
 teaser: My JavaScript reference guide, created when taking courses, experimenting and coming across stuff during projects 
 img-url: /assets/blog/programming/js.jpg

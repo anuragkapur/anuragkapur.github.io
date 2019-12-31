@@ -2,7 +2,7 @@
 layout: post
 title:  "React.js Reference Guide"
 date:   2019-07-12 00:00:00 +0000   
-categories: programming javascript reactjs highlight
+categories: programming javascript reactjs
 tags: programming
 teaser: My React.js reference guide, created when taking courses, experimenting and coming across stuff during projects 
 img-url: /assets/blog/programming/react.png
