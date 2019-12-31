@@ -156,3 +156,27 @@ Bundler for JavaScript projects.
   "dev": "parcel src/index.html"
 }    
 ```
+
+# Babel
+Javascript transpiler    
+(use if not using parcel for handling babel with parcel's default config)
+
+## Install
+```shell script
+npm install -D babel-eslint @babel/core @babel/preset-env @babel/plugin-proposal-class-properties @babel/preset-react
+```
+
+## .babelrc
+```json
+{
+  "presets": ["@babel/preset-react", "@babel/preset-env"],
+  "plugins": ["@babel/plugin-proposal-class-properties"]
+}
+```
+
+## Update to .eslinstrc.json
+```json
+{
+  "parser": "babel-eslint",
+}
+```
