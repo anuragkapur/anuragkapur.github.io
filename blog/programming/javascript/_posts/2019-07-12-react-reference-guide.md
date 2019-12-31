@@ -239,7 +239,7 @@ level
             // ...
             const [theme] = useContext(ThemeContext);
             // ... return (
-            <button style={{ backgroundColor: theme }}>Submit</button>;
+            <button style={ { backgroundColor: theme } }>Submit</button>;
             // ... );
           }
           ```
@@ -250,7 +250,7 @@ level
             // ...
             return (
               // ...
-              <button style={{ backgroundColor: this.context[0] }}>
+              <button style={ { backgroundColor: this.context[0] } }>
               // ...
             );
           }
@@ -263,7 +263,7 @@ level
               <ThemeContext.Consumer>
                 {value => (
                   // ...
-                  <button style={{ backgroundColor: value[0] }}>
+                  <button style={ { backgroundColor: value[0] } }>
                   // ...
                 )}
               </ThemeContext.Consumer>
