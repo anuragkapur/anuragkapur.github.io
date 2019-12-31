@@ -13,7 +13,9 @@ permalink: /blog/reactjs-reference-guide
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Fundamentals](#fundamentals)
+- [Error Boundaries](#error-boundaries)
 - [Hooks](#hooks)
+- [Context](#context)
 - [References](#references)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -41,7 +43,7 @@ permalink: /blog/reactjs-reference-guide
     
     </html>
     ```
-* **Props** are variable that a parent passes to its children
+* **Props** are variables that a parent passes to its children
     ```javascript
     const Pet = props => {
       return React.createElement("div", {}, [
@@ -87,6 +89,19 @@ permalink: /blog/reactjs-reference-guide
   * Extends `React.Component`
   * Have a render method that returns a react element
   * Example of a class component, [Run on JS Bin](https://jsbin.com/nolujap/edit?js,output)
+    ```
+    class App extends React.Component {
+    
+      constructor(props) {
+        super(props);
+        this.state = {message: props.message.toUpperCase()}
+      }
+      
+      render() {
+        return <h1>{this.state.message} ; {this.props.message}</h1>;
+      }
+    }
+    ```  
   * Provide state and lifecycle methods for the component
   * State is private to the component
   * A component may choose to pass its state down as props to its child components
@@ -138,10 +153,37 @@ it locally using npm and then package into the app bundle
 * [Strict Mode](https://reactjs.org/docs/strict-mode.html) can be enabled to highlight potential issues in a react app
 * [Reach Router](https://reach.tech/router) is a new router from the creators of React Router  
 
+# Error Boundaries
+* Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those 
+errors, and display a fallback UI instead of the component tree that crashed
+* Only class components can be error boundaries
+* Ref: [https://reactjs.org/docs/error-boundaries.html](https://reactjs.org/docs/error-boundaries.html)
+* Wrapping a component in an error boundary component
+    ```
+    <ErrorBoundary>
+      <MyWidget />
+    </ErrorBoundary>
+    ```
+* Alternative method to wrap a component in an error boundary
+    ```
+    // Replace the following:
+    export default MyComponent;
+    
+    // with
+    export default function MyComponentErrorBoundary(props) {
+      return (
+        <ErrorBoundary>
+          <MyComponent {...props} />
+        </ErrorBoundary>
+      );
+    }
+    ```  
+
 # Hooks
 * Introduced in React 16.8
 * Allow using / "hooking into" state and component lifecycle without writing classes, i.e. from function components
-* Do not put hooks inside if statement or loops because hooks rely on strict ordering of declaration  
+* Do not put hooks inside if statement or loops because hooks rely on strict ordering of declaration
+* Hooks can't be used in a class component  
 * `useState` hook: for handling form elements, i.e state
     ```
     import React, { useState } from "react";
@@ -168,6 +210,69 @@ it locally using npm and then package into the app bundle
     document.title = `You clicked ${count} times`;
     });
     ```
+  
+# Context
+* Context provides a way to pass data through the component tree without having to pass props down manually at every 
+level
+* Using contexts
+  1. Create context using `createContext` which returns an object with two React components in it: a **Provider** and a 
+  **Consumer**
+      ```javascript
+      // A hook (array of state and function) is passed as argument to createContext
+      const ThemeContext = React.createContext(["green", () => {}]);
+      ```
+  1. Pass shared context values by wrapping the required components in the Provider
+      ```
+      import ThemeContext from "./ThemeContext";
+      
+      const theme = useState("darkblue");
+     
+      // wrap the rest of the app
+      <ThemeContext.Provider value={theme}>
+        […]
+      </ThemeContext.Provider>
+      ```
+   1. Use the shared context value in the child components
+      1. In a Function Component using `useContext` hook
+          ```
+          const SearchParams = () => {
+            // ...
+            const [theme] = useContext(ThemeContext);
+            // ... return (
+            <button style={{ backgroundColor: theme }}>Submit</button>;
+            // ... );
+          }
+          ```
+      1. In a Class Component using `contextType`
+          ```
+          static contextType = ThemeContext;
+          render () {
+            // ...
+            return (
+              // ...
+              <button style={{ backgroundColor: this.context[0] }}>
+              // ...
+            );
+          }
+          ```
+      1. In a Class Component using `Content.Consumer`
+          ```
+          render () {
+            // ...
+            return (
+              <ThemeContext.Consumer>
+                {value => (
+                  // ...
+                  <button style={{ backgroundColor: value[0] }}>
+                  // ...
+                )}
+              </ThemeContext.Consumer>
+            );
+          }
+          ```
+* Ref: [https://btholt.github.io/complete-intro-to-react-v5/context](https://btholt.github.io/complete-intro-to-react-v5/context)
+* Ref: [https://reactjs.org/docs/context.html](https://reactjs.org/docs/context.html)
+* Ref: [https://reactjs.org/docs/hooks-reference.html#usecontext](https://reactjs.org/docs/hooks-reference.html#usecontext) 
 
 # References
 * [https://reactjs.org/docs](https://reactjs.org/docs)
