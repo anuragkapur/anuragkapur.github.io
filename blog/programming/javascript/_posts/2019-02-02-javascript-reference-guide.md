@@ -330,7 +330,7 @@ copies = memory wasted!
     user2.increment(); // 7
     ```
 * ![Prototype chain](/assets/blog/programming/js-prototype-chain.png)
-* All objects have a `__proto__` property by default which defaults linking to a bug object - `Object.prototype`
+* All objects have a `__proto__` property by default which defaults linking to a big object - `Object.prototype`
 * Benefit: function copies (`increment` and `login`) are not duplicated in memory
 * Nested function (ES5 syntax and not the ES6 arrow function syntax) defined inside an object's method does not 
 bind the `this` keyword to the object that the method binds to. However, nested ES6 functions, bind the `this` keyword 
