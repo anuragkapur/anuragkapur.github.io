@@ -77,7 +77,7 @@ one can use variables in the [] notation.
     b; // 0
     ```
 * Variables declared with `let` have block scope while those with `var` have global scope
-* for..in loop to iterate over keys of an object
+* `for..in` loop to iterate over keys of an object
     ```javascript
     var obj = {key1: 1, key2: 2};
     for (var key in obj) {
@@ -112,7 +112,7 @@ one can use variables in the [] notation.
             }
     ```
 * Functions are just objects under the hood
-* Spread operator - like varargs in java
+* Spread operator, aka rest parameter syntax - like varargs in java
     ```javascript
     var addAll = (...a) => {
         var sum = 0;
