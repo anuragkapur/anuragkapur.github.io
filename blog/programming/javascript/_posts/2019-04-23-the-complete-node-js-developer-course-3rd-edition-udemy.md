@@ -43,6 +43,7 @@ const notes = require('./notes.js');
 
 * Module
   - available to all files
+  - node uses CommonJS modules
 ```
 $ node
 > module
