@@ -210,6 +210,81 @@ errors, and display a fallback UI instead of the component tree that crashed
     document.title = `You clicked ${count} times`;
     });
     ```
+  * `useEffect` can be configured to perform cleanup, by returning what needs to be done as cleanup from the 
+  `useEffect` function
+    ```
+    useEffect(() => {
+      const timer = setTimeout(setTime(new Date()), 1000);
+    
+      // similar to componentDidUnmount
+      return () => clearTimeout(timer);
+    });
+    ```  
+* `useRef` returns a mutable reference object whose `.current` property is initialised to the passed argument
+  * `useRef` is useful as the returned object persis for the full lifetime of the component and thus its value 
+  persists across every render
+  * Mutating the `.current` property does **not** cause a re-render
+    ```
+    const RefComponent = () => {
+      const [stateNumber, setStateNumber] = useState(0);
+      const numRef = useRef(0);
+    
+      function incrementAndDelayLogging() {
+        setStateNumber(stateNumber + 1);
+        numRef.current++;
+        setTimeout(
+          // value of stateNumber lags behind the value of numRef, as stateNumber holds previous value in its closure
+          // before the re-render is trigerred
+          () => alert(`state: ${stateNumber} | ref: ${numRef.current}`),
+          1000
+        );
+      }
+    
+      return (
+        <div>
+          <h1>useRef Example</h1>
+          <button onClick={incrementAndDelayLogging}>delay logging</button>
+          <h4>state: {stateNumber}</h4>
+          <h4>ref: {numRef.current}</h4>
+        </div>
+      );
+    };
+    ```
+  * Ref: [Run on codesandbox.io](https://codesandbox.io/s/github/btholt/react-hooks-examples/tree/master/)
+* `useReducer` is an alternative to `useState` which is usually preferrable when you have state logic involving multiple
+sub-values or when the next state depends on the previous one or when it would improve code readability (and 
+testability) to keep state update logic in one place (in the reducer function definition)
+    ```    
+    function reducer(state, action) {
+      switch (action.type) {
+        case 'increment':
+          return {count: state.count + 1};
+        case 'decrement':
+          return {count: state.count - 1};
+        default:
+          throw new Error();
+      }
+    }
+    
+    function Counter() {
+      const [state, dispatch] = useReducer(reducer, {count: 0});
+      return (
+        <>
+          Count: {state.count}
+          <button onClick={() => dispatch({type: 'decrement'})}>-</button>
+          <button onClick={() => dispatch({type: 'increment'})}>+</button>
+        </>
+      );
+    }
+    ```
+  * [Additional example on codesandbox.io](https://codesandbox.io/s/github/btholt/react-hooks-examples/tree/master/)   
+* `useMemo` returns a memoized value
+  * Takes a _create_ function and an array of dependencies as arguments and only recomputes the memoized value using
+  the passed create function when one of the dependencies changes
+  * Helps avoid expensive calculations on every render
+    ```
+    const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+    ```      
   
 # Context
 * Context provides a way to pass data through the component tree without having to pass props down manually at every 
