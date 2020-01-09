@@ -282,7 +282,7 @@ testability) to keep state update logic in one place (in the reducer function de
   * Takes a _create_ function and an array of dependencies as arguments and only recomputes the memoized value using
   the passed create function when one of the dependencies changes
   * Helps avoid expensive calculations on every render
-    ```
+    ```jsx
     const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
     ```      
   
@@ -292,12 +292,12 @@ level
 * Using contexts
   1. Create context using `createContext` which returns an object with two React components in it: a **Provider** and a 
   **Consumer**
-      ```javascript
+      ```jsx
       // A hook (array of state and function) is passed as argument to createContext
       const ThemeContext = React.createContext(["green", () => {}]);
       ```
   1. Pass shared context values by wrapping the required components in the Provider
-      ```
+      ```jsx
       import ThemeContext from "./ThemeContext";
       
       const theme = useState("darkblue");
@@ -309,7 +309,7 @@ level
       ```
    1. Use the shared context value in the child components
       1. In a Function Component using `useContext` hook
-          ```
+          ```jsx
           const SearchParams = () => {
             // ...
             const [theme] = useContext(ThemeContext);
@@ -319,7 +319,7 @@ level
           }
           ```
       1. In a Class Component using `contextType`
-          ```
+          ```jsx
           static contextType = ThemeContext;
           render () {
             // ...
@@ -331,7 +331,7 @@ level
           }
           ```
       1. In a Class Component using `Content.Consumer`
-          ```
+          ```jsx
           render () {
             // ...
             return (
@@ -348,6 +348,27 @@ level
 * Ref: [https://btholt.github.io/complete-intro-to-react-v5/context](https://btholt.github.io/complete-intro-to-react-v5/context)
 * Ref: [https://reactjs.org/docs/context.html](https://reactjs.org/docs/context.html)
 * Ref: [https://reactjs.org/docs/hooks-reference.html#usecontext](https://reactjs.org/docs/hooks-reference.html#usecontext) 
+
+# Emotion
+* A way to write CSS in JS
+* An alternative to [Styled Components](https://www.styled-components.com/)
+* Installation, including babel preset
+    ```shell
+    npm install @emotion/core @emotion/babel-preset-css-prop
+    ```
+* Babel configuration: add the following to the `.babelrc`
+    ```json
+    {
+        "presets": [
+            [
+              "@emotion/babel-preset-css-prop",
+              {
+                "sourceMap": false
+              }
+            ]
+        ]
+    }
+    ```  
 
 # References
 * [https://reactjs.org/docs](https://reactjs.org/docs)
