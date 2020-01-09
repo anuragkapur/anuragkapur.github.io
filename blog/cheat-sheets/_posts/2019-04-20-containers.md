@@ -45,22 +45,22 @@ tags: cheat-sheets
 
 # Docker
 ## View images
-```shell script
+```shell
 docker images
 ```
 
 ## Build image from dockerfile
-```shell script
+```shell
 docker build -t anuragkapur/node-docker-hello-world .
 ```
 
 ## Remove image
-```shell script
+```shell
 docker rmi anuragkapur/node-web-app
 ```
 
 ## Run an image
-```shell script
+```shell
 # Default run commad
 docker run 678422363581.dkr.ecr.eu-west-2.amazonaws.com/zzish-api:1.7.0
 
@@ -70,19 +70,19 @@ docker run -p 8080:3000 anuragkapur/node-docker-hello-world
 ```
 
 ## Docker system cleanup
-```shell script
+```shell
 docker system prune
 ```
 
 ## Login and pull image from AWS ECR
-```shell script
+```shell
 aws ecr get-login --region eu-west-2 --no-include-email
 # Run the command returned in the output of the command above
 docker pull 678422363581.dkr.ecr.eu-west-2.amazonaws.com/api:v1.7.1
 ```   
 
 ## Push image to container registry
-```shell script
+```shell
 docker push anuragkapur/node-docker-hello-world
 ```
 
@@ -95,68 +95,68 @@ docker cp <containerId>:/file/path/within/container /host/path/targets
 [https://kubernetes.io/docs/reference/kubectl/cheatsheet/](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) 
 
 ## Get pods and node info
-```shell script
+```shell
 kubectl get pods -o wide
 ```
 
 ### Ger pods filtered by a label
-```shell script
+```shell
 kb get nodes --show-labels --selector=kubernetes.io/lifecycle=spot
 ````
 
 ## Watch pod status
-```shell script
+```shell
 watch -n 1 -x kubectl get pods -n prod
 ```
 
 ## Delete pod
-```shell script
+```shell
 kb delete pods quizplayer-556bd5d7f8-gxczl
 ```
 
 ## Get resource utilisation
-```shell script
+```shell
 kubectl top pod
 kubectl top node
 ```
 
 ## View Node port
-```shell script
+```shell
 kubectl describe service --all-namespaces | grep -i nodeport
 ```
 
 ## View logs
-```shell script
+```shell
 kb logs stag-spitafields-99b8bf696-ffn76 -n stag -f
 kb logs -l app=spitafields -n prod -f --max-log-requests=10
 ``` 
     
 ## Deployments
-```shell script
+```shell
 kb get deployments
 kb get deployments -n prod
 kb edit deployment quizalize
 ```
 
 ## Port forward into a poc
-```shell script
+```shell
 kb port-forward carmel-9d8d57f75-9qx58 -n stag 3100:3100
 ```
 
 ## Config maps
-```shell script
+```shell
 kubectl create config stag-spitafields-25apr19v1 --from-env-file=tech-stuff/workspace/zzish/kubernetes/test-environment/spitafields/spitafields.stag.env -n stag
 kubectl get configmap stag-spitafields-24august -n stag -o yaml
 kubectl get pods -n prod | grep Evicted | awk '{print $1}' | xargs kubectl delete pod -n prod
 ```
 
 ## SSH into a pod
-```shell script
+```shell
 kb exec -it stag-spitafields-6f755588dc-vrldn sh
 ```
 
 ## Get service info (including FQDN)
-```shell script
+```shell
 kubectl get service ecsdemo-frontend -o wide
 ```
 
@@ -165,33 +165,33 @@ kubectl get service ecsdemo-frontend -o wide
 Ref: https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/
 
 ### Get config
-```shell script
+```shell
 kubectl get hpa
 ```
 
 ### Edit config
-```shell script
+```shell
 kubectl edit hpa
 ```
 
 # EKS
 ## Create cluster
-```shell script
+```shell
 eksctl create cluster --name ak-eks-playground --version 1.13 --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 4 --node-ami auto --region eu-central-1
 ```
 
 ## Get clusters
-```shell script
+```shell
 eksctl get clusters
 ```
 
 ## Delete cluster
-```shell script
+```shell
 eksctl delete cluster --name ak-eks-playground --region eu-west-1
 ```
 
 ## Get nodegroup of a cluster
-```shell script
+```shell
 eksctl get nodegroup --cluster ak-eks-playground --region eu-central-1
 ```
 
