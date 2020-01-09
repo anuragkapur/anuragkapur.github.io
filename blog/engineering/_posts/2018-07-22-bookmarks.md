@@ -87,3 +87,8 @@ permalink: /blog/bookmarks
 
 # Digital Marketing
 * [Digital Marketing Primer](https://www.analyticsvidhya.com/blog/2018/12/guide-digital-marketing-analytics/)
+
+# Systems Engineering
+## Modelica
+* [What is Modelica?](https://marcobonvini.com/modelica/2016/10/22/modelica-sw-engineering-meets-math-modeling-Modelica-basics.html)
+* [Modelica by Example - online book](https://mbe.modelica.university/)
