@@ -70,6 +70,11 @@ docker run 678422363581.dkr.ecr.eu-west-2.amazonaws.com/zzish-api:1.7.0
 docker run -p 8080:3000 anuragkapur/node-docker-hello-world
 ```
 
+## Stop a container
+```shell
+docker stop <containerId>
+```
+
 ## Docker system cleanup
 ```shell
 docker system prune
@@ -90,6 +95,11 @@ docker push anuragkapur/node-docker-hello-world
 ## Copy file from container to localhost
 ```shell
 docker cp <containerId>:/file/path/within/container /host/path/targets
+```
+
+## SSH into container
+```shell
+docker exec -it <containerId> /bin/bash
 ```
 
 # Kubernetes
