@@ -88,7 +88,7 @@ docker push anuragkapur/node-docker-hello-world
 ```
 
 ## Copy file from container to localhost
-```shell script
+```shell
 docker cp <containerId>:/file/path/within/container /host/path/targets
 ```
 
