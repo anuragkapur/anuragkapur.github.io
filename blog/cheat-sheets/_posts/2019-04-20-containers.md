@@ -18,6 +18,7 @@ tags: cheat-sheets
   - [Run an image](#run-an-image)
   - [Docker system cleanup](#docker-system-cleanup)
   - [Login and pull image from AWS ECR](#login-and-pull-image-from-aws-ecr)
+  - [Push image to container registry](#push-image-to-container-registry)
   - [Copy file from container to localhost](#copy-file-from-container-to-localhost)
 - [Kubernetes](#kubernetes)
   - [Get pods and node info](#get-pods-and-node-info)

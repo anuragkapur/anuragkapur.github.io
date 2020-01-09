@@ -28,6 +28,8 @@ permalink: /blog/bookmarks
 - [Agile Engineering Practices](#agile-engineering-practices)
   - [Testing](#testing-1)
 - [Digital Marketing](#digital-marketing)
+- [Systems Engineering](#systems-engineering)
+  - [Modelica](#modelica)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
