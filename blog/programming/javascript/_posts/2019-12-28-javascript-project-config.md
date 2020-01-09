@@ -153,8 +153,9 @@ Bundler for JavaScript projects.
 ## package.json script
 ```json
 "scripts": {
-  "dev": "parcel src/index.html"
-}    
+  "dev": "parcel src/index.html",
+  "production-build": "parcel build --public-url ./dist/ src/index.html",
+}
 ```
 
 # Babel
