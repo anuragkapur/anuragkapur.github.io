@@ -251,7 +251,7 @@ errors, and display a fallback UI instead of the component tree that crashed
     };
     ```
   * Ref: [Run on codesandbox.io](https://codesandbox.io/s/github/btholt/react-hooks-examples/tree/master/)
-* `useReducer` is an alternative to `useState` which is usually preferrable when you have state logic involving multiple
+* `useReducer` is an alternative to `useState` which is usually preferable when you have state logic involving multiple
 sub-values or when the next state depends on the previous one or when it would improve code readability (and 
 testability) to keep state update logic in one place (in the reducer function definition)
     ```    
