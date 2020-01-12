@@ -21,7 +21,15 @@ permalink: /blog/js-project-reference-config
   - [Install](#install-1)
   - [package.json script](#packagejson-script-1)
   - [.eslintrc.json](#eslintrcjson)
+  - [ESLint + React](#eslint--react)
   - [Webstorm IDE setup](#webstorm-ide-setup-1)
+- [Parcel](#parcel)
+  - [Install](#install-2)
+  - [package.json script](#packagejson-script-2)
+- [Babel](#babel)
+  - [Install](#install-3)
+  - [.babelrc](#babelrc)
+  - [Update to .eslinstrc.json](#update-to-eslinstrcjson)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -179,5 +187,24 @@ npm install -D babel-eslint @babel/core @babel/preset-env @babel/plugin-proposal
 ```json
 {
   "parser": "babel-eslint",
+}
+```
+
+# TypeScript
+
+## Install
+```shell
+npm install -D typescript
+```
+
+## Generate `tsconfig.json`
+```shell
+npx tsc --init. npx
+```
+
+## package.json script
+```json
+"scripts": {
+  "typecheck": "tsc --noEmit"
 }
 ```
