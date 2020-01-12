@@ -95,7 +95,8 @@ A static code analysis / linting tool.
   "env": {
     "es6": true,
     "browser": true,
-    "node": true
+    "node": true,
+    "jest": true  
   }
 }
 ```
