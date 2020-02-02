@@ -38,11 +38,11 @@ A code styling / pretty printing utility.
 
 ## Install
 * Global install on dev machine
-    ```shell script
+    ```shell
     npm install --global prettier
     ```
 * Local project install
-    ```shell script
+    ```shell
     npm install --save-dev prettier
     ```  
 
@@ -69,7 +69,7 @@ A static code analysis / linting tool.
 
 ## Install
 * Local project install
-    ```shell script
+    ```shell
     npm install --save-dev eslint eslint-config-prettier
     ```  
   
@@ -103,7 +103,7 @@ A static code analysis / linting tool.
 
 ## ESLint + React
 * Getting ESLint to recognise React
-    ```shell script
+    ```shell
     npm install -D babel-eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
     ```
 * Updated .eslintrc.json
@@ -155,7 +155,7 @@ Bundler for JavaScript projects.
 
 ## Install
 * Local project install
-    ```shell script
+    ```shell
     npm install --save-dev parcel-bundler
     ```
   
@@ -172,7 +172,7 @@ Javascript transpiler
 (use if not using parcel for handling babel with parcel's default config)
 
 ## Install
-```shell script
+```shell
 npm install -D babel-eslint @babel/core @babel/preset-env @babel/plugin-proposal-class-properties @babel/preset-react
 ```
 
