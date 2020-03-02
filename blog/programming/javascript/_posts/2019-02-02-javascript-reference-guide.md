@@ -190,8 +190,9 @@ f(a)(b)(c)
     user.sayHi(); // ES6 :: Hi, I'm
     user.sayHiAlt(); // ES5 :: Hi, I'm Anurag
     ```
-* A **closure** is the combination of a function and the lexical environment (Persistent Lexical Scope Reference Data) 
-within which that function was declared [Run on JS Bin](https://jsbin.com/lapuxoq/edit?js,console)
+* A **closure** is the combination of a function and the lexical environment (Persistent Lexical Scope Reference Data; 
+colloquially referred to as the Clousure; referred to as backpack by Will Sentance) within which that function was 
+declared [Run on JS Bin](https://jsbin.com/lapuxoq/edit?js,console)
 <script src="https://gist.github.com/anuragkapur/17426a23c922d66950c61001c52e811c.js"></script>
 * [Additional examples of closures and higher order functions](http://csbin.io/closures)
 * JS is a lexically (statically) scoped language
@@ -200,6 +201,9 @@ within which that function was declared [Run on JS Bin](https://jsbin.com/lapuxo
   * Nested functions have access to variables declared in their outer scope
 
 # Asynchronicity
+* JavaScript is:
+  * Single threaded (one command runs at a time)
+  * Synchronously executed (each line is run in order the code appears)
 * Features like timer (setTimeout), HTML DOM (document), network requests (xhr / fetch), console are not core JS 
 features, instead are provided by the web browser / engine that runs JS
   * Example: `setTimeout` is simply a facade function to call out functionality implemented by the runtime (say a web 
@@ -218,6 +222,11 @@ features, instead are provided by the web browser / engine that runs JS
 * **Promises** are two-pronged facade functions that both:
   * Initiate background work in the runtime (ex: web browser)
   * Return a placeholder object (promise) immediately in JavaScript
+  * Promise object has two properties
+    * value: the property that holds whatever is returned from the runtime function invoked by the facade function (ex:
+    fetch)
+    * onFulfilled: an array of functions to be auto-run with value passed as a param, once the value property get a value
+    * onError: an array of functions to be run when the promise is rejected with an error
 * Unlike promises, callbacks are limited in capability as they can only initiate the background but don't have a 
 placeholder object that can be interrogated to know what's happening with the background task
 * When a promise is fulfilled, the function passed to the promise object using the `then` method is pushed to the 
