@@ -321,9 +321,6 @@ copies = memory wasted!
         const newUser = Object.create(userFunctionStore);
         newUser.mame = name;
         newUser.score = score;
-        newUser.increment = function () {
-            newUser.score ++;
-        };
         return newUser;
     }
     
