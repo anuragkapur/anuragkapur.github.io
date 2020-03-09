@@ -393,8 +393,9 @@ containing the nested function. This is illustrated in the example below:
         this.score = score;
     }
     
-    // arrow function won't do the job as its `this` will bind to the global context and not the object created by
-    // userCreator
+    // - arrow function won't do the job as its `this` will bind to the global context and not the object created by
+    // userCreator.
+    // - all functions in JS are also objects and have a prototype property which is initialised to an empty object
     userCreator.prototype.increment = function() {
         return ++this.score;    
     };
