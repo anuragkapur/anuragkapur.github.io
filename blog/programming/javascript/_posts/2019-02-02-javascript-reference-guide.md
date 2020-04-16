@@ -431,6 +431,7 @@ containing the nested function. This is illustrated in the example below:
 * The `class` feature works exactly like approach 3, but its just cleaner as there is no need to separately define the
 functions in the prototype property using `object.prototype`
 * The above is strikingly similar to how classes (i.e. data + methods) work in other languages like Java
+* Introduced in ES2015/ES6
     
 # References
 * [JS: From Fundamentals to Functional JS - Day 1, by Bianca Gandolfo](https://slides.com/bgando/f2f-final-day-1#/)
