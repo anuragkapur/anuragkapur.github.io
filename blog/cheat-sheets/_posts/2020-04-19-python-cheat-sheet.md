@@ -49,6 +49,23 @@ features_log_transformed = pd.DataFrame(data = features_raw)
 features_log_transformed[skewed] = features_raw[skewed].apply(lambda x: np.log(x + 1))
 ```
 
+## One-hot Encoding
+Typically, learning algorithms expect input to be numeric, which requires that non-numeric features (called categorical
+variables) be converted. One popular way to convert categorical variables is by using the one-hot encoding scheme. 
+One-hot encoding creates a "dummy" variable for each possible category of each non-numeric feature. For example, 
+assume someFeature has three possible entries: A, B, or C. We then encode this feature into someFeature_A, someFeature_B
+and someFeature_C.
+```python
+features_final = pd.get_dummies(features_original)
+```
+
+## Manual Encoding
+If a column/feature has only two possible categories, we can avoid using one-hot encoding and simply encode these two
+categories as 0 and 1, respectively.
+```python
+income = income_raw.replace(['<=50K', '>50K'], [0, 1])
+```
+
 # Scikit Learn
 
 ## Feature Scaling
