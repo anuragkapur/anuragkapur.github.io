@@ -38,9 +38,14 @@ features_raw = data.drop('<column_name>', axis = 1) # axis = 1 => axis = 'column
 ```
 
 ## Log-transform the skewed features
+A dataset may sometimes contain at least one feature whose values tend to lie near a single number, but will also have a
+non-trivial number of vastly larger or smaller values than that single number. Algorithms can be sensitive to such 
+distributions of values and can underperform if the range is not properly normalized.    
+Using a logarithmic transformation significantly reduces the range of values caused by outliers
 ```python
 skewed = ['<feature_column_name_1>', '<feature_column_name_2>']
 features_log_transformed = pd.DataFrame(data = features_raw)
+# log(x + 1) to avoid log(0) which is undefined
 features_log_transformed[skewed] = features_raw[skewed].apply(lambda x: np.log(x + 1))
 ```
 
