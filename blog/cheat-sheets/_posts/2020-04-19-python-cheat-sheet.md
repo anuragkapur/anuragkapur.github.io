@@ -5,6 +5,7 @@ teaser: Python Cheat Sheet - Pandas, Numpy, Anaconda, Jupyter
 date:   2020-04-19 00:00:00 +0000
 categories: cheat-sheets
 tags: cheat-sheets
+permalink: /blog/python-cheat-sheet
 ---
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
