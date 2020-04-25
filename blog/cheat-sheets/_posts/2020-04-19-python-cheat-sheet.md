@@ -51,6 +51,16 @@ features_log_transformed[skewed] = features_raw[columns_to_transform].apply(lamb
 data = data_raw.replace(['a', 'b'], [0, 1])
 ```
 
+## Sum of a Panda Series Using Numpy
+```python
+np.sum(a_series)
+```
+
+## Count of Number of Elements in a Pandas Series
+```python
+a_series.count()
+```
+
 # Anaconda
 
 ## Update all packages
