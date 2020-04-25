@@ -40,3 +40,14 @@ numerical = ['age', 'education-num', 'capital-gain', 'capital-loss', 'hours-per-
 features_log_minmax_transform = pd.DataFrame(data = features_log_transformed)
 features_log_minmax_transform[numerical] = scaler.fit_transform(features_log_transformed[numerical])
 ```
+
+## Split Data - Training and Testing
+```python
+from sklearn.model_selection import train_test_split
+
+# Split the 'features' and 'income' data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X_raw, 
+                                                    y_raw, 
+                                                    test_size = 0.2, 
+                                                    random_state = 0)
+```
