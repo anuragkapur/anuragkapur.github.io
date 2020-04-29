@@ -27,17 +27,21 @@ permalink: /blog/machine-learning-reference-guide
     - [Strengths](#strengths)
     - [Weaknesses](#weaknesses)
     - [References](#references-1)
-  - [Naive Bayes](#naive-bayes)
+  - [Perceptron](#perceptron)
     - [Classification And/Or Regression?](#classification-andor-regression-1)
+    - [Properties and Assumptions](#properties-and-assumptions-1)
+    - [References](#references-2)
+  - [Naive Bayes](#naive-bayes)
+    - [Classification And/Or Regression?](#classification-andor-regression-2)
     - [Real-World Applications](#real-world-applications-1)
     - [Strengths](#strengths-1)
     - [Weaknesses](#weaknesses-1)
     - [Gaussian Naive Bayes](#gaussian-naive-bayes)
   - [Decision Trees](#decision-trees)
-    - [Classification And/Or Regression?](#classification-andor-regression-2)
+    - [Classification And/Or Regression?](#classification-andor-regression-3)
     - [Strengths](#strengths-2)
     - [Weaknesses](#weaknesses-2)
-    - [References](#references-2)
+    - [References](#references-3)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -121,7 +125,7 @@ KD Tree).
 makes the classification boundaries less distinct.
 
 ### Real-World Applications
-TODO 
+Classification 
 
 ### Strengths
 * Simple to understand and implement.
@@ -139,10 +143,25 @@ similar to each other, and the k-NN assumption breaks down.
 * [http://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote02_kNN.html](http://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote02_kNN.html)
 * [https://scikit-learn.org/stable/modules/neighbors.html](https://scikit-learn.org/stable/modules/neighbors.html)
 
+## Perceptron
+
+### Classification And/Or Regression?
+Classification
+
+### Properties and Assumptions
+* A single perceptron can only be used to implement linearly separable functions.
+* If a data set is linearly separable, the Perceptron will find a separating hyperplane in a finite number of updates. 
+(If the data is not linearly separable, it will loop forever.)
+* Perceptrons work well with high dimensional data. 
+
+### References
+* [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote03.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote03.html)
+* [https://towardsdatascience.com/perceptron-learning-algorithm-d5db0deab975](https://towardsdatascience.com/perceptron-learning-algorithm-d5db0deab975)
+
 ## Naive Bayes
 
 ### Classification And/Or Regression?
-Used for both classification problems 
+Used for both classification and regression problems 
 
 ### Real-World Applications
 * Document classification
