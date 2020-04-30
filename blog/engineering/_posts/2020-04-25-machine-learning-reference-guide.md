@@ -48,7 +48,7 @@ math: true
 - [Misc Math](#misc-math)
   - [Lines](#lines)
   - [Vectors](#vectors)
-  - [Binomial Probability Distribution](#binomial-probability-distribution)
+  - [Probability](#probability)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -282,7 +282,12 @@ $$
     | u . v | \leq ||u|| \times ||v|| 
 $$
 
-## Binomial Probability Distribution
+## Probability
+* Binomial Probability Distribution
 $$
     P(k \: out \: of \: n) = {n \choose k} \times p^k {(1-p)}^{n-k}
+$$
+* Bayes Theorem
+$$
+    P(X | Y) = \dfrac{P(X)P(Y|X)}{P(Y)} = \dfrac{P(X)P(Y|X)}{\sum_{i=1}^{n}P(x_i)P(Y|x_i)} 
 $$
