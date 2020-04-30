@@ -7,6 +7,7 @@ tags: engineering
 teaser: Machine Learning reference guide - supervised learning, deep learning, unsupervised learning
 img-url: /assets/blog/engineering/ml.jpg
 permalink: /blog/machine-learning-reference-guide
+math: true
 ---
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -60,8 +61,8 @@ features_log_transformed[skewed] = features_raw[skewed].apply(lambda x: np.log(x
 ```
 
 ## One-hot Encoding
-Typically, learning algorithms expect input to be numeric, which requires that non-numeric features (called categorical
-variables) be converted. One popular way to convert categorical variables is by using the one-hot encoding scheme. 
+Typically, learning algorithms expect input to be numeric, which requires that non-numeric features [called categorical
+variables] be converted. One popular way to convert categorical variables is by using the one-hot encoding scheme. 
 One-hot encoding creates a "dummy" variable for each possible category of each non-numeric feature. For example, 
 assume someFeature has three possible entries: A, B, or C. We then encode this feature into someFeature_A, someFeature_B
 and someFeature_C.
@@ -113,14 +114,14 @@ X_train, X_test, y_train, y_test = train_test_split(X_raw,
 Used for both classification and regression problems
 
 ### Properties and Assumptions
-* As n (size of training data set) -> ∞, the 1-NN classifier is only a factor of 2 worse than the best possible 
+* As n [size of training data set] -> ∞, the 1-NN classifier is only a factor of 2 worse than the best possible 
 classifier
 * Assumes that similar points share similar labels
-* "Lazy" learners, i.e there is no learning or training step. Instead there is a computation step (computing the nearest
-neighbours) to make every prediction.
+* "Lazy" learners, i.e there is no learning or training step. Instead there is a computation step [computing the nearest
+neighbours] to make every prediction.
 * Neighbors-based methods are known as _instance based_ or _non-generalizing_ machine learning methods, since they 
-simply “remember” all of its training data (possibly transformed into a fast indexing structure such as a Ball Tree or 
-KD Tree).
+simply “remember” all of its training data [possibly transformed into a fast indexing structure such as a Ball Tree or 
+KD Tree].
 * The optimal choice of the value  is highly data-dependent: in general a larger  suppresses the effects of noise, but 
 makes the classification boundaries less distinct.
 
@@ -144,6 +145,8 @@ similar to each other, and the k-NN assumption breaks down.
 * [https://scikit-learn.org/stable/modules/neighbors.html](https://scikit-learn.org/stable/modules/neighbors.html)
 
 ## Perceptron
+Perceptron algorithm is historically important: it was one of the first machine learning algorithms ever derived and was
+even implemented in analog hardware
 
 ### Classification And/Or Regression?
 Classification
@@ -151,7 +154,7 @@ Classification
 ### Properties and Assumptions
 * A single perceptron can only be used to implement linearly separable functions.
 * If a data set is linearly separable, the Perceptron will find a separating hyperplane in a finite number of updates. 
-(If the data is not linearly separable, it will loop forever.)
+[If the data is not linearly separable, it will loop forever.]
 * Perceptrons work well with high dimensional data. 
 
 ### References
@@ -188,13 +191,13 @@ Trees can be visualised in a way that is easy for non-experts to interpret.
 decisions/behavior.
 * Requires little data preparation. Other techniques often require data normalisation, dummy variables need to be 
 created and blank values to be removed.
-* The cost of using the tree (i.e., predicting data) is logarithmic in the number of data points used to train the tree.
+* The cost of using the tree [i.e., predicting data] is logarithmic in the number of data points used to train the tree.
 * Performs well with large datasets. Large amounts of data can be analyzed using standard computing resources in 
 reasonable time.
 * Able to handle both numerical and categorical data.
 * Able to handle multi-output problems.
 * Uses a white box model. If a given situation is observable in a model, the explanation for the condition is easily 
-explained by boolean logic. By contrast, in a black box model (e.g., in an artificial neural network), results may be 
+explained by boolean logic. By contrast, in a black box model [e.g., in an artificial neural network], results may be 
 more difficult to interpret.
 * Possible to validate a model using statistical tests. That makes it possible to account for the reliability of the 
 model.
@@ -212,8 +215,8 @@ even for simple concepts. Consequently, practical decision-tree learning algorit
 greedy algorithm where locally optimal decisions are made at each node. Such algorithms cannot guarantee to return the 
 globally optimal decision tree. 
 * Over-fitting or high variance: decision-tree learners can create over-complex trees that do not generalize well from 
-the training data. Mechanisms such as pruning are necessary to avoid this problem (with the exception of some algorithms 
-such as the Conditional Inference approach, that does not require pruning). Other methods to avoid this problem include
+the training data. Mechanisms such as pruning are necessary to avoid this problem [with the exception of some algorithms 
+such as the Conditional Inference approach, that does not require pruning]. Other methods to avoid this problem include
 setting the minimum number of samples required at a leaf node or setting the maximum depth of the tree.
 * For data including categorical variables with different numbers of levels, information gain in decision trees is 
 biased in favor of attributes with more levels. However, the issue of biased predictor selection is avoided by the 
@@ -227,3 +230,53 @@ approaches and are typically used in an ensemble.
 * https://scikit-learn.org/stable/modules/tree.html
 * https://en.wikipedia.org/wiki/Decision_tree_learning
 * An Introduction to Statistical Learning, Gareth James et all
+
+# Misc Definitions
+
+### Parametric and Non-Parametric Models
+Models that have a fixed number of parameters are called Parametric models, while models in which number of parameters 
+grow with the amount of training data are called Non-Parametric models. Parametric models have the advantage of often 
+being faster to use, but the disadvantage of making stronger assumptions about the nature of the data distributions. 
+Non-parametric models are more flexible, but often computationally intractable for large datasets.    
+
+Example: K-NN is non-parametric classifier. Linear and Logistic regression are examples of parametric models.
+
+# Misc Math
+
+## Lines
+* Slope intercept form          
+$$ 
+    y = mx + k
+$$
+
+* General form    
+$$
+    ax + by = c
+$$    
+where,    
+$$
+    m = \dfrac{-a}{b}, k = \dfrac{c}{b}
+$$
+
+## Vectors
+* Norm of a vector    
+$$
+    W = \begin{bmatrix}    
+        w_1 \\
+        w_2 \\ 
+        w_3 \\
+        \end{bmatrix}    
+$$        
+then 
+$$
+    ||W|| = \sqrt{W^T W} = \sqrt{w_1^2 + w_2^2 + w_3^2}
+$$
+* Cauchy Schwartz inequality    
+$$
+    | u . v | \leq ||u|| \times ||v|| 
+$$
+
+## Binomial Probability Distribution
+$$
+    P(k \: out \: of \: n) = {n \choose k} \times p^k {(1-p)}^{n-k}
+$$
