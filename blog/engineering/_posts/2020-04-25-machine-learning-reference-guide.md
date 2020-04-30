@@ -43,6 +43,12 @@ math: true
     - [Strengths](#strengths-2)
     - [Weaknesses](#weaknesses-2)
     - [References](#references-3)
+- [Misc Definitions](#misc-definitions)
+    - [Parametric and Non-Parametric Models](#parametric-and-non-parametric-models)
+- [Misc Math](#misc-math)
+  - [Lines](#lines)
+  - [Vectors](#vectors)
+  - [Binomial Probability Distribution](#binomial-probability-distribution)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
