@@ -239,13 +239,36 @@ approaches and are typically used in an ensemble.
 
 # Misc Definitions
 
-### Parametric and Non-Parametric Models
+## Parametric and Non-Parametric Models
 Models that have a fixed number of parameters are called Parametric models, while models in which number of parameters 
 grow with the amount of training data are called Non-Parametric models. Parametric models have the advantage of often 
 being faster to use, but the disadvantage of making stronger assumptions about the nature of the data distributions. 
 Non-parametric models are more flexible, but often computationally intractable for large datasets.    
 
-Example: K-NN is non-parametric classifier. Linear and Logistic regression are examples of parametric models.
+Example: K-NN is non-parametric classifier. Linear and Logistic regression are examples of parametric models.    
+
+Ref:    
+  * Sec 1.4.1 Machine Learning A Probabilistic Perspective, Kevin P. Murphy
+
+## Generative and Discriminative Learning
+Generative classifiers learn a model of joint probability $$ p(x, y) $$, of the inputs x and the label y, and make their 
+prediction using Bayes Theorem to calculate $$ P(y|x) $$ and picking the most likely label y. Discriminative classifiers
+model the posterior $$ p(y|x) $$ directly, or learn a direct map from inputs x to class labels.    
+* When we estimate $$ P(X,Y)=P(X|Y)P(Y) $$ , then we call it generative learning.
+* When we only estimate $$ P(Y|X) $$ directly, then we call it discriminative learning.    
+Ref:
+  * [https://ai.stanford.edu/~ang/papers/nips01-discriminativegenerative.pdf](https://ai.stanford.edu/~ang/papers/nips01-discriminativegenerative.pdf)
+  * [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote04.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote04.html)
+
+## Maximum Likelihood Estimation, MLE and Maximum a Posteriori Probability Estimation, MAP
+In supervised Machine learning you are provided with training data D. You use this data to train a model, represented by
+its parameters θ. With this model you want to make predictions on a test point $$x_t$$.
+* MLE Prediction: $$ P(y|x_t;\theta) $$ Learning: $$ \theta=\operatorname*{argmax}_\theta P(D;\theta) $$ Here θ is 
+purely a model parameter.
+* MAP Prediction: $$ P(y|x_t,\theta) $$ Learning: $$ \theta=\operatorname*{argmax}_\theta P(\theta|D)\propto P(D \mid \theta) P(\theta) $$
+Here θ is a random variable.    
+Ref:
+  * [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote04.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote04.html)
 
 # Misc Math
 
@@ -283,11 +306,20 @@ $$
 $$
 
 ## Probability
-* Binomial Probability Distribution
+* Binomial Probability Distribution    
 $$
     P(k \: out \: of \: n) = {n \choose k} \times p^k {(1-p)}^{n-k}
+$$    
+where,     
+p = probability of positive event, of which we are looking for k occurrences
+* Bayes Theorem    
 $$
-* Bayes Theorem
+    P(A|B) = \dfrac{P(A)P(B|A)}{P(B)} = \dfrac{P(A)P(B|A)}{\sum_{i=1}^{n}P(a_i)P(B|a_i)} 
 $$
-    P(X | Y) = \dfrac{P(X)P(Y|X)}{P(Y)} = \dfrac{P(X)P(Y|X)}{\sum_{i=1}^{n}P(x_i)P(Y|x_i)} 
+* Multiplication rule    
 $$
+    P(A ∩ B) = P(B|A)P(A) = P(A|B)P(B)
+$$    
+Ref: 
+  * [https://faculty.arts.ubc.ca/hkasahara/Econ325/notes_probability.pdf](https://faculty.arts.ubc.ca/hkasahara/Econ325/notes_probability.pdf)
+  * [https://www.youtube.com/watch?v=RIawrYLVdIw&list=PLl8OlHZGYOQ7bkVbuRthEsaLr7bONzbXS&index=7](https://www.youtube.com/watch?v=RIawrYLVdIw&list=PLl8OlHZGYOQ7bkVbuRthEsaLr7bONzbXS&index=7)
