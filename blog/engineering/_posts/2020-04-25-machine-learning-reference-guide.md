@@ -253,8 +253,8 @@ Ref:
 ## Generative and Discriminative Learning
 Generative classifiers learn a model of joint probability $$ p(x, y) $$, of the inputs x and the label y, and make their 
 prediction using Bayes Theorem to calculate $$ P(y|x) $$ and picking the most likely label y. Discriminative classifiers
-model the posterior $$ p(y|x) $$ directly, or learn a direct map from inputs x to class labels.    
-* When we estimate $$ P(X,Y)=P(X|Y)P(Y) $$ , then we call it generative learning.
+model the posterior $$ P(y|x) $$ directly, or learn a direct map from inputs x to class labels.    
+* When we estimate $$ P(X,Y) = P(X\|Y) P(Y) $$ , then we call it generative learning.
 * When we only estimate $$ P(Y|X) $$ directly, then we call it discriminative learning.    
 Ref:
   * [https://ai.stanford.edu/~ang/papers/nips01-discriminativegenerative.pdf](https://ai.stanford.edu/~ang/papers/nips01-discriminativegenerative.pdf)
@@ -264,9 +264,9 @@ Ref:
 In supervised Machine learning you are provided with training data D. You use this data to train a model, represented by
 its parameters θ. With this model you want to make predictions on a test point $$x_t$$.
 * MLE Prediction: $$ P(y|x_t;\theta) $$ Learning: $$ \theta=\operatorname*{argmax}_\theta P(D;\theta) $$ Here θ is 
-purely a model parameter.
+purely a model parameter. [Frequentist Statistics Approach]
 * MAP Prediction: $$ P(y|x_t,\theta) $$ Learning: $$ \theta=\operatorname*{argmax}_\theta P(\theta|D)\propto P(D \mid \theta) P(\theta) $$
-Here θ is a random variable.    
+Here θ is a random variable. [Bayesian Statistics Approach]    
 Ref:
   * [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote04.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote04.html)
 
