@@ -121,34 +121,34 @@ Used for both classification and regression problems
 
 ### Properties and Assumptions
 * As n [size of training data set] -> ∞, the 1-NN classifier is only a factor of 2 worse than the best possible 
-classifier
-* Assumes that similar points share similar labels
+classifier.
+* Assumes that similar points share similar labels.
 * "Lazy" learners, i.e there is no learning or training step. Instead there is a computation step [computing the nearest
 neighbours] to make every prediction.
 * Neighbors-based methods are known as _instance based_ or _non-generalizing_ machine learning methods, since they 
 simply “remember” all of its training data [possibly transformed into a fast indexing structure such as a Ball Tree or 
 KD Tree].
-* The optimal choice of the value  is highly data-dependent: in general a larger  suppresses the effects of noise, but 
+* The optimal choice of the value k is highly data-dependent: in general a larger k suppresses the effects of noise, but 
 makes the classification boundaries less distinct.
 
 ### Real-World Applications
-Classification 
+* [Recommendation systems](https://en.wikipedia.org/wiki/Recommender_system#Collaborative_filtering)
 
 ### Strengths
 * Simple to understand and implement.
 * k-NN is a simple and effective classifier if distances reliably reflect a semantically meaningful notion of the 
 dissimilarity of data points.
-* As n -> ∞, k-NN becomes provably very accurate, but also very slow.
+* As $$ n\to\infty $$, k-NN becomes provably very accurate, but also very slow.<sup>1</sup>
 * It is often successful in classification situations where the decision boundary is very irregular.
 
 ### Weaknesses
-* As d >> 0, i.e. dimensionality of the data becomes high, points drawn from a probability distribution stop being 
-similar to each other, and the k-NN assumption breaks down.
-* Can become prohibitively slow to make predictions on new data when the training data set is very large.
+* As $$ d >> 0 $$, i.e. dimensionality of the data becomes high, points drawn from a probability distribution stop being 
+similar to each other, and the k-NN assumption breaks down.<sup>1</sup>
+* Can become prohibitively slow to make predictions on new data when the training data set is very large.<sup>1</sup>
 
 ### References
-* [http://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote02_kNN.html](http://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote02_kNN.html)
-* [https://scikit-learn.org/stable/modules/neighbors.html](https://scikit-learn.org/stable/modules/neighbors.html)
+1. [http://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote02_kNN.html](http://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote02_kNN.html)
+2. [https://scikit-learn.org/stable/modules/neighbors.html](https://scikit-learn.org/stable/modules/neighbors.html)
 
 ## Perceptron
 Perceptron algorithm is historically important: it was one of the first machine learning algorithms ever derived and was
@@ -158,32 +158,58 @@ even implemented in analog hardware
 Classification
 
 ### Properties and Assumptions
-* A single perceptron can only be used to implement linearly separable functions.
+* A single perceptron can only be used to implement linearly separable functions.<sup>1</sup>
 * If a data set is linearly separable, the Perceptron will find a separating hyperplane in a finite number of updates. 
-[If the data is not linearly separable, it will loop forever.]
+[If the data is not linearly separable, it will loop forever.]<sup>1</sup>
 * Perceptrons work well with high dimensional data. 
+* Doesn't require a learning rate.
+* It updates the model only on mistakes.
 
 ### References
-* [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote03.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote03.html)
-* [https://towardsdatascience.com/perceptron-learning-algorithm-d5db0deab975](https://towardsdatascience.com/perceptron-learning-algorithm-d5db0deab975)
+1. [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote03.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote03.html)
+2. [https://towardsdatascience.com/perceptron-learning-algorithm-d5db0deab975](https://towardsdatascience.com/perceptron-learning-algorithm-d5db0deab975)
+3. [https://scikit-learn.org/stable/modules/linear_model.html#perceptron](https://scikit-learn.org/stable/modules/linear_model.html#perceptron)
 
 ## Naive Bayes
+Different flavours of NB exist and are used depending the properties of the features, x.
+* Categorical NB: When features take a categorical value. Ex: Patient Gender feature used to predict probability of a 
+certain disease.
+* Multinomial NB: When features values represent counts and not categorical values: Ex: Number of occurrences of a word
+in an email that needs to be classified as spam or ham. 
+* Gaussian NB: When features take on real values and follow a gaussian distribution. 
 
 ### Classification And/Or Regression?
-Used for both classification and regression problems 
+Classification 
 
 ### Real-World Applications
-* Document classification
-* Spam filtering
+* Document classification [multinomial NB]
+* Spam filtering [multinomial NB]
+
+### Properties and Assumptions
+* A generative learning algorithm.<sup>2</sup>
+* When X is a vector of discrete-valued attributes, Naive Bayes learning algorithms can be viewed as linear classifiers;
+that is, every such Naive Bayes classifier corresponds to a hyperplane decision surface in X. The same statement holds
+for Gaussian Naive Bayes classifiers if the variance of each feature is assumed to be independent of the class.<sup>3</sup> 
 
 ### Strengths
-TODO
+* They require a small amount of training data to estimate the necessary parameters.<sup>1</sup>
+* Naive Bayes learners and classifiers can be extremely fast compared to more sophisticated methods.<sup>1</sup>
+The decoupling of the class conditional feature distributions means that each distribution can be independently 
+estimated as a one dimensional distribution. This in turn helps to alleviate problems stemming from the curse of 
+dimensionality.<sup>1</sup>
 
 ### Weaknesses
-TODO
+* [Gaussian NB] Doesn't work well with outliers. There can be cases where a linear decision boundary for classification
+exists, but GNB fails to make correct prediction for outliers. On the other hand, in such a scenarios, a simple 
+Perceptron works and makes correct prediction. However, NB is much faster compared to perceptron as the perceptron can 
+be slow to converge.<sup>4</sup>
+* Although naive Bayes is known as a decent classifier, it is known to be a bad estimator.<sup>1</sup>
 
-### Gaussian Naive Bayes
-TODO
+### References
+1. [https://scikit-learn.org/stable/modules/naive_bayes.html](https://scikit-learn.org/stable/modules/naive_bayes.html)
+2. [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote05.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote05.html)
+3. [https://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf](https://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf)
+4. [Machine Learning Lecture 10 "Naive Bayes continued" -Cornell CS4780 SP17](https://youtu.be/rqB0XWoMreU?t=2722)
 
 ## Decision Trees
 
@@ -269,6 +295,7 @@ purely a model parameter. [Frequentist Statistics Approach]
 Here θ is a random variable. [Bayesian Statistics Approach]    
 Ref:
   * [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote04.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote04.html)
+  * [https://www.youtube.com/watch?time_continue=1277&v=pDHEX2usCS0](https://www.youtube.com/watch?time_continue=1277&v=pDHEX2usCS0)
 
 # Misc Math
 
