@@ -297,6 +297,22 @@ Ref:
   * [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote04.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote04.html)
   * [https://www.youtube.com/watch?time_continue=1277&v=pDHEX2usCS0](https://www.youtube.com/watch?time_continue=1277&v=pDHEX2usCS0)
 
+## Accuracy, Precision and Recall
+* Accuracy measures how often the classifier makes the correct prediction. It’s the ratio of the number of correct 
+predictions to the total number of predictions (the number of test data points).
+$$ Accuracy = \dfrac{True Positive + True Negative}{Total Predictions} $$
+
+* Precision tells us what proportion of messages we classified as spam, actually were spam. It is a ratio of true 
+positives [words classified as spam, and which are actually spam] to all positives [all words classified as spam, 
+irrespective of whether that was the correct classification].    
+**High precision = Ok if not all spam is found. But if marked as spam, better be spam.**    
+$$ Precision = \dfrac{True Positive}{True Positive + False Positive} $$
+
+* Recall tells us what proportion of messages that actually were spam were classified by us as spam. It is a ratio of
+true positives [words classified as spam, and which are actually spam] to all the words that were actually spam.    
+**High Recall = Ok if not all are sick, but find all sick people**    
+$$ Recall = \dfrac{True Positive}{True Positive + False Negative} $$
+
 # Misc Math
 
 ## Lines
