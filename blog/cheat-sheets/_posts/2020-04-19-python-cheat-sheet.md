@@ -13,8 +13,21 @@ permalink: /blog/python-cheat-sheet
 
 - [Pandas](#pandas)
   - [Read CSV as a DataFrame](#read-csv-as-a-dataframe)
+  - [Get Column by Label](#get-column-by-label)
+  - [Get All Rows Where Column Value Satisfies Condition](#get-all-rows-where-column-value-satisfies-condition)
+  - [Get Column by Index](#get-column-by-index)
+  - [Get Row by Label](#get-row-by-label)
+  - [Get Row by Index](#get-row-by-index)
   - [Drop a column from DF](#drop-a-column-from-df)
-  - [# Log-transform the skewed features](#-log-transform-the-skewed-features)
+  - [Append Columns from a DF to another DF](#append-columns-from-a-df-to-another-df)
+  - [Transform Values of Selected Columns of a DF](#transform-values-of-selected-columns-of-a-df)
+  - [Replace Values in Columns of a DF](#replace-values-in-columns-of-a-df)
+  - [Sum of a Panda Series Using Numpy](#sum-of-a-panda-series-using-numpy)
+  - [Count of Number of Elements in a Pandas Series](#count-of-number-of-elements-in-a-pandas-series)
+  - [Get N Rows from a DF](#get-n-rows-from-a-df)
+  - [Get N Random Rows from a DF](#get-n-random-rows-from-a-df)
+- [Data Visualisation](#data-visualisation)
+  - [Draw Distribution of a Column Value](#draw-distribution-of-a-column-value)
 - [Anaconda](#anaconda)
   - [Update all packages](#update-all-packages)
   - [Install package](#install-package)
@@ -33,9 +46,53 @@ permalink: /blog/python-cheat-sheet
 data = pd.read_csv("census.csv")
 ```
 
+## Get Column by Label
+```python
+df.shape                    # rows x columns
+
+# Option 1
+df[['column_label']]
+
+# Option 2
+df.loc[:, ['column_label']]       
+
+df[['column_label']].shape  # rows x 1
+```
+
+## Get All Rows Where Column Value Satisfies Condition
+```python
+df.loc[df['column_label'] > 4]
+```
+
+## Get Column by Index
+```python
+df.shape                    # rows x columns
+df.iloc[:, [0]]
+df.iloc[:, [0]].shape       # rows x 1
+```
+
+## Get Row by Label
+```python
+df.shape                    # rows x columns
+df.loc[['row_label']]
+df.loc[['row_label']].shape # 1 x columns
+```
+
+## Get Row by Index
+```python
+df.shape                    # rows x columns
+df.iloc[[0]]
+df.loc[[0]].shape           # 1 x columns
+```
+
 ## Drop a column from DF
 ```python
 features_raw = data.drop('<column_name>', axis = 1) # axis = 1 => axis = 'columns'
+```
+
+## Append Columns from a DF to another DF
+```python
+df1.join(df2)
 ```
 
 ## Transform Values of Selected Columns of a DF
@@ -60,6 +117,21 @@ np.sum(a_series)
 ```python
 a_series.count()
 ```
+
+## Get N Rows from a DF
+```python
+df[:n]
+```
+
+## Get N Random Rows from a DF
+```python
+df.sample(n=N)
+```
+
+# Data Visualisation
+
+## Draw Distribution of a Column Value
+todo
 
 # Anaconda
 
