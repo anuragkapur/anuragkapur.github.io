@@ -1,11 +1,22 @@
-h2 {
+.post-content h1 {
+    font-size: 32px;
+    color: #1756a9;
+}
+
+.post-content h2 {
+    font-size: 24px;
+    font-style: italic;
     color: #595959;
 }
 
-h3 {
-    color: #6c6c6c;
+.post-content h3 {
+    font-size: 16px;
+    font-style: italic;
+    color: #797979;
 }
 
-h4 {
+.post-content h4 {
+    font-size: 10px;
+    font-style: italic;
     color: #919191;
 }
