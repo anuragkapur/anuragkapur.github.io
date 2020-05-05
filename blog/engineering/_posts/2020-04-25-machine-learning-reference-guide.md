@@ -19,6 +19,9 @@ math: true
   - [Manual Encoding](#manual-encoding)
   - [Scikit - Feature Scaling](#scikit---feature-scaling)
   - [Split Data - Training and Testing](#split-data---training-and-testing)
+- [Model Evaluation Metrics](#model-evaluation-metrics)
+  - [Accuracy](#accuracy)
+  - [F-Beta Score](#f-beta-score)
 - [Supervised Learning](#supervised-learning)
   - [References](#references)
   - [K-Nearest-Neighbours (K-NN)](#k-nearest-neighbours-k-nn)
@@ -35,16 +38,20 @@ math: true
   - [Naive Bayes](#naive-bayes)
     - [Classification And/Or Regression?](#classification-andor-regression-2)
     - [Real-World Applications](#real-world-applications-1)
+    - [Properties and Assumptions](#properties-and-assumptions-2)
     - [Strengths](#strengths-1)
     - [Weaknesses](#weaknesses-1)
-    - [Gaussian Naive Bayes](#gaussian-naive-bayes)
+    - [References](#references-3)
   - [Decision Trees](#decision-trees)
     - [Classification And/Or Regression?](#classification-andor-regression-3)
     - [Strengths](#strengths-2)
     - [Weaknesses](#weaknesses-2)
-    - [References](#references-3)
+    - [References](#references-4)
 - [Misc Definitions](#misc-definitions)
-    - [Parametric and Non-Parametric Models](#parametric-and-non-parametric-models)
+  - [Parametric and Non-Parametric Models](#parametric-and-non-parametric-models)
+  - [Generative and Discriminative Learning](#generative-and-discriminative-learning)
+  - [Maximum Likelihood Estimation, MLE and Maximum a Posteriori Probability Estimation, MAP](#maximum-likelihood-estimation-mle-and-maximum-a-posteriori-probability-estimation-map)
+  - [Accuracy, Precision and Recall](#accuracy-precision-and-recall)
 - [Misc Math](#misc-math)
   - [Lines](#lines)
   - [Vectors](#vectors)
@@ -104,6 +111,22 @@ X_train, X_test, y_train, y_test = train_test_split(X_raw,
                                                     y_raw, 
                                                     test_size = 0.2, 
                                                     random_state = 0)
+```
+
+# Model Evaluation Metrics
+
+## Accuracy
+```python
+from sklearn.metrics import accuracy_score
+
+accuracy_score(y_test, y_pred)
+```
+
+## F-Beta Score
+```python
+from sklearn.metrics import fbeta_score
+
+fbeta_score(y_test, y_pred, beta=0.5)
 ```
 
 # Supervised Learning
@@ -171,12 +194,14 @@ Classification
 3. [https://scikit-learn.org/stable/modules/linear_model.html#perceptron](https://scikit-learn.org/stable/modules/linear_model.html#perceptron)
 
 ## Naive Bayes
-Different flavours of NB exist and are used depending the properties of the features, x.
-* Categorical NB: When features take a categorical value. Ex: Patient Gender feature used to predict probability of a 
+* NB estimates a distribution given the data and then finds a hyperplane separating the data. This is subtly different 
+to Perceptron which finds a hyperplane separating the data directly.
+* Different flavours of NB exist and are used depending the properties of the features, x.
+  * Categorical NB: When features take a categorical value. Ex: Patient Gender feature used to predict probability of a 
 certain disease.
-* Multinomial NB: When features values represent counts and not categorical values: Ex: Number of occurrences of a word
-in an email that needs to be classified as spam or ham. 
-* Gaussian NB: When features take on real values and follow a gaussian distribution. 
+  * Multinomial NB: When features values represent counts and not categorical values: Ex: Number of occurrences of a 
+word in an email that needs to be classified as spam or ham. 
+  * Gaussian NB: When features take on real values and follow a gaussian distribution. 
 
 ### Classification And/Or Regression?
 Classification 
