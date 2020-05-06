@@ -194,6 +194,7 @@ Classification
 3. [https://scikit-learn.org/stable/modules/linear_model.html#perceptron](https://scikit-learn.org/stable/modules/linear_model.html#perceptron)
 
 ## Naive Bayes
+* For most common cases [Multinomial, Gaussian] NB is a linear classifier.
 * NB estimates a distribution given the data and then finds a hyperplane separating the data. This is subtly different 
 to Perceptron which finds a hyperplane separating the data directly.
 * Different flavours of NB exist and are used depending the properties of the features, x.
