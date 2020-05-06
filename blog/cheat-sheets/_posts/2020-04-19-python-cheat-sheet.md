@@ -8,6 +8,8 @@ tags: cheat-sheets
 permalink: /blog/python-cheat-sheet
 ---
 
+<h3>Up-to-date version: <a href="https://github.com/anuragkapur/anuragkapur.github.io/blob/master/blog/cheat-sheets/jupyter/Python%20Cheat%20Sheet.ipynb" target="_blank">Python Cheat Sheet</a></h3>
+
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
