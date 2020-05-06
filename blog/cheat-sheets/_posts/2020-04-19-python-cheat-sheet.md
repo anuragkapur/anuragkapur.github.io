@@ -46,6 +46,13 @@ permalink: /blog/python-cheat-sheet
 data = pd.read_csv("census.csv")
 ```
 
+## Create DF manually
+```python
+df = pd.DataFrame([[1, 2], [4, 5], [7, 8]],
+         index=['cobra', 'viper', 'sidewinder'],
+         columns=['max_speed', 'shield'])
+```
+
 ## Get Column by Label
 ```python
 df.shape                    # rows x columns
@@ -128,12 +135,122 @@ df[:n]
 df.sample(n=N)
 ```
 
-# Data Visualisation
+# Sample Data
+```python
+import numpy as np
+import pandas as pd
 
-## Draw Distribution of a Column Value
-todo
+# Load the Census dataset
+census_df = pd.read_csv("census.csv")
+
+# Success - Display the first record
+display(census_df.head(n=10))
+
+from sklearn.datasets import load_boston
+from sklearn.datasets import load_diabetes
+
+# https://scikit-learn.org/stable/datasets/index.html#boston-dataset
+dataset = load_boston()
+
+# dataset_2 = load_diabetes()
+
+# print(np.append(dataset['feature_names'], 'bla'))
+# print(type(dataset['feature_names']))
+# print(dataset_2['feature_names'] + ['bla'])
+# print(type(dataset_2['feature_names']))
+
+dataset_df = pd.DataFrame(
+    data=np.column_stack((dataset['data'], dataset['target'])), 
+    columns=(np.append(dataset['feature_names'], 'MEDV'))
+)
+
+display(dataset_df.head())
+
+data = census_df
+```
+
+# Data Visualisation
+```
+## Sample Data
+  	age	workclass	education_level	education-num	marital-status	occupation	relationship	race	sex	capital-gain	capital-loss	hours-per-week	native-country	income
+0	39	State-gov	Bachelors	13.0	Never-married	Adm-clerical	Not-in-family	White	Male	2174.0	0.0	40.0	United-States	<=50K
+1	50	Self-emp-not-inc	Bachelors	13.0	Married-civ-spouse	Exec-managerial	Husband	White	Male	0.0	0.0	13.0	United-States	<=50K
+2	38	Private	HS-grad	9.0	Divorced	Handlers-cleaners	Not-in-family	White	Male	0.0	0.0	40.0	United-States	<=50K
+```
+
+## Plot Distribution of a Column Value Where Column_2 Value Satisfies Condition
+```python
+import seaborn as sns
+
+%matplotlib inline
+sns.set(style="ticks")
+
+target_0 = data.loc[data['income'] == '>50K']
+target_1 = data.loc[data['income'] == '<=50K']
+
+sns.distplot(target_0[['age']])
+sns.distplot(target_1[['age']])
+```
+
+## Plot Count of Categorical label
+```python
+sns.countplot(data['education_level']);
+```
+
+## Plot Count of Categorical Label Grouped-by Another Label
+```python
+chart = sns.catplot(x="education_level", kind="count", hue="income", data=data)
+chart.set_xticklabels(rotation=90)
+```
+
+## Explore Pairwise Relationships in Data + Univariate Distribution of Each Feature (Numerical Features Only)
+```python
+import seaborn as sns
+
+%matplotlib inline
+sns.set(style="ticks")
+
+sns.pairplot(data);
+
+# Additional Option: Group data by a 3rd feature
+sns.pairplot(data, hue="y");
+```
+Ref: [https://seaborn.pydata.org/generated/seaborn.pairplot.html#seaborn.pairplot](https://seaborn.pydata.org/generated/seaborn.pairplot.html#seaborn.pairplot)
+
+## Plot Distribution of Numerical Features
+```python
+import matplotlib.pyplot as plt
+plt.figure(figsize=(20, 6))
+
+chart1 = sns.distplot(data[["age"]])
+chart1.set(xlabel="age", ylabel="dstribution")
+
+chart2 = sns.catplot(x="age", kind="count", data=data)
+#chart2.set(xticks=[20, 50, 90])
+chart2.set(xticks=data['age'].values)
+chart2.fig.set_figwidth(20)
+
+print(data.loc[data['age'] < 17].shape)
+```
+
+## Plot Distribution of Categorical Features
+```python
+chart = sns.catplot(x="education_level", kind="count", data=data)
+chart.set(xlabel="education_level", ylabel="count")
+chart.set_xticklabels(rotation=90)
+```
 
 # Anaconda
+
+## List envs
+```shell
+conda info --envs
+```
+
+## Activate env
+```shell
+conda activate default37
+```
 
 ## Update all packages
 ```shell
@@ -172,3 +289,6 @@ jupyter nbconvert --to html notebook.ipynb
 # Other formats
 # https://nbconvert.readthedocs.io/en/latest/usage.html
 ```
+
+## Add TOC
+Ref: [https://towardsdatascience.com/jupyter-tools-to-increase-productivity-7b3c6b90be09](https://towardsdatascience.com/jupyter-tools-to-increase-productivity-7b3c6b90be09)
