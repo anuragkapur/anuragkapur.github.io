@@ -194,15 +194,15 @@ Classification
 3. [https://scikit-learn.org/stable/modules/linear_model.html#perceptron](https://scikit-learn.org/stable/modules/linear_model.html#perceptron)
 
 ## Naive Bayes
-* For most common cases [Multinomial, Gaussian] NB is a linear classifier.
+* For most common cases [Multinomial, Gaussian] NB is a linear classifier.<sup>2</sup>
 * NB estimates a distribution given the data and then finds a hyperplane separating the data. This is subtly different 
 to Perceptron which finds a hyperplane separating the data directly.
-* Different flavours of NB exist and are used depending the properties of the features, x.
+* Different flavours of NB exist and are used depending the properties of the features, x.<sup>2</sup>
   * Categorical NB: When features take a categorical value. Ex: Patient Gender feature used to predict probability of a 
 certain disease.
   * Multinomial NB: When features values represent counts and not categorical values: Ex: Number of occurrences of a 
 word in an email that needs to be classified as spam or ham. 
-  * Gaussian NB: When features take on real values and follow a gaussian distribution. 
+  * Gaussian NB: When features take on continuous, real values and follow a gaussian distribution. 
 
 ### Classification And/Or Regression?
 Classification 
@@ -219,8 +219,9 @@ for Gaussian Naive Bayes classifiers if the variance of each feature is assumed 
 
 ### Strengths
 * They require a small amount of training data to estimate the necessary parameters.<sup>1</sup>
-* Naive Bayes learners and classifiers can be extremely fast compared to more sophisticated methods.<sup>1</sup>
-The decoupling of the class conditional feature distributions means that each distribution can be independently 
+* Naive Bayes learners and classifiers can be extremely fast [there is no model to "train"]<sup>5</sup> compared to more 
+sophisticated methods.<sup>1</sup>
+* The decoupling of the class conditional feature distributions means that each distribution can be independently 
 estimated as a one dimensional distribution. This in turn helps to alleviate problems stemming from the curse of 
 dimensionality.<sup>1</sup>
 
@@ -236,6 +237,40 @@ be slow to converge.<sup>4</sup>
 2. [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote05.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote05.html)
 3. [https://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf](https://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf)
 4. [Machine Learning Lecture 10 "Naive Bayes continued" -Cornell CS4780 SP17](https://youtu.be/rqB0XWoMreU?t=2722)
+5. [Naive Bayes vs Logistic Regression | Machine Learning Lecture 12 - Cornell CS4780 SP17](https://youtu.be/o6FfdP2uYh4?t=345)
+
+## Logistic Regression
+$$
+    P(y|\mathbf{x}_i)=\frac{1}{1+e^{-y(\mathbf{w}^T \mathbf{x}_i+b)}}
+$$
+
+### Classification And/Or Regression?
+Classification 
+
+### Real-World Applications
+todo
+
+### Properties and Assumptions
+* Discriminative and parametric learning algorithm.<sup>1</sup>
+* Discriminative counterpart of GNB.<sup>2</sup>
+* A linear model for classification.<sup>3</sup>
+* Unlike in Naive Bayes, in Logistic Regression we do not restrict ourselves in any way by making assumptions about 
+$$P(X|y)$$. This allows logistic regression to be more flexible, but such flexibility also requires more data to avoid
+overfitting.<sup>2</sup>
+* Typically, in scenarios with little data and if the modeling assumption is appropriate, Naive Bayes tends to 
+outperform Logistic Regression. However, as data sets become large logistic regression often outperforms Naive Bayes, 
+which suffers from the fact that the assumptions made on $$P(x|y)$$ are probably not exactly correct. If the assumptions 
+hold exactly, i.e. the data is truly drawn from the distribution that we assumed in Naive Bayes, then Logistic 
+Regression and Naive Bayes converge to the exact same result in the limit [but NB will be faster].<sup>2</sup>
+
+## Weaknesses
+* Can overfit, especially when there isn't much training data and the data has high dimensionality.<sup>4</sup> 
+
+### References
+1. Sec 8.1 Machine Learning A Probabilistic Perspective, Kevin P. Murphy
+2. [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote06.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote06.html)
+3. [https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
+4. [Problem with Logistic Regression | Naive Bayes vs Logistic Regression | Machine Learning Lecture 12 - Cornell CS4780 SP17](https://youtu.be/o6FfdP2uYh4?t=357)
 
 ## Decision Trees
 
@@ -291,6 +326,12 @@ approaches and are typically used in an ensemble.
 
 # Misc Definitions
 
+## Linear Models
+Linear classifiers decides class membership by comparing a linear combination of the features to a threshold.<sup>1</sup>
+
+### References
+1. [https://nlp.stanford.edu/IR-book/html/htmledition/linear-versus-nonlinear-classifiers-1.html](https://nlp.stanford.edu/IR-book/html/htmledition/linear-versus-nonlinear-classifiers-1.html)
+
 ## Parametric and Non-Parametric Models
 Models that have a fixed number of parameters are called Parametric models, while models in which number of parameters 
 grow with the amount of training data are called Non-Parametric models. Parametric models have the advantage of often 
@@ -299,8 +340,8 @@ Non-parametric models are more flexible, but often computationally intractable f
 
 Example: K-NN is non-parametric classifier. Linear and Logistic regression are examples of parametric models.    
 
-Ref:    
-  * Sec 1.4.1 Machine Learning A Probabilistic Perspective, Kevin P. Murphy
+### References    
+1. Sec 1.4.1 Machine Learning A Probabilistic Perspective, Kevin P. Murphy
 
 ## Generative and Discriminative Learning
 Generative classifiers learn a model of joint probability $$ p(x, y) $$, of the inputs x and the label y, and make their 
