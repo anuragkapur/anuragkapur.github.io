@@ -129,6 +129,11 @@ from sklearn.metrics import fbeta_score
 fbeta_score(y_test, y_pred, beta=0.5)
 ```
 
+# General Concepts
+
+## Gradient Descent
+* For gradient descent to be usable, the error function must be differentiable and continuous.
+
 # Supervised Learning
 
 [Supervised Learning - Notes](/assets/blog/engineering/ML-Supervised-Learning-Notes.pdf)
@@ -328,6 +333,19 @@ approaches and are typically used in an ensemble.
 
 ## Linear Models
 Linear classifiers decides class membership by comparing a linear combination of the features to a threshold.<sup>1</sup>
+
+## Softmax Function
+Given scores $$z_1, z_2, ..., z_n$$,     
+$$
+ P(class \: i) = \frac{e^{z_i}}{e^{z_1} + e^{z_2} + ... + e^{z_n}}
+$$  
+
+## Cross-Entropy
+Given probabilities $$ p_1, p_2, ..., p_m $$ of events happening and $$ y_1, y_2, ..., y_m $$ being a discrete function 
+with value 1 is the event actually happened and 0 if the event didn't actually happen, then,     
+$$
+  CrossEntropy = - \sum\limits_{i=1}^m y_iln(p_i) + (1-y_i)ln(1-p_i)
+$$     
 
 ### References
 1. [https://nlp.stanford.edu/IR-book/html/htmledition/linear-versus-nonlinear-classifiers-1.html](https://nlp.stanford.edu/IR-book/html/htmledition/linear-versus-nonlinear-classifiers-1.html)
