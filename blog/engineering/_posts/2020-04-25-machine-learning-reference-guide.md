@@ -265,6 +265,9 @@ todo
 * Discriminative and parametric learning algorithm.<sup>1</sup>
 * Discriminative counterpart of GNB.<sup>2</sup>
 * A linear model for classification.<sup>3</sup>
+* Logistic regression is a *generalized linear model*. Generalized linear models are, despite their name, not generally 
+considered linear models. They have a linear component, but the model itself is nonlinear due to the nonlinearity 
+introduced by the link function.<sup>5</sup>
 * Unlike in Naive Bayes, in Logistic Regression we do not restrict ourselves in any way by making assumptions about 
 $$P(X|y)$$. This allows logistic regression to be more flexible, but such flexibility also requires more data to avoid
 overfitting.<sup>2</sup>
@@ -282,6 +285,7 @@ Regression and Naive Bayes converge to the exact same result in the limit [but N
 2. [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote06.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote06.html)
 3. [https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
 4. [Problem with Logistic Regression, Naive Bayes vs Logistic Regression, Machine Learning Lecture 12 - Cornell CS4780 SP17](https://youtu.be/o6FfdP2uYh4?t=357)
+5. [Why-is-logistic-regression-considered-a-linear-model](https://www.quora.com/Why-is-logistic-regression-considered-a-linear-model)
 
 ## Decision Trees
 
