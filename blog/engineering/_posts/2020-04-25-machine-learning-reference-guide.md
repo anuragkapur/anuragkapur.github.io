@@ -280,7 +280,7 @@ Regression and Naive Bayes converge to the exact same result in the limit [but N
 1. Sec 8.1 Machine Learning A Probabilistic Perspective, Kevin P. Murphy
 2. [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote06.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote06.html)
 3. [https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
-4. [Problem with Logistic Regression | Naive Bayes vs Logistic Regression | Machine Learning Lecture 12 - Cornell CS4780 SP17](https://youtu.be/o6FfdP2uYh4?t=357)
+4. [Problem with Logistic Regression, Naive Bayes vs Logistic Regression, Machine Learning Lecture 12 - Cornell CS4780 SP17](https://youtu.be/o6FfdP2uYh4?t=357)
 
 ## Decision Trees
 
