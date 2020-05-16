@@ -42,12 +42,22 @@ math: true
     - [Strengths](#strengths-1)
     - [Weaknesses](#weaknesses-1)
     - [References](#references-3)
-  - [Decision Trees](#decision-trees)
+  - [Logistic Regression](#logistic-regression)
     - [Classification And/Or Regression?](#classification-andor-regression-3)
-    - [Strengths](#strengths-2)
-    - [Weaknesses](#weaknesses-2)
+    - [Real-World Applications](#real-world-applications-2)
+    - [Properties and Assumptions](#properties-and-assumptions-3)
+  - [Weaknesses](#weaknesses-2)
     - [References](#references-4)
-- [Misc Definitions](#misc-definitions)
+  - [Decision Trees](#decision-trees)
+    - [Classification And/Or Regression?](#classification-andor-regression-4)
+    - [Strengths](#strengths-2)
+    - [Weaknesses](#weaknesses-3)
+    - [References](#references-5)
+- [Misc Concepts](#misc-concepts)
+  - [Gradient Descent](#gradient-descent)
+  - [Linear Models](#linear-models)
+  - [Softmax Function](#softmax-function)
+  - [Cross-Entropy](#cross-entropy)
   - [Parametric and Non-Parametric Models](#parametric-and-non-parametric-models)
   - [Generative and Discriminative Learning](#generative-and-discriminative-learning)
   - [Maximum Likelihood Estimation, MLE and Maximum a Posteriori Probability Estimation, MAP](#maximum-likelihood-estimation-mle-and-maximum-a-posteriori-probability-estimation-map)
@@ -128,11 +138,6 @@ from sklearn.metrics import fbeta_score
 
 fbeta_score(y_test, y_pred, beta=0.5)
 ```
-
-# General Concepts
-
-## Gradient Descent
-* For gradient descent to be usable, the error function must be differentiable and continuous.
 
 # Supervised Learning
 
@@ -329,10 +334,16 @@ approaches and are typically used in an ensemble.
 * https://en.wikipedia.org/wiki/Decision_tree_learning
 * An Introduction to Statistical Learning, Gareth James et all
 
-# Misc Definitions
+# Misc Concepts
+
+## Gradient Descent
+* For gradient descent to be usable, the error function must be differentiable and continuous.
 
 ## Linear Models
 Linear classifiers decides class membership by comparing a linear combination of the features to a threshold.<sup>1</sup>
+
+Ref:        
+1. Sec 1.4.1 Machine Learning A Probabilistic Perspective, Kevin P. Murphy
 
 ## Softmax Function
 Given scores $$z_1, z_2, ..., z_n$$,     
@@ -347,8 +358,7 @@ $$
   CrossEntropy = - \sum\limits_{i=1}^m y_iln(p_i) + (1-y_i)ln(1-p_i)
 $$     
 
-### References
-1. [https://nlp.stanford.edu/IR-book/html/htmledition/linear-versus-nonlinear-classifiers-1.html](https://nlp.stanford.edu/IR-book/html/htmledition/linear-versus-nonlinear-classifiers-1.html)
+Higher the cross-entropy, lower the probability for an event.
 
 ## Parametric and Non-Parametric Models
 Models that have a fixed number of parameters are called Parametric models, while models in which number of parameters 
@@ -357,9 +367,6 @@ being faster to use, but the disadvantage of making stronger assumptions about t
 Non-parametric models are more flexible, but often computationally intractable for large datasets.    
 
 Example: K-NN is non-parametric classifier. Linear and Logistic regression are examples of parametric models.    
-
-### References    
-1. Sec 1.4.1 Machine Learning A Probabilistic Perspective, Kevin P. Murphy
 
 ## Generative and Discriminative Learning
 Generative classifiers learn a model of joint probability $$ p(x, y) $$, of the inputs x and the label y, and make their 
