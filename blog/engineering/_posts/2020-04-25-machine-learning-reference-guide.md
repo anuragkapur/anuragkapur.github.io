@@ -372,7 +372,8 @@ m = # of training examples
 n = # of features
 
 ## Gradient Descent
-[Sample Implementation for Logistic Regression](https://github.com/anuragkapur/udacity-into-to-machine-learning/blob/master/src/classroom/jupyter/gradient_descent.ipynb)
+* [Mathematical derivation](/assets/blog/engineering/machine-learning/udacity-into-ml/03-24-Gradient-Descent-Derivation-Logistic-Regression.pdf)
+* [Sample implementation for Logistic Regression](https://github.com/anuragkapur/udacity-into-to-machine-learning/blob/master/src/classroom/jupyter/gradient_descent.ipynb)
 * For gradient descent to be usable, the error function must be differentiable and continuous.
 
 ## Linear Models
