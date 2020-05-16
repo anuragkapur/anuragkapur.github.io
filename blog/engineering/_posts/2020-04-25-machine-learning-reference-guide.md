@@ -54,6 +54,7 @@ math: true
     - [Weaknesses](#weaknesses-3)
     - [References](#references-5)
 - [Misc Concepts](#misc-concepts)
+  - [Vector of Training Examples, Labels, Model Parameters](#vector-of-training-examples-labels-model-parameters)
   - [Gradient Descent](#gradient-descent)
   - [Linear Models](#linear-models)
   - [Softmax Function](#softmax-function)
