@@ -336,7 +336,42 @@ approaches and are typically used in an ensemble.
 
 # Misc Concepts
 
+## Vector of Training Examples, Labels, Model Parameters
+Training examples,
+$$
+X = \begin{bmatrix} 
+    x_{0}^{0} & x_{1}^{0} & \dots & x_{n}^{0} \\
+    x_{0}^{1} & x_{1}^{1} & \dots & x_{n}^{1} \\
+    \vdots    & \vdots    &\ddots & \vdots    \\
+    x_{0}^{m} & x_{1}^{m} & \dots & x_{n}^{m} \\
+    \end{bmatrix}_{m \times n}
+$$
+Labels,
+$$
+Y = \begin{bmatrix}
+    y_1    \\
+    y_2    \\
+    \vdots \\
+    y_n
+    \end{bmatrix}_{n \times 1}
+$$
+Model params / weights, 
+$$
+W = \begin{bmatrix}
+    w_1    \\
+    w_2    \\
+    \vdots \\
+    w_n
+    \end{bmatrix}_{n \times 1}
+$$    
+
+where,     
+$$x_j^i$$ = value of feature $$j$$ in $$i^{th}$$ training example    
+m = # of training examples    
+n = # of features
+
 ## Gradient Descent
+[Sample Implementation for Logistic Regression](https://github.com/anuragkapur/udacity-into-to-machine-learning/blob/master/src/classroom/jupyter/gradient_descent.ipynb)
 * For gradient descent to be usable, the error function must be differentiable and continuous.
 
 ## Linear Models
