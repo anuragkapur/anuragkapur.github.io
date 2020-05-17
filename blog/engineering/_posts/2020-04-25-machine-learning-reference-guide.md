@@ -376,7 +376,7 @@ m = # of training examples
 n = # of features
 
 ## Gradient Descent
-* [Mathematical derivation using Log-loss Error Function](/assets/blog/engineering/machine-learning/udacity-into-ml/03-24-Gradient-Descent-Derivation-Logistic-Regression.pdf)
+* [Mathematical derivation using Log-loss Error Function](https://github.com/anuragkapur/udacity-into-to-machine-learning/blob/master/course-downloads/text/03-01-Gradient-Descent-Derivation-Logistic-Regression.pdf)
 * [Sample implementation for Logistic Regression](https://github.com/anuragkapur/udacity-into-to-machine-learning/blob/master/src/classroom/jupyter/gradient_descent.ipynb)
 * For gradient descent to be usable, the error function must be differentiable and continuous.
 
