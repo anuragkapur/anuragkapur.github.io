@@ -248,7 +248,7 @@ be slow to converge.<sup>4</sup>
 2. [https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote05.html](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote05.html)
 3. [https://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf](https://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf)
 4. [Machine Learning Lecture 10 "Naive Bayes continued" -Cornell CS4780 SP17](https://youtu.be/rqB0XWoMreU?t=2722)
-5. [Naive Bayes vs Logistic Regression | Machine Learning Lecture 12 - Cornell CS4780 SP17](https://youtu.be/o6FfdP2uYh4?t=345)
+5. [Naive Bayes vs Logistic Regression, Machine Learning Lecture 12 - Cornell CS4780 SP17](https://youtu.be/o6FfdP2uYh4?t=345)
 
 ## Logistic Regression
 $$
