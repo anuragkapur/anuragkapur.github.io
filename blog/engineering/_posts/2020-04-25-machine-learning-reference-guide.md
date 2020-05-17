@@ -276,6 +276,8 @@ outperform Logistic Regression. However, as data sets become large logistic regr
 which suffers from the fact that the assumptions made on $$P(x|y)$$ are probably not exactly correct. If the assumptions 
 hold exactly, i.e. the data is truly drawn from the distribution that we assumed in Naive Bayes, then Logistic 
 Regression and Naive Bayes converge to the exact same result in the limit [but NB will be faster].<sup>2</sup>
+* Logistic regression typically optimizes the log loss for all the observations on which it is trained, which is the 
+same as optimizing the average cross-entropy in the sample.<sup>6</sup>
 
 ## Weaknesses
 * Can overfit, especially when there isn't much training data and the data has high dimensionality.<sup>4</sup> 
@@ -286,6 +288,7 @@ Regression and Naive Bayes converge to the exact same result in the limit [but N
 3. [https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
 4. [Problem with Logistic Regression, Naive Bayes vs Logistic Regression, Machine Learning Lecture 12 - Cornell CS4780 SP17](https://youtu.be/o6FfdP2uYh4?t=357)
 5. [Why-is-logistic-regression-considered-a-linear-model](https://www.quora.com/Why-is-logistic-regression-considered-a-linear-model)
+6. [Cross-entropy loss function and logistic regression](https://en.wikipedia.org/wiki/Cross_entropy#Cross-entropy_loss_function_and_logistic_regression)
 
 ## Decision Trees
 
@@ -376,9 +379,9 @@ m = # of training examples
 n = # of features
 
 ## Gradient Descent
-* [Mathematical derivation using Log-loss Error Function](https://github.com/anuragkapur/udacity-into-to-machine-learning/blob/master/course-downloads/text/03-01-Gradient-Descent-Derivation-Logistic-Regression.pdf)
-* [Sample implementation for Logistic Regression](https://github.com/anuragkapur/udacity-into-to-machine-learning/blob/master/src/classroom/jupyter/gradient_descent.ipynb)
 * For gradient descent to be usable, the error function must be differentiable and continuous.
+* [Mathematical derivation using Log-loss Error Function](https://github.com/anuragkapur/udacity-into-to-machine-learning/blob/master/course-downloads/text/03-01-Gradient-Descent-Derivation-Logistic-Regression.pdf)
+* [Sample implementation for Logistic Regression using log-loss error function](https://github.com/anuragkapur/udacity-into-to-machine-learning/blob/master/src/classroom/jupyter/gradient_descent.ipynb)
 
 ## Linear Models
 Linear classifiers decides class membership by comparing a linear combination of the features to a threshold.<sup>1</sup>
