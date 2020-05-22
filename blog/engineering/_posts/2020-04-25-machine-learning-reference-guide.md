@@ -342,6 +342,88 @@ approaches and are typically used in an ensemble.
 * https://en.wikipedia.org/wiki/Decision_tree_learning
 * An Introduction to Statistical Learning, Gareth James et all
 
+# Unsupervised Learning
+Two popular methods for unsupervised learning:
+* Clustering
+* Dimensionality Reduction
+
+## K-Means
+* [Visualising K-Means Clustering](https://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
+
+### Properties
+* Distance, from centroid, based clustering algorithm
+* Needs feature scaling since the algorithm relies on distances of data points from centroid 
+
+### Weaknesses
+* Fails on non-spherical clusters, example: [two crescent data set](https://rdrr.io/cran/clusterSim/man/shapes.two.moon.html)
+
+### Real-world Applications
+* Recommendation systems - movies, music, books etc
+
+## Hierarchical [aka Agglomerative] clustering
+* Single link
+* Complete link
+* Average link
+* Ward method
+
+### Real-World Applications
+* [Clustering of Secreted Protein Families to Classify and Rank Candidate Effectors of Rust Fungi](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029847)
+* [Association Between Composition of the Human Gastrointestinal Microbiome and Development of Fatty Liver With Choline Deficiency](https://pubmed.ncbi.nlm.nih.gov/21129376/)
+
+### Properties 
+* Distance based approach, hence needs feature scaling
+* Single link method is more prone to result in elongated shapes that are not necessarily compact or circular 
+because it looks at the closest point to the cluster, that can result in clusters of various shapes.<sup>2</sup>
+
+### Strengths 
+* Resulting hierarchical representation can be very informative<sup>1</sup>
+* Provides additional ability to visualise<sup>1</sup>
+* Especially potent when dataset contains real hierarchical relationships<sup>1</sup>
+
+### Weaknesses
+* Sensitive to noise and outliers<sup>1</sup>
+* Computationally intensive $$O(N^2)$$<sup>1</sup>
+
+### References
+1. [Udacity - Intro to ML Nanodegree - 3.2.9 - Hierarchical Clustering Examples and Applications](https://www.udacity.com/course/intro-to-machine-learning-nanodegree--nd229)
+2. [Udacity - Intro to ML Nanodegree - 3.2.10 - Hierarchical Clustering Quiz](https://www.udacity.com/course/intro-to-machine-learning-nanodegree--nd229)
+
+## Density Based Spatial Clustering of Applications with Noise [DBSCAN]
+Density Based Spatial Clustering of Applications with Noise    
+
+### Real-World Applications
+* Network traffic classification - what traffic is bitorrent related vs normal, when you can't peek at the data packets 
+themselves
+
+### Properties 
+* Density based clustering algorithm
+
+### Strengths
+* No need to specify number of clusters<sup>1<sup>
+* Flexibility in the shapes and sizes of clusters<sup>1<sup>
+* ABle to deal with noise and outliers<sup>1<sup>
+
+### Weaknesses
+* Border points reachable from two cluster are assigned to a cluster arbitrarily<sup>1<sup>
+* Faces difficulty finding cluster of varying densities<sup>1<sup>
+
+### References
+1. [Udacity - Intro to ML Nanodegree - 3.2.15 - DBSCAN Examples and Applications](https://www.udacity.com/course/intro-to-machine-learning-nanodegree--nd229)
+
+## Gaussian Mixture Model
+
+### Strengths
+* Soft-clustering [sample membership of multiple clusters]<sup>1</sup>
+* Cluster shape flexibility<sup>1</sup>
+
+### Weaknesses
+* Sensitive to initialisation values<sup>1</sup>
+* Possible to converge to a local optimum<sup>1</sup>
+* Slow convergence rate<sup>1</sup>
+
+### References
+1. [Udacity - Intro to ML Nanodegree - 3.3.14 - GMM Examples and Applications](https://www.udacity.com/course/intro-to-machine-learning-nanodegree--nd229)
+
 # Misc Concepts
 
 ## Vector of Training Examples, Labels, Model Parameters
