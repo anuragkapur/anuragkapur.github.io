@@ -53,6 +53,31 @@ math: true
     - [Strengths](#strengths-2)
     - [Weaknesses](#weaknesses-3)
     - [References](#references-5)
+- [Unsupervised Learning](#unsupervised-learning)
+  - [K-Means](#k-means)
+    - [Properties](#properties)
+    - [Weaknesses](#weaknesses-4)
+    - [Real-world Applications](#real-world-applications)
+  - [Hierarchical [aka Agglomerative] clustering](#hierarchical-aka-agglomerative-clustering)
+    - [Real-World Applications](#real-world-applications-3)
+    - [Properties](#properties-1)
+    - [Strengths](#strengths-3)
+    - [Weaknesses](#weaknesses-5)
+    - [References](#references-6)
+  - [Density Based Spatial Clustering of Applications with Noise [DBSCAN]](#density-based-spatial-clustering-of-applications-with-noise-dbscan)
+    - [Real-World Applications](#real-world-applications-4)
+    - [Properties](#properties-2)
+    - [Strengths](#strengths-4)
+    - [Weaknesses](#weaknesses-6)
+    - [References](#references-7)
+  - [Gaussian Mixture Model](#gaussian-mixture-model)
+    - [Strengths](#strengths-5)
+    - [Weaknesses](#weaknesses-7)
+    - [References](#references-8)
+  - [Independent Component Analysis [ICA]](#independent-component-analysis-ica)
+    - [Real-World Applications](#real-world-applications-5)
+    - [Properties](#properties-3)
+    - [References](#references-9)
 - [Misc Concepts](#misc-concepts)
   - [Vector of Training Examples, Labels, Model Parameters](#vector-of-training-examples-labels-model-parameters)
   - [Gradient Descent](#gradient-descent)
@@ -63,6 +88,7 @@ math: true
   - [Generative and Discriminative Learning](#generative-and-discriminative-learning)
   - [Maximum Likelihood Estimation, MLE and Maximum a Posteriori Probability Estimation, MAP](#maximum-likelihood-estimation-mle-and-maximum-a-posteriori-probability-estimation-map)
   - [Accuracy, Precision and Recall](#accuracy-precision-and-recall)
+  - [Eigenvalues and Eigenvectors](#eigenvalues-and-eigenvectors)
 - [Misc Math](#misc-math)
   - [Lines](#lines)
   - [Vectors](#vectors)
@@ -424,6 +450,21 @@ themselves
 ### References
 1. [Udacity - Intro to ML Nanodegree - 3.3.14 - GMM Examples and Applications](https://www.udacity.com/course/intro-to-machine-learning-nanodegree--nd229)
 
+## Independent Component Analysis [ICA]
+
+### Real-World Applications
+* Transform EEG scan data to do blind source separation<sup>3</sup>
+
+### Properties
+* ICA needs as many observations as the original signals we are trying to separate<sup>1</sup>
+* Assumes components are statistically independent<sup>2</sup>
+* Components must have non-gaussian distributions<sup>2</sup>
+
+### References
+1. [Udacity - Intro to ML Nanodegree - 3.5.6 - ICA Quiz](https://www.udacity.com/course/intro-to-machine-learning-nanodegree--nd229)
+2. [Udacity - Intro to ML Nanodegree - 3.5.5 - FastICA Algorithm](https://www.udacity.com/course/intro-to-machine-learning-nanodegree--nd229)
+3. [Independent Component Analysis of Electroencephalographic Data](http://papers.nips.cc/paper/1091-independent-component-analysis-of-electroencephalographic-data.pdf)
+
 # Misc Concepts
 
 ## Vector of Training Examples, Labels, Model Parameters
@@ -530,6 +571,10 @@ $$ Precision = \dfrac{True Positive}{True Positive + False Positive} $$
 true positives [words classified as spam, and which are actually spam] to all the words that were actually spam.    
 **High Recall = Ok if not all are sick, but find all sick people**    
 $$ Recall = \dfrac{True Positive}{True Positive + False Negative} $$
+
+## Eigenvalues and Eigenvectors
+An eigenvalue is the same as the amount of variability captured by a principal component, and an eigenvector is the 
+principal component itself
 
 # Misc Math
 
