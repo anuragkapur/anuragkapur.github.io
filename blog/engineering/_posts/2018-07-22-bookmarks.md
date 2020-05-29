@@ -15,7 +15,7 @@ permalink: /blog/bookmarks
 - [Programming](#programming)
   - [JVM](#jvm)
     - [Reactive programming](#reactive-programming)
-    - [Java 8](#java-8)
+    - [Java](#java)
     - [Testing](#testing)
   - [Javascript](#javascript)
   - [Misc](#misc)
@@ -44,8 +44,9 @@ permalink: /blog/bookmarks
 * [Reactive Spring 5 Demo Video](https://www.infoq.com/presentations/reactive-spring-5)
 * [Project Reactor - Reference Guide](http://projectreactor.io/docs/core/release/reference/)
 
-### Java 8
+### Java
 * [Effective use of Optionals](https://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html)
+* [Upgrading from Java 8 to Java 12](https://www.infoq.com/articles/upgrading-java-8-to-12/)
 
 ### Testing
 * [Spring - Web Testing](https://spring.io/guides/gs/testing-web/)
