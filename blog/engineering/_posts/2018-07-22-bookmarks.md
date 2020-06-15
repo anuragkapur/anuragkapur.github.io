@@ -63,6 +63,10 @@ permalink: /blog/bookmarks
 ## GraphQL
 * [GraphQL tutorials](https://www.howtographql.com)
 
+# Datbases
+## Postgres
+* [Queues in PostgreSQL](https://www.youtube.com/watch?v=B81nQLg4RuU)
+
 # Architecture
 ## Microservices
 * [Microservices](https://martinfowler.com/articles/microservices.html)
