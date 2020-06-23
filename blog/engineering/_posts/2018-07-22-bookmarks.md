@@ -92,6 +92,9 @@ permalink: /blog/bookmarks
 ## Testing
 * [Practical Testing Pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)
 
+# Engineering Management
+* [Spotify's Failed Squad Goals](https://www.jeremiahlee.com/posts/failed-squad-goals/)
+
 # Digital Marketing
 * [Digital Marketing Primer](https://www.analyticsvidhya.com/blog/2018/12/guide-digital-marketing-analytics/)
 
