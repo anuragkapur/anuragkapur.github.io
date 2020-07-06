@@ -120,6 +120,12 @@ $ git pull
 $ git merge upstream/master
 ```
 
+## Force update fork from upstream
+```
+git reset --hard upstream/master
+git push --force
+```
+
 # Git submodules
 ## Init and update submodules
 ```shell
