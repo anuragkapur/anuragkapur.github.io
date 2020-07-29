@@ -2,9 +2,10 @@
 layout: post
 title:  "Containers cheat sheet"
 teaser: Containers cheat sheet - docker, kubernetes, eks
-date:   2019-04-20 00:00:00 +0000
+date:   2020-07-29 00:00:00 +0000
 categories: cheat-sheets
 tags: cheat-sheets
+permalink: /blog/cheat-sheets/containers
 ---
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -16,10 +17,13 @@ tags: cheat-sheets
   - [Build image from dockerfile](#build-image-from-dockerfile)
   - [Remove image](#remove-image)
   - [Run an image](#run-an-image)
+  - [Stop a container](#stop-a-container)
+  - [List containers](#list-containers)
   - [Docker system cleanup](#docker-system-cleanup)
   - [Login and pull image from AWS ECR](#login-and-pull-image-from-aws-ecr)
   - [Push image to container registry](#push-image-to-container-registry)
   - [Copy file from container to localhost](#copy-file-from-container-to-localhost)
+  - [SSH into container](#ssh-into-container)
 - [Kubernetes](#kubernetes)
   - [Get pods and node info](#get-pods-and-node-info)
     - [Ger pods filtered by a label](#ger-pods-filtered-by-a-label)
@@ -73,6 +77,11 @@ docker run -p 8080:3000 anuragkapur/node-docker-hello-world
 ## Stop a container
 ```shell
 docker stop <containerId>
+```
+
+## List containers
+```shell
+docker container ls
 ```
 
 ## Docker system cleanup
