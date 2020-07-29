@@ -29,6 +29,10 @@ tags: cheat-sheets
 
 The `^M` is typed using Ctrl-V-Enter
 
+## Delete all lines containing a pattern
+
+    :g/pattern/d
+
 ## Remove all lines
 
     :0
