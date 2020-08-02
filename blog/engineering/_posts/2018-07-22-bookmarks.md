@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Bookmarks"
-date:   2018-07-22 22:14:00 +0000   
+date:   2018-07-22 22:14:00 +0000
+lastUpdatedDate: 2020-06-23 22:14:00 +0000
 categories: engineering
 tags: engineering
 teaser: Useful bookmarks - a collection of engineering related online resources
