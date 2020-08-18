@@ -2,7 +2,7 @@
 layout: post
 title:  "Bookmarks"
 date:   2018-07-22 22:14:00 +0000
-lastUpdatedDate: 2020-06-23 22:14:00 +0000
+lastUpdatedDate: 2020-08-19 00:00:00 +0000
 categories: engineering
 tags: engineering
 teaser: Useful bookmarks - a collection of engineering related online resources
@@ -21,6 +21,8 @@ permalink: /blog/bookmarks
   - [Javascript](#javascript)
   - [Misc](#misc)
   - [GraphQL](#graphql)
+- [Datbases](#datbases)
+  - [Postgres](#postgres)
 - [Architecture](#architecture)
   - [Microservices](#microservices)
   - [CQRS](#cqrs)
@@ -28,6 +30,7 @@ permalink: /blog/bookmarks
   - [Misc](#misc-1)
 - [Agile Engineering Practices](#agile-engineering-practices)
   - [Testing](#testing-1)
+- [Engineering Management](#engineering-management)
 - [Digital Marketing](#digital-marketing)
 - [Systems Engineering](#systems-engineering)
   - [Modelica](#modelica)
@@ -60,6 +63,7 @@ permalink: /blog/bookmarks
 ## Misc
 * [ASCII table](https://www.asciitable.com/)
 * [Unicode and encoding basics](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+* [Concurrency vs Parallelism](https://stackoverflow.com/questions/1050222/what-is-the-difference-between-concurrency-and-parallelism)
 
 ## GraphQL
 * [GraphQL tutorials](https://www.howtographql.com)
