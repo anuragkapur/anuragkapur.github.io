@@ -71,6 +71,7 @@ permalink: /blog/bookmarks
 # Datbases
 ## Postgres
 * [Queues in PostgreSQL](https://www.youtube.com/watch?v=B81nQLg4RuU)
+* [Transaction Isolation](https://pgdash.io/blog/postgres-transactions.html)
 
 # Architecture
 ## Microservices
