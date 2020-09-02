@@ -21,7 +21,7 @@ permalink: /blog/bookmarks
   - [Javascript](#javascript)
   - [Misc](#misc)
   - [GraphQL](#graphql)
-- [Datbases](#datbases)
+- [Databases](#databases)
   - [Postgres](#postgres)
 - [Architecture](#architecture)
   - [Microservices](#microservices)
@@ -68,10 +68,13 @@ permalink: /blog/bookmarks
 ## GraphQL
 * [GraphQL tutorials](https://www.howtographql.com)
 
-# Datbases
+# Databases
 ## Postgres
 * [Queues in PostgreSQL](https://www.youtube.com/watch?v=B81nQLg4RuU)
 * [Transaction Isolation](https://pgdash.io/blog/postgres-transactions.html)
+* [Sharding with PostgreSQL 11](https://pgdash.io/blog/postgres-11-sharding.html)
+* [HA, Replication and Scaling Reads](https://blog.timescale.com/blog/scalable-postgresql-high-availability-read-scalability-streaming-replication-fb95023e2af/)
+* [AWS RDS: PostgreSQL, Load-balancing Across Read-replicas](https://aws.amazon.com/premiumsupport/knowledge-center/requests-rds-read-replicas/)
 
 # Architecture
 ## Microservices
