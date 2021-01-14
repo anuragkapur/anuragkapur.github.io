@@ -50,6 +50,9 @@ git revert -m 1 [sha_of_merge_commit]
 ```shell
 git commit --amend
 # Ref: https://help.github.com/articles/changing-a-commit-message/
+
+# Amend author info associated with commit
+git commit --amend --reset-author
 ```
 
 ## Rewrite history after pushing to remote
