@@ -76,6 +76,22 @@ git pull origin master
 git pull --allow-unrelated-histories
 ```
 
+# Signing commits
+## Check git knows about your GPG signing key
+```shell
+git config --global user.signingkey
+```
+
+## Configure project to sign all commits
+```shell
+git config commit.gpgsign true
+```
+
+## Configure git user to match that associated with GPG key
+```shell
+git config user.email 864639+anuragkapur@users.noreply.github.com
+```
+
 # Branches
 
 ## Delete remote branch
