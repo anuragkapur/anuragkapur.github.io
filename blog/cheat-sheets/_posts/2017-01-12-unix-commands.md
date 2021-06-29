@@ -32,10 +32,13 @@ tags: cheat-sheets
 - [CentOS](#centos)
   - [Manage network interfaces](#manage-network-interfaces)
 - [Ubuntu](#ubuntu)
+  - [Switch between apt-get installed java versions](#switch-between-apt-get-installed-java-versions)
 - [AWS CLI](#aws-cli)
   - [S3 copy/download](#s3-copydownload)
   - [S3 upload object](#s3-upload-object)
   - [EB get saved config](#eb-get-saved-config)
+  - [Cloud Watch - Describe Subscription Filters](#cloud-watch---describe-subscription-filters)
+  - [Cloud Watch - Update Subscription Filter](#cloud-watch---update-subscription-filter)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
