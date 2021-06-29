@@ -3,6 +3,7 @@ layout: post
 title:  "Unix commands cheat sheet"
 teaser: Cheat sheet for misc unix commands
 date:   2017-01-12 10:37:00 +0000
+lastUpdatedDate: 2021-06-29 00:00:00 +0000
 categories: cheat-sheets
 tags: cheat-sheets
 ---
@@ -144,6 +145,11 @@ $ nmtui
 ```shell
 mkdir $HOME/Shared
 /usr/bin/vmhgfs-fuse -o auto_unmount .host:/ $HOME/Shared
+```
+
+## Switch between apt-get installed java versions
+```
+sudo update-alternatives --config java
 ```
 
 # AWS CLI
