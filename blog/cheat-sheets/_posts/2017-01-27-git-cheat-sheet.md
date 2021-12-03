@@ -115,6 +115,7 @@ git push --set-upstream origin new_branch_name
 
 ## Default branch name config
 ```
+# Needs git version >=2.28
 git config --global init.defaultBranch main
 ```
 
