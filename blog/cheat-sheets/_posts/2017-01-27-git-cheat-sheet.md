@@ -3,6 +3,7 @@ layout: post
 title:  "GIT cheat sheet"
 teaser: Cheat sheet for the GIT command line
 date:   2017-01-27 12:09:26 +0000
+lastUpdatedDate: 2021-12-03 00:00:00 +0000
 categories: cheat-sheets
 tags: cheat-sheets
 ---
@@ -104,6 +105,11 @@ $ git push origin --delete <branch-name>
 git branch -m old_branch_name new_branch_name
 git push origin :old_branch_name
 git push --set-upstream origin new_branch_name
+```
+
+## Default branch name config
+```
+git config --global init.defaultBranch main
 ```
 
 # Tags
