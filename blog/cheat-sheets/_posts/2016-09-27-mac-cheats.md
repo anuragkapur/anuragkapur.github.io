@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Brew](#brew)
+  - [List installed brew packages](#list-installed-brew-packages)
+  - [Uninstall a package installed via brew](#uninstall-a-package-installed-via-brew)
+  - [List services](#list-services)
+- [Disable apple security that prevents packages by unidentified developers from being opened (tested on macOS Sierra)](#disable-apple-security-that-prevents-packages-by-unidentified-developers-from-being-opened-tested-on-macos-sierra)
+- [Utilities](#utilities)
+  - [Find process using a specific port](#find-process-using-a-specific-port)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 layout: post
 title:  "MacOS cheats"

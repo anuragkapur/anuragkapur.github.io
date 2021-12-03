@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [JSON processing](#json-processing)
+  - [Jackson ignore unknown field annotation](#jackson-ignore-unknown-field-annotation)
+- [Spring](#spring)
+  - [Testing - Setup Environment for a single Controller, doesn't start server](#testing---setup-environment-for-a-single-controller-doesnt-start-server)
+  - [Testing - Setup Environment with an embedded server](#testing---setup-environment-with-an-embedded-server)
+  - [Rest Template](#rest-template)
+  - [Get request with request headers](#get-request-with-request-headers)
+- [IO](#io)
+  - [Write to File](#write-to-file)
+  - [Read from File](#read-from-file)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # JSON processing
 ## Jackson ignore unknown field annotation
 ```java
