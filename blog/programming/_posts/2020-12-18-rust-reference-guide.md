@@ -3,7 +3,7 @@ layout: post
 title:  "Rust Reference Guide"
 date:   2020-12-18 00:00:00 +0000   
 lastUpdatedDate: 2020-12-18 00:00:00 +0000
-categories: programming rust highlight
+categories: programming rust
 tags: programming
 teaser: My Rust reference guide, created when taking courses, experimenting and coming across stuff during projects 
 img-url: /assets/blog/programming/rust_programming_language_black_logo.svg.png

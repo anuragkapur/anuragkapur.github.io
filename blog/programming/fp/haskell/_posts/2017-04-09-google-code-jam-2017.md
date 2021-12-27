@@ -2,7 +2,7 @@
 layout: post
 title:  "Google Code Jam 2017"
 date:   2017-04-09 23:00:00 +0000   
-categories: highlight programming
+categories: programming
 tags: programming
 teaser: Summary of my participation in annual Google code jam event
 permalink: /blog/google-code-jam-2017

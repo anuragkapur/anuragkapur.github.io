@@ -6,6 +6,6 @@
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h3>
     <p>{{ post.teaser }} <a href="{{ post.url | prepend: site.baseurl }}" target="_blank">Read more...</a></p>
-    <span class="post-meta">Tags: <a href="/blog/{{post.tags}}">{{post.tags}}</a>
+    <span class="post-meta">Tags: <a href="/blog/{{post.tags}}">{{post.tags}}</a> | Published: {{post.date | date_to_long_string: "ordinal", "US"}}
     <hr>
 </li>

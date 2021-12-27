@@ -6,16 +6,11 @@ title: Blog
 <div class="container-fluid">
 
   <div class="row-fluid">
-    <h3 class="page-heading">Posts, Notes and Scribbles</h3>
     <div class="span8">
+      <h3 class="page-heading">Posts, Notes and Scribbles</h3>
       <ul class="post-list">
         {% assign odd = "true" %}
         {% for post in site.posts %}
-<!--        {% if odd == "true" %}-->
-<!--        {% assign odd = "false" %}-->
-<!--        {% else odd == "false" %}-->
-<!--        {% assign odd = "true" %}-->
-<!--        {% endif %}-->
         {% include post-list-item.html %}
         {% endfor %}
       </ul>
