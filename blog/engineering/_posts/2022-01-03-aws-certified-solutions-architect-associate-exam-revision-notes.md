@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AWS Solutions Architect Associate Certification - Exam Revision Guide"
+title:  "AWS Certified Solutions Architect - Associate - Exam Revision Guide"
 date:   2022-01-03 00:00:00 +0000   
 categories: engineering
 tags: engineering
