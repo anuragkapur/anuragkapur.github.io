@@ -12,7 +12,7 @@ teaser: Notes taken while taking the A Cloud Guru course to prepare for the cert
 * Default message retention period is 4 days, min is 1 minute and max is 14 days
 * Delivery delay: default is 9 and can be set to a max of 15 minutes
 * Queue types: standard and FIFO
-* Use FIFO is message ordering is important
+* Use FIFO if message ordering is important
 * Polling types: long and short polling
 * Max long polling wait time is 20 seconds
 * Long polling helps reduce cost of using SQS by elimination the number of empty responses and false empty responses
@@ -38,3 +38,26 @@ DLQ
 * Notable features
   * Web Application Firewall (WAF)
   * Rate limiting and DDoS protection
+
+### Redshift
+* Can store up to 16 PB of data
+* A relational database
+* A redshift cluster lives in a single AZ and thus not highly available
+
+### Elastic Map Reduce (EMR)
+* EMR cluster nodes are EC2 instances and thus live inside a VPC
+* EC2 spot and reserved instances can be used to reduce EMR cluster costs
+
+### Kinesis
+* Real-time data streaming service
+* 2 types of Kinesis services
+  * Data streams: real-time streaming for ingesting data; does not scale automatically
+  * Data firehouse: (near real-time) data transfer tool to get information to S3, Redshift, Elasticsearch, or Splunk; 
+  scaling is managed by AWS
+* Kinesis can store data for uo to a year as opposed to SQS which has a max 14 day retention period
+* Kinesis Data Analytics allows data transformation using SQL as it flows through Kinesis
+
+### Athena and Glue
+* Athena is a serverless interactive query service that can analyse data in S3 using SQL
+* Glue is serverless data integration service for ETL workloads
+* Glue can be used to build a schema of data and Athena can use used to query this data stored in S3
