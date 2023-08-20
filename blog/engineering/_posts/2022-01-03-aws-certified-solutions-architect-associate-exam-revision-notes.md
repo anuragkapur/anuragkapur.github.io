@@ -8,14 +8,77 @@ tags: engineering aws certification
 teaser: Notes taken while taking the ACloudGuru and AWS Skill Builder courses to prepare for the certification exam
 ---
 
-### AWS Fundamentals
-* Key services to know for the exam
-  * Compute: EC2, Lambda, Elastic Beanstalk
-  * Storage: S3, EBS, EFS, FSx, Storage Gateway
-  * Databases: RDS, DynamoDB, Redshift
-  * Networking: VPCs, Direct Connect, Route 53, API Gateway, AWS Global Accelerator
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
 
-### Simple Storage Service (S3)
+- [Exam Domains and Overview (SAA-CO3)](#exam-domains-and-overview-saa-co3)
+  - [Recommended Whitepapers](#recommended-whitepapers)
+- [AWS Fundamentals](#aws-fundamentals)
+- [Simple Storage Service (S3)](#simple-storage-service-s3)
+- [Elastic Compute Cloud (EC2)](#elastic-compute-cloud-ec2)
+- [Simple Queue Service (SQS)](#simple-queue-service-sqs)
+- [Simple Notification Service (SNS)](#simple-notification-service-sns)
+- [API Gateway](#api-gateway)
+- [Redshift](#redshift)
+- [Elastic Map Reduce (EMR)](#elastic-map-reduce-emr)
+- [Kinesis](#kinesis)
+- [Athena and Glue](#athena-and-glue)
+- [AWS Lambda](#aws-lambda)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Exam Overview (SAA-CO3)
+### Exam domains
+1. Design secure architectures - 30%
+2. Design resilient architectures - 26%
+3. Design high-performing architectures - 24%
+4. Design cost-optimised architectures - 20%
+
+### Key services to know for the exam
+* Compute: EC2, Lambda, Elastic Beanstalk
+* Storage: S3, EBS, EFS, FSx, Storage Gateway
+* Databases: RDS, DynamoDB, Redshift
+* Networking: VPCs, Direct Connect, Route 53, API Gateway, AWS Global Accelerator
+
+### Misc
+* 65 questions (50 scored and 15 un-scored); 130 minutes
+
+### Recommended Whitepapers
+* [AWS Well-Architected Framework](/assets/blog/engineering/wellarchitected-framework.pdf)
+* [AWS Security Best Practices](https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/security-of-the-aws-infrastructure.html)
+
+## AWS Fundamentals
+* AWS global infrastructure
+  * 24+ regions, 77+ availability zones, 215+ edge locations
+  * Edge locations are networking points of presence typically used for caching content (using CloudFront)
+* 6 pillars of well-architected framework
+  * Operational Excellence
+  * Performance Efficiency
+  * Security
+  * Cost Optimisation
+  * Reliability
+  * Sustainability
+
+## Identity and Access Management (IAM)
+* IAM does not require region selection; it's a global service
+* Policy documents
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "*",
+      "Resource": "*"
+    }
+  ]
+}
+```
+* Policy documents can be attached to groups, users (not recommended; users should inherit policy from groups instead) and roles
+* AWS Security Token Service (AWS STS) can be used to, among other things, allow IAM users to assume a role with specific permissions as set out in an IAM policy
+
+## Simple Storage Service (S3)
 * Object-based storage for files up to 5 TB
 * No limit on total volume of date and number of objects that may be stored
 * S3 has a universal namespace (https://bucket-name.s3.region.amazonaws.com/key-name)
@@ -55,7 +118,7 @@ teaser: Notes taken while taking the ACloudGuru and AWS Skill Builder courses to
 * When S3 replication is turned on, existing objects in a bucket are not replicated automatically
 * With S3 replication delete markets are not replicated by default
 
-### Elastic Compute Cloud (EC2)
+## Elastic Compute Cloud (EC2)
 * Pricing options
   * On-demand
   * Spot (discount up to 90%)
@@ -68,7 +131,7 @@ teaser: Notes taken while taking the ACloudGuru and AWS Skill Builder courses to
 * User data (bootstrap scripts) can access metadata (such as instance name, public IP etc)
 * 
 
-### Simple Queue Service (SQS)
+## Simple Queue Service (SQS)
 * Max message size is 256 KB of text in any format
 * Default message retention period is 4 days, min is 1 minute and max is 14 days
 * Delivery delay: default is 9 and can be set to a max of 15 minutes
@@ -85,7 +148,7 @@ visibility timeout, or missing consumer logic to delete the message after succes
 DLQ
 * CloudWatch can be used to monitor queue depth of DLQ
 
-### Simple Notification Service (SNS)
+## Simple Notification Service (SNS)
 * Used for proactive push notifications
 * Can be used to set up alarms in CloudWatch
 * Available subscribers: Kinesis data firehose, SQS, Lambda, email, HTTP(S), SMS, platform application endpoint
@@ -95,21 +158,21 @@ DLQ
 * FIFO and Standard SNS topics available
 * Messages are encrypted in transit by default and encryption at rest can be optionally added
 
-### API Gateway
+## API Gateway
 * Notable features
   * Web Application Firewall (WAF)
   * Rate limiting and DDoS protection
 
-### Redshift
+## Redshift
 * Can store up to 16 PB of data
 * A relational database
 * A redshift cluster lives in a single AZ and thus not highly available
 
-### Elastic Map Reduce (EMR)
+## Elastic Map Reduce (EMR)
 * EMR cluster nodes are EC2 instances and thus live inside a VPC
 * EC2 spot and reserved instances can be used to reduce EMR cluster costs
 
-### Kinesis
+## Kinesis
 * Real-time data streaming service
 * 2 types of Kinesis services
   * Data streams: real-time streaming for ingesting data; does not scale automatically
@@ -118,12 +181,12 @@ DLQ
 * Kinesis can store data for uo to a year as opposed to SQS which has a max 14 day retention period
 * Kinesis Data Analytics allows data transformation using SQL as it flows through Kinesis
 
-### Athena and Glue
+## Athena and Glue
 * Athena is a serverless interactive query service that can analyse data in S3 using SQL
 * Glue is serverless data integration service for ETL workloads
 * Glue can be used to build a schema of data and Athena can use used to query this data stored in S3
 
-### AWS Lambda
+## AWS Lambda
 * 15 min max timeout
 * 10 GB max RAM/memory
 * Can run in or out of a VPC
