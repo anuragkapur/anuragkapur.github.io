@@ -1,7 +1,6 @@
 * Data
   * Databases
-    * PostgreSQL
-      * [Transaction Isolation](https://pgdash.io/blog/postgres-transactions.html) 
+    * [PostgreSQL](./posgresql.md) 
     * Cassandra
       * Consistent Hashing
     * MongoDB
@@ -10,17 +9,19 @@
   * Data Streaming
     * Kafka
   * Concepts
-    * ACID
+    * [SOLID](./solid.md) 
+    * [ACID](./acid.md)
     * BASE
     * OLAP
     * OLTP
+    * Write-ahead Logging
 * Architecture
   * Domain Driven Design
   * CQRS
+  * Hexagonal Architecture
+  * Cellular Architecture
   * Event Sourcing
   * Microservices
-  * Serverless
-    * AWS Lambda
   * CAP
   * Service Mesh
   * Service Discovery
@@ -30,6 +31,12 @@
     * gRPC
     * Protocol Buffers
   * Circuit Breaker
+  * Compute Infrastructure
+    * Serverless
+      * AWS Lambda
+  * Containers
+    * Docker
+    * Kubernetes
 * Networking
   * Load Balancing
     * L7, L4 load balancers
@@ -37,7 +44,8 @@
   * OSI Model
   * HTTP/2
   * HTTP/3
-* Programming Languages
+* Programming
+  * Design Patterns
   * Java
     * Java 8
     * Java 11
@@ -57,3 +65,4 @@
 * Data Structures
   * B-Tree
   * Bloom Filters
+* Machine Learning
