@@ -1,1 +1,1 @@
-![URL shortener](/assets/blog/engineering/system-design/sd-url-shortener.svg)
+![URL shortener](/assets/blog/engineering/system-design/sd-url-shortener.png)
