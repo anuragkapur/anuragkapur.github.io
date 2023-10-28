@@ -1,0 +1,1 @@
+![Messaging App with Persistent Storage](/assets/blog/engineering/system-design/sd-messaging-app-persistent.png)
