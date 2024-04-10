@@ -5,7 +5,7 @@ date:   2017-06-08 18:00:00 +0000
 categories: highlight engineering
 tags: engineering
 teaser: Looking back into traditional ETL architecture and how Kafka based stream processing makes things better 
-img-url: /assets/blog/training/etl-is-dead/img.png
+img-url: /assets/blog/training/etl-is-dead/trie-vs-hast-table.png
 ---
 
 My notes from the webinar: [ETL is dead; Long live streams](https://vimeo.com/220846693/305dfdb663?mkt_tok=eyJpIjoiTXpVNFlUVmpNVEkzT0RsayIsInQiOiJmbCthcWZFN05jMWtuMkxMcGprd2xZT3dXZDlFT1B4anplMk9BQlJNSE9BR0I3S1hBZkR1NmRCUVNFdnJsNHdWNWZ1UHZOUnVybHlmWkNzSzN6WnlyXC9VRmlIWWxNRFErbW1oTHVXZHdUazhacnZjNHdSXC85QnNWU1hRT0w5NGJUIn0%3D)

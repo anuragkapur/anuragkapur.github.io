@@ -22,10 +22,11 @@
   * Cellular Architecture
   * Event Sourcing
   * Microservices
-  * CAP
+  * [CAP](./cap.md)
   * Service Mesh
   * Service Discovery
   * Communication Protocols
+    * https://aws.amazon.com/compare/the-difference-between-rpc-and-rest
     * HTTP
     * REST
     * gRPC
