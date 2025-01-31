@@ -1,3 +1,13 @@
+---
+layout: post
+title:  "What I read this month"
+date:   2025-01-31 13:50:00 +0000
+lastUpdatedDate: 2025-01-31 13:50:00 +0000   
+categories: reading highlights
+tags: issue-resolutions
+teaser: January'2025 reading highlights including Teleportation breakthrough, Google's Quantum Computing Chip, Trumps's 2nd term, DeepSeek, AI coding agents, Life of Bill Gates and Children at the age of 3
+---  
+
 # Scientists make major quantum teleportation breakthrough
 Scientists achieved quantum teleportation across 2 entangled photons, one at each end of a 30km optical fibre channel. What’s special about the breakthrough is that it demonstrated that teleportation is possible over existing/classical communication channels (optical fibre cable in this case) instead of needing new specialised infrastructure and thus enhancing the practicality of the research. This could pave the way for networking across quantum computers, transmitting quantum bits (qubits) across distant devices, near instantly (only limited by speed of light).
 ## References
@@ -10,14 +20,30 @@ The chip showcased two major achievements: a) exponential quantum error correcti
 - [1] [Google Tech Blog, Dec 2024](https://blog.google/technology/research/google-willow-quantum-chip/)
 
 # Trump’s 2nd term
-Seems serious about wanting Greenland, a Danish territory 
+Started 2nd term on Jan 20th
+- Seems serious about wanting Greenland, a Danish territory
+- Wants to change Citizenship rights, deniying visa's to children of illegal immigrants and those on temporary visas; Birthright Citizenship is currently enshrined in the US Consituation    
+- One of the many Executive Orders signed was to create a new Department of Government Efficiency (DOGE) headed by Elon Musk; the department is expected to make dramatic cuts in employment in the goverment, promoting efficiencies and modernizing how the government operates.   
+- Pulls out of Paris Climate Agreement, an international deal to limit global warming
+- Gave TikTok a 75-day extension to comply with US law demanding TikTok's US business be divested
+
 ## Reference
 - [1] [Financial Times, Jan 2025: Donald Trump in fiery call with Denmark’s prime minister over Greenland](https://on.ft.com/4gZt1Hr)
+- [2] [BBC News, Jan 2025: Trump has vowed to end birthright citizenship. Can he do it?](https://www.bbc.co.uk/news/articles/c7vdnlmgyndo)
+- [3] [Reuters, Jan 2025: Trump announces 'DOGE' advisory group, attracting instant lawsuits](https://www.reuters.com/world/us/trump-use-one-his-first-executive-orders-create-doge-semafor-reports-2025-01-20/)
+- [4] [GOV.US, Jan 2025: PUTTING AMERICA FIRST IN INTERNATIONAL ENVIRONMENTAL AGREEMENTS](https://www.whitehouse.gov/presidential-actions/2025/01/putting-america-first-in-international-environmental-agreements/)
+- [5] [The New York Times, Jan 2025: Why TikTok Is Facing a U.S. Ban, and What Could Happen Next](https://www.nytimes.com/article/tiktok-ban.html)
 
 # Klarna’s CEO says they stopped hiring thanks to AI
-CEO said they were of the opinion that “AI can already do all the jobs that we as humans do” in an interview. While I couldn’t access the actual interview, the analysis on publications such as Techcrunch, Entrepreneur and Business Insider all seem to indicate this was more sound bites than an extraordinary fact. Karna seems to be in a natural cycle of growth and consolidation when it comes to expanding its workforce and is leveraging AI in ways similar to other businesses. Karna has been hiring humans for several open positions and its use of AI supplements and improves the effectiveness and efficiency of human employees. Klarna’s press lead said the CEO’s comments were “directionally true” and ““simplifying for brevity in a broadcast interview.”
+CEO said they were of the opinion that “AI can already do all the jobs that we as humans do” in an interview. While I couldn’t access the actual interview, the analysis on publications such as Techcrunch, Entrepreneur and Business Insider all seem to indicate this was more sound bites than an extraordinary fact. Karna seems to be in a natural cycle of growth and consolidation when it comes to expanding its workforce and is leveraging AI in ways similar to other businesses. Karna has been hiring humans for several open positions and its use of AI supplements and improves the effectiveness and efficiency of human employees. Klarna’s press lead said the CEO’s comments were “directionally true” and “simplifying for brevity in a broadcast interview.”
 ## References
 - [1] [Techcrunch, Dec 2024](https://techcrunch.com/2024/12/14/klarnas-ceo-says-it-stopped-hiring-thanks-to-ai-but-still-advertises-many-open-positions/)
+
+# Zuckerberg on AI coding agent
+Zuckerberg believes 2025 is the year when AI-agents become good enough to do some coding tasks that normally mid-level engineers do. Contrary to some click-bait headlines, Zuck didn't imply that this would mean **all** mid-level engineers will be replaced. Instead, AI-agents will make engineers more effective, freeing up their time for higher-level tasks. Demand for mid-level engineers may reduce as a result OR the demand may reamain the same, with employers getting a lot more "output" from each engineer.
+## Referneces
+- [1] [Forbes, Jan 2025: Zuckerberg Says AI Will Replace Mid-Level Engineers Soon](https://www.forbes.com/sites/quickerbettertech/2025/01/26/business-tech-news-zuckerberg-says-ai-will-replace-mid-level-engineers-soon/)
+
 
 # Kids get more imaginative and adventurous as they turn 3
  My daughter is turning 3 in a couple of days, so I thought I would read about what to expect. Key takeaways: more imaginative role-plays, which have kinds already started are to be expected; I need to invest more in reading time with her :D
