@@ -3,8 +3,8 @@ layout: post
 title:  "What I read this month"
 date:   2025-01-31 13:50:00 +0000
 lastUpdatedDate: 2025-01-31 13:50:00 +0000   
-categories: reading highlights
-tags: issue-resolutions
+categories: highlight
+tags: reading
 teaser: January'2025 reading highlights including Teleportation breakthrough, Google's Quantum Computing Chip, Trumps's 2nd term, DeepSeek, AI coding agents, Life of Bill Gates and Children at the age of 3
 ---  
 
