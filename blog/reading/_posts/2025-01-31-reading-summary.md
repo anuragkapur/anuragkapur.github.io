@@ -61,3 +61,8 @@ DeepSeek, a Chinese AI company released a new model, R1, that appears to perform
 - [1] [Financial Times, Jan 2025: What DeepSeek’s AI really means for the market](https://on.ft.com/4jwaVOZ)
 - [2] [Financial Times, Jan 2025: OpenAI’s Sam Altman vows ‘better models’ as China’s DeepSeek disrupts global race](https://www.ft.com/content/b98e4903-ac05-4462-8ad1-eda619b6a9c4)
 - [3] [Financial Times, Jan 2025: OpenAI says it has evidence China’s DeepSeek used its model to train competitor](https://www.ft.com/content/a0dfedd1-5255-4fa9-8ccc-1fe01de87ea6)
+
+# What is this?
+Just trying to carve out time to read more when I can. Posting about it somewhat publicly is meant to nudge me when the motivation starts to dwindle.
+
+Inspired by [Chamath Palihapitiya's What I read this week](https://chamath.substack.com/) series.
