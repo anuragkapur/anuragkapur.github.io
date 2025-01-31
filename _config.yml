@@ -9,7 +9,7 @@
 title: Anurag Kapur
 email:
 description: > # this means to ignore newlines until "baseurl:"
-  Engineering Manager @Amazon; Former startup guy @Perpetual_Labs and @Zish; Held various roles @BCG, @FT, @NewsUKTech, @SapientIndia; 🚣‍♀️ @GlobeRowing ex-@ChChBc; 👨‍🎓@UniofOxford
+  Engineering Manager @Meta; Former startup guy @Perpetual_Labs and @Zish; Held various roles @Amazon, @BCG, @FT, @NewsUKTech, @SapientIndia; 🚣‍♀️ @GlobeRowing ex-@ChChBc; 👨‍🎓@UniofOxford
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.anuragkapur.com" # the base hostname & protocol for your site
 twitter_username: anuragkapur
