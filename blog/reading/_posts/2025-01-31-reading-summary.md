@@ -23,7 +23,7 @@ The chip showcased two major achievements: **a) exponential quantum error correc
 Started 2nd term on Jan 20th
 - Seems serious(!!!) about wanting Greenland, a Danish territory
 - Wants to change Citizenship rights, deniying visa's to children of illegal immigrants and those on temporary visas; Birthright Citizenship is currently enshrined in the US Consituation    
-- One of the many Executive Orders signed was to create a new Department of Government Efficiency (DOGE) headed by Elon Musk; the department is expected to make dramatic cuts in employment in the goverment, promoting efficiencies and modernizing how the government operates.   
+- One of the many Executive Orders signed was to create a new Department of Government Efficiency (DOGE) headed by Elon Musk; the department is expected to make dramatic cuts in employment in the government, promoting efficiencies and modernizing how the government operates.   
 - Pulls out of Paris Climate Agreement, an international deal to limit global warming
 - Gave TikTok a 75-day extension to comply with US law demanding TikTok's US business be divested; TikTok did go dark for a few hours starting 19/Jan to comply with the Biden Government issued Divest-or-Ban law, until Trump gave the app the 75-day extension
 
@@ -43,7 +43,7 @@ CEO said they were of the opinion that “AI can already do all the jobs that we
 - [3] [Business Insider, Jan 2025](https://www.businessinsider.com/klarna-ceo-sebastian-siemiatkowski-ai-job-2025-1)
 
 # Zuckerberg on AI coding agent
-Zuckerberg believes 2025 is the year when AI-agents become good enough to do some coding tasks that normally mid-level engineers do. Contrary to some click-bait headlines, Zuck didn't imply that this would mean **all** mid-level engineers will be replaced. Instead, AI-agents will make engineers more effective, freeing up their time for higher-level tasks. Demand for mid-level engineers may reduce as a result OR the demand may reamain the same, with employers getting a lot more "output" from each engineer.
+Zuckerberg believes 2025 is the year when AI-agents become good enough to do some coding tasks that normally mid-level engineers do. Contrary to some click-bait headlines, Zuck didn't imply that this would mean **all** mid-level engineers will be replaced. Instead, AI-agents will make engineers more effective, freeing up their time for higher-level tasks. Demand for mid-level engineers may reduce as a result OR the demand may remain the same, with employers getting a lot more "output" from each engineer.
 ## Referneces
 - [1] [Forbes, Jan 2025: Zuckerberg Says AI Will Replace Mid-Level Engineers Soon](https://www.forbes.com/sites/quickerbettertech/2025/01/26/business-tech-news-zuckerberg-says-ai-will-replace-mid-level-engineers-soon/)
 
@@ -66,7 +66,7 @@ DeepSeek, a Chinese AI company released a new model, R1, that appears to perform
 - [3] [Financial Times, Jan 2025: OpenAI says it has evidence China’s DeepSeek used its model to train competitor](https://www.ft.com/content/a0dfedd1-5255-4fa9-8ccc-1fe01de87ea6)
 
 # Google offers voluntary exit to US based platform and devices employees
-After an internal merge of 2 large organisations, Google has offered employess of its US based Platform and Devices team, working on Android, Pixel hardware etc voluntary exits. Google wants the employees who remain to be "deeply committed to our mission and focused on building great products, with speed and efficiency". 
+After an internal merge of 2 large organisations, Google has offered employees of its US based Platform and Devices team, working on Android, Pixel hardware etc voluntary exits. Google wants the employees who remain to be "deeply committed to our mission and focused on building great products, with speed and efficiency". 
 ## References
 - [1] [The Verge, Jan 2025: Google offers ‘voluntary exit’ to all US platforms and devices employees](https://www.theverge.com/news/603432/google-voluntary-exit-platforms-devices-team)
 
