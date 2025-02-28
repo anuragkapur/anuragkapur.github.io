@@ -1,5 +1,35 @@
 # Artificial Intelligence
 
+## MetaAI: Personalisation and Memory
+Meta has been rolling out a feature where the AI chatbot remembers some info from your 1:1 conversations with it. For example, if you tell it you are vegan, and then at some point in the future ask it for restaurant recommendations, it would keep your dietary preferences in mind. Users will also have the ability to ask the AI to explicitly remember certain details about them or ask the AI to delete its memory about them at any time should they want to. Similar “memory” features already exist in ChatGPT and Gemini. 
+
+Additionally, the AI will leverage some info from your profile information and activity across the Meta family of apps (FB, insta, WhatsApp) to personalise its responses. Personalisation could be a USP of the Meta AI compared to competitors, such as ChatGPT, because Meta knows “a lot” about specific interests and activities of users across its apps. 
+
+### References
+* [1] [about.fb.com, Jan 2025: Building Toward a Smarter, More Personalized Assistant](https://about.fb.com/news/2025/01/building-toward-a-smarter-more-personalized-assistant/)
+* [2] [Engadget, Jan 2025: Meta AI will now use your Facebook and Instagram activity to inform its recommendations](https://www.engadget.com/social-media/meta-ai-will-now-use-your-facebook-and-instagram-activity-to-inform-its-recommendations-201218403.html)
+* [3] [The Verge, Jan 2025: Meta AI will use its ‘memory’ to provide better recommendations](https://www.theverge.com/2025/1/27/24352992/meta-ai-memory-personalization)
+
+## The AI Scene in China and DeepSeek
+The broader implications of the launch of DeepSeek's R1 model a few weeks ago are still being understood. DeepSeek claimed that the final training step for R1 cost only $5.6mn. The figure, however, doesn’t include many other costs involved in developing its models, including computing infrastructure and previous training runs, making it hard to draw precise comparisons. A possoble competitive advantage for DeepSeek, atleast amongst other Chinese AI companies is that DeepSeek hasn't raised any external financing, such as that from Chinese State-owned funds. This means it doesn't feel the pressure as some other companies to gurantee returns for the fear of losing the country's assets. While the precise claims around lower cost remain debated, it is clear DeepSeek has most the state-of-the-art forward as judged from priase from both Sam Altman and Mark Zuckerberg, with the latter crediting DeepSeek for making "advances that we will hope to implement in our systems".
+
+DeepSeek has published its research and released its models in “open-weights” form, a more limited version of open-source software that allows anyone to download, use and modify the technology.
+
+### References
+* [1] [Financial Times, Jan 2025: The global AI race: Is China catching up to the US?](https://on.ft.com/3WHuhGV)
+* [2] [Financial Times, Feb 2025: DeepSeek spreads across China with Beijing’s backing](https://on.ft.com/3D8Bw4h)
+
+## Musk's OpenAI Bid
+Musk led a group of investors to make a $97.4 billion bid for the not-for-profit arm of OpenAI. Unclear what the real intention behind might be, some opinion pieces suggest this adds pressure on Altman and potentially messes with some of his plans to convert OpenAI into a for-profit company. 
+
+Forbes reported: “He’s attempted to forcefully raise the nonprofit price – which would make it harder for OpenAI to justify paying anything less.”
+
+### References
+* [1] [Wall Street Journal, Feb 2025: Elon Musk-Led Group Makes $97.4 Billion Bid for Control of OpenAI](https://www.wsj.com/tech/elon-musk-openai-bid-4af12827)
+* [2] [Forbes, Feb 2025: How Elon Musk Tried To Jack Up The Price Of OpenAI's Nonprofit Overnight](https://www.forbes.com/sites/richardnieva/2025/02/11/elon-musk-sam-altman-openai-bid-price/)
+
+
+
 # Nuclear Energy
 
 # Trump Administration
