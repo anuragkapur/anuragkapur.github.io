@@ -1,3 +1,12 @@
+# How to Raise a Sovereign Child, A Freedom-Maximizing Approach to Parenting
+"How to Raise a Sovereign Child" advocates for a parenting approach that prioritizes children's autonomy and freedom. It emphasizes treating children with the same respect afforded to adults. Encourages parents to minimize control and maximize children's ability to make their own choices.
+
+The philosophy is describe in the book [The Sovereign Child: How a Forgotten Philosophy Can Liberate Kids and Their Parents](https://www.amazon.co.uk/Sovereign-Child-Forgotten-Philosophy-Liberate-ebook/dp/B0DR36P28C) by Aaron Stupple. Aaron is a parent of 5 himself. The podcast is joined by Naval Ravikant, parent and among other claims to fame, the co-founder of Angel List. 
+
+## References
+* [1] [Tim Ferriss' Blog, Jan 2025](https://tim.blog/2025/01/18/naval-ravikant-sovereign-child/)
+* [2] [The Book on Amazon](https://www.amazon.co.uk/Sovereign-Child-Forgotten-Philosophy-Liberate-ebook/dp/B0DR36P28C)
+
 # Artificial Intelligence
 
 ## MetaAI: Personalisation and Memory
@@ -10,15 +19,44 @@ Additionally, the AI will leverage some info from your profile information and a
 * [2] [Engadget, Jan 2025: Meta AI will now use your Facebook and Instagram activity to inform its recommendations](https://www.engadget.com/social-media/meta-ai-will-now-use-your-facebook-and-instagram-activity-to-inform-its-recommendations-201218403.html)
 * [3] [The Verge, Jan 2025: Meta AI will use its ‘memory’ to provide better recommendations](https://www.theverge.com/2025/1/27/24352992/meta-ai-memory-personalization)
 
+## AI for Deep Research
+OpenAI launched deep research, an AI agent capable of multi-step research on the Internet for complex tasks, in minutes compared to something a human would need hours to do. Uses o3 model. Though the reports produced have linked references, occasional hallucinations and inaccuracies have been reported by the early adopters. 
+
+"Unlike traditional AI models that attempt one-shot answers, Deep Research first asks clarifying questions. It might ask four or more questions to make sure it understands exactly what you want. It then develops a structured research plan, conducts multiple searches, revises its plan based on new insights, and iterates in a loop until it compiles a comprehensive, well-formatted report" [3]
+
+At a high level Deep Research combines (1) the power of reasoning LLMs (such as OpenAI's o3, DeepSeek's R1) with (2) agentic Retrieval-Augmented Generation (RAG) in ways that hasn't been done before in a mass-market product.
+
+Perplexity, Google's Gemini, xAI's Grok 3, HuggingFace have also launched there versions of deep research agents. Unlike Gemini, Grok 3 and ChatGPT, Perplexity's research agent is built on top of DeepSeek's open source R1 model and offers a free tier usage to users. All other current deep research agents provided by OpenAI, Google and xAI are for paid subscribers only. HuggingFace's Open Deep Research is as the name suggests, open source.
+
+Given the early version of all research agents, there are reports of inaccuracies and hallucincation across most, highlighting the need to fact-check answers and research output from these AI models.
+
+### References
+* [1] [OpenAI.com, Feb 2025: Introducing deep research](https://openai.com/index/introducing-deep-research/)
+* [2] [Mashable, Feb 2025: Perplexity's new Deep Research tool is powered by DeepSeek R1](https://mashable.com/article/perplexity-new-deep-research-tool-powered-by-deepseek-r1)
+* [3] [VentureBeat, Feb 2025: ](https://venturebeat.com/ai/out-analyzing-analysts-openai-deep-research-pairs-reasoning-llms-with-agentic-rag-to-automate-work-and-replace-jobs/)
+
+## AI Action Summit
+The AI Action Summit, hosted by France and co-chaired by India, brought to light a shifting sentiment (atleast from US and UK's point-of-view) away from security and regulation to a growth-focused AI agenda. US and UK did not sign the pledge that for "open", "inclusive" and "ethical" approach to the technology's development. The pledge was signed by other attendees including France, China, Japan, Canada, Australia and India.
+
+### References
+* [1] [BBC, Feb 2025: UK and US refuse to sign international AI declaration](https://www.bbc.co.uk/news/articles/c8edn0n58gwo)
+
 ## The AI Scene in China and DeepSeek
-The broader implications of the launch of DeepSeek's R1 model a few weeks ago are still being understood. DeepSeek claimed that the final training step for R1 cost only $5.6mn. The figure, however, doesn’t include many other costs involved in developing its models, including computing infrastructure and previous training runs, making it hard to draw precise comparisons. A possoble competitive advantage for DeepSeek, atleast amongst other Chinese AI companies is that DeepSeek hasn't raised any external financing, such as that from Chinese State-owned funds. This means it doesn't feel the pressure as some other companies to gurantee returns for the fear of losing the country's assets. While the precise claims around lower cost remain debated, it is clear DeepSeek has most the state-of-the-art forward as judged from priase from both Sam Altman and Mark Zuckerberg, with the latter crediting DeepSeek for making "advances that we will hope to implement in our systems".
+DeepSeek's launch has come with its share of controversy and debate. OpenAI claims it has found evidence the DeepSeek used outputs from OpenAI's models to train its LLM at a lower cost, process usually referred to as distillation. The broader implications of the launch of DeepSeek's R1 model a few weeks ago are still being understood. DeepSeek claimed that the final training step for R1 cost only $5.6mn. The figure, however, doesn’t include many other costs involved in developing its models, including computing infrastructure and previous training runs, making it hard to draw precise comparisons. 
+
+Controversy and debate aside, experts acknowledge that the innovation in DeepSeek's work is in its use of Reinforcement Learning in developing the model. Large Language Models (LLMs) are created in two steps: (1) Pre-training where massive data sets requiring large compute power are used to help the model learn how to predict the next word in a sentence. (2) Post-training where the model is taught how to follow instructions such as solving math or coding problems. OpenAI pioneered and used Reinforcement Learning from Human Feedback (RLHF) to traing its LLM. However, this process is expensive and time consuming requiring humans labelling the model's responses to prompts to help the model learn which responses are the best. DeepSeek automated this final step using Reinforcement Learning (RL) where the model is rewarded to do the right thing and doeesn't rely on an army of human labellers. 
+	
+A possible competitive advantage for DeepSeek, atleast amongst other Chinese AI companies is that DeepSeek hasn't raised any external financing, such as that from Chinese State-owned funds. This means it doesn't feel the pressure as some other companies to gurantee returns for the fear of losing the country's assets. While the precise claims around lower cost remain debated, it is clear DeepSeek has most the state-of-the-art forward as judged from priase from both Sam Altman and Mark Zuckerberg, with the latter crediting DeepSeek for making "advances that we will hope to implement in our systems".
 
 DeepSeek has published its research and released its models in “open-weights” form, a more limited version of open-source software that allows anyone to download, use and modify the technology.
 
-### References
-* [1] [Financial Times, Jan 2025: The global AI race: Is China catching up to the US?](https://on.ft.com/3WHuhGV)
-* [2] [Financial Times, Feb 2025: DeepSeek spreads across China with Beijing’s backing](https://on.ft.com/3D8Bw4h)
+As the poster child of Chinese AI, DeepSeek is seeing rapid adoption in its home country. Several domestic cloud providers, car manufacturers, several local governments, hospitals, and state-owned-enterprises (SOEs) are among the early adopters of the technology. The shift in sentiment among previously conservative instituations is noticeable. The low cost of adoption of the open source R1 model seems to be playing its part in boosting adoption. Opinions may be split on whether this is genuine interest in adoption vs a result of superficial adoption so that instituations are seen in favour of the newest Chinese AI posterchild. Interestingly DeepSeek doesn't seem to be directly benifiting from the surge in adoption because it allows its model to be downlaoded and used for free. The cloud service providers hosting the model for use on the other hand are benfiting financially.
 
+### References
+* [1] [Financial Times, Jan 2025: DeepSeek’s ‘aha moment’ creates new way to build powerful AI with less money](https://on.ft.com/42zNGgS)
+* [2] [Financial Times, Jan 2025: The global AI race: Is China catching up to the US?](https://on.ft.com/3WHuhGV)
+* [3] [Financial Times, Feb 2025: DeepSeek spreads across China with Beijing’s backing](https://on.ft.com/3D8Bw4h)
+ 
 ## Musk's OpenAI Bid
 Musk led a group of investors to make a $97.4 billion bid for the not-for-profit arm of OpenAI. Unclear what the real intention behind might be, some opinion pieces suggest this adds pressure on Altman and potentially messes with some of his plans to convert OpenAI into a for-profit company. 
 
@@ -28,9 +66,36 @@ Forbes reported: “He’s attempted to forcefully raise the nonprofit price –
 * [1] [Wall Street Journal, Feb 2025: Elon Musk-Led Group Makes $97.4 Billion Bid for Control of OpenAI](https://www.wsj.com/tech/elon-musk-openai-bid-4af12827)
 * [2] [Forbes, Feb 2025: How Elon Musk Tried To Jack Up The Price Of OpenAI's Nonprofit Overnight](https://www.forbes.com/sites/richardnieva/2025/02/11/elon-musk-sam-altman-openai-bid-price/)
 
+## Alexa+ Launch
+Amazon launched Alexa+ service, embedding generative AI into the Alexa product line, with an aim to bring personalised and conversational Alexa experience. Alexa+ was originally touted to be launched over a year ago, following ChatGPTs launch. Not clear what were the primary factors behind the delay. Alexa+ comes with agentic capabilities enabling it to navigate the internet to make restaurant reservations, order groceries, book home appliance repairs etc. Its also personalised, remebering the user's past behvaiours and preferences, somewhat similar to the personalisation capabilities Meta AI is bringing to its users. The service is included in the Prime subscription price, i.e. free for Prime members.
 
+### References
+* [1] [Financial Times, Feb 2025: Amazon debuts updated Alexa chatbot in push to catch up with rivals](https://on.ft.com/41yPh5Q)
+* [2] [about.amazon.com, Feb 2025: The all-new Alexa+ and more: All the news from Amazon’s 2025 devices event](https://www.aboutamazon.com/news/devices/amazon-2025-devices-alexa-event-live-updates)
 
 # Nuclear Energy
+
+## Small Modular Reactors (SMRs)
+Fission based nuclear reactors with a typical (not a strict limite) power capacity of upto 300MW, which is roughly a third of that of a conventional nuclear reactor. A key advantge of SMRs is their modular design where prefabricated units can be assembelled together to have a functioning reactor, thus limiting the risks and delays associated with onsite contruction.
+
+SMR  design and development field is still in its early days, with known operational SMRs limited to a handful in Russia and China. UK government plans to make a decision on 2 SMRs by 2029, and have the first SMRs operational in the UK sometime in the 2030s.
+
+Some backers of SMRs argue they are safer than large plants because they are simpler. They are still splitting the atom so they will still generate nuclear waste.
+
+It is believed that SMRs can play a big role in powering energy hunry data centers supporting the growing use of AI.
+
+### References
+* [1] [International Atomic Energy Agency, Sep 2023: What are Small Modular Reactors (SMRs)?](https://www.iaea.org/newscenter/news/what-are-small-modular-reactors-smrs)
+* [2] [Financial Times, Jan 2025: Small nuclear reactors are coming, but big is still better](https://on.ft.com/4g46x6O)
+* [3] [The Times, Feb 2025: How do small nuclear reactors work and why would they help Britain?](https://www.thetimes.com/uk/environment/article/how-mini-nuclear-reactor-work-pm9tq6l2v)
+
+## Fusion
+Helion, a start-up aiming to produce electicity using Nuclear Fusion by 2028, has raised $425mn in funding from investors including Sam Altman and Peter Thiel. 
+
+The attraction to fusion comes from the fact that it's carbon-free and doesn't create long lived radio active waste. The radioactive waste generated from fusion has a much shorter half-life compare to that generated by fission. The challenge though is that to-date scientists have not been able to sustain fusion reactions for long enough time periods. China based reasearchers set a new world record of sustaining a fusion reaction for 1,066 seconds in Jan 2025.
+
+### References
+* [1] [Financial Times, Jan 2025: US nuclear fusion start-up backed by Sam Altman and Peter Thiel secures $425mn](https://on.ft.com/40xNxbi)
 
 # Trump Administration
 
@@ -61,3 +126,9 @@ Trump's direction of travel in diplomacy does not look good for Ukraine, given t
 * [1] [Washinton Post, Feb 2025: Trump Says He and Putin Agreed to Begin Talks on Ending Ukraine War](https://www.washingtonpost.com/national/2025/02/12/russia-us-marc-fogel-prisoner-swap/a5c50720-e92e-11ef-969b-cfbefacb1eb3_story.html)
 * [2] [Financial Times, Feb 2025: Europe reels after Donald Trump announces US-Russia talks on Ukraine](https://on.ft.com/4hMHG96)
 * [3] [Sky News, Feb 2025: Donald Trump's direction of travel in diplomacy does not look good for Ukraine](https://news.sky.com/story/donald-trumps-direction-of-travel-in-diplomacy-does-not-look-good-for-ukraine-13312187)
+
+# Data Centres on the Moon
+IntuitiveMachines is launching a mini data centre to the moon via SpaceX's Falcon 9 rocket. The lunar surface which has almost no atmosphere doesn't come with the worry of climate related disruptions such as hurricanes and earthquakes. Certain parts of the moon are permanently shadowed from the sun and are thus extremly cold meaning no energy or water is needed to cool data centers. Likewise solar energy from the always thats almost always available in certain parts of the moon can be harnessed to power these data centres. Theoretically, data centers can be hidden away from the sun and power can be transmitted to them, resulting in perfectly renewable operation at low temperature. The challenges include the fact that the moon is far away, leading to one-way latency to the earth of 1.4 seconds, which rules out data that needs to be accessed in real time.
+
+## References
+* [1] [IEEE Spectrum, Feb 2025: We're Testing Out Data Centers on the Moon](https://spectrum.ieee.org/data-center-on-the-moon)
