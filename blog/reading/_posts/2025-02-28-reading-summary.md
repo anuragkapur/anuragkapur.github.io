@@ -5,7 +5,7 @@ date:   2025-02-28 23:50:00 +0000
 lastUpdatedDate: 2025-02-28 23:50:00 +0000
 categories: reading highlight
 tags: reading
-teaser: February'2025 casual reading highlights including MetaAI: Personalisation and Memory, AI for Deep Research, AI Action Summit, Small Modular Reactors (SMRs), Trump, DOGE, Taking Your Kids Seriously
+teaser: February'2025 casual reading highlights including MetaAI: Personalisation and Memory, AI for Deep Research, AI Action Summit, Small Modular Reactors SMRs, Trump, DOGE, Taking Your Kids Seriously
 ---  
 
 # Artificial Intelligence
