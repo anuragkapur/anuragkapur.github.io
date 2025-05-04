@@ -1,3 +1,84 @@
+---
+layout: post
+title:  "Apr 2025: What I read this month"
+date:   2025-05-04 23:50:00 +0000
+lastUpdatedDate: 2025-02-28 23:50:00 +0000
+categories: reading highlight
+tags: reading
+teaser: April'2025 casual reading highlights including Revertising Alzeimers, Airborne Microplastics, Quantum Theory at 100, Trump and Tariffs, FTC v Google, Meta.
+---  
+
+Contents
+1. [The controversial neurologist who believes you can dementia-proof your brain](#the-controversial-neurologist-who-believes-you-can-dementia-proof-your-brain)
+2. [Airborne Microplastics](#airborne-microplastics)
+3. [Quantum Theory: Centenary Year](#quantum-theory-centenary-year)
+4. [US Trade Tariffs and Liberation Day](#us-trade-tariffs-and-liberation-day)
+5. [Trade Tariffs, Apple and India](#trade-tariffs-apple-and-india)
+6. [FTC v Meta](#ftc-v-meta)
+7. [FTC v Google](#ftc-v-google)
+8. [Google's AI Agent Interoperability Initiative: Agent2Agent Protocol](#googles-ai-agent-interoperability-initiative-agent2agent-protocol)
+9. [LlamaCon](#llamacon)
+10. [What is this?](#what-is-this)
+
+# The controversial neurologist who believes you can dementia-proof your brain
+Dr Dale Bredesen, a neurologist, is known for his claims that Alzheimers can be treated. The prevelant view in the wider community though is that there is no cure for any form of Dementia. That said, there certain diets (a diet based on traditional Mediterranean diet), and a good amount of exercise that is known to reduce the risk of brain degeneration.
+
+Without waiting for proof, there's probably no harm in following as much of the known best practices to reduce ones risk of the disease: frequent exercise and clean eating. The earlier in life these practices are adopted, the better, but “your forties and fifties are really the sweet spot when it comes to dementia prevention,” Dr Bredesen says.
+
+Eating right, avoiding insuling resistance 
+* Mediterranean diet, with lots of vegetables and oily fish
+* Ketogenic diet (high fat, low carb)
+* Small amount of fasting (~12 hours, starting atleast 3 hours before bed); avoid longer intermittent fasting if trying to ward off Dimentia
+* Low-mercury fish, pastured chicken and eggs
+* Fibre and healthy omega-3 fats from sources such as avocados, nuts and seeds
+
+Exercise right
+* 30-40 mins, 5 times a week
+* 3-4 strength training sessions + regular cardio
+* Strength training helps with insuling sensitivity
+* HIIT is great, though neither a replacement for longer cardio or dedicated strength training sessions
+
+Get enough sleep (but not too much)
+* Sweet spot is 7 hours, but everyones needs can vary
+* 1 hour of deep sleep + 1.5 hours of REM sleep is important
+* Regularly sleeping 9 or more hours is bad
+
+Brain training
+* “take on a small cognitive challenge each day, a medium cognitive challenge each month, and a big cognitive challenge each year”
+* Small challenge = "new" (i.e. not repeating too many sodokus, if you've been doing them for a while) kinds of puzzles, simply setup desk in new part of the house
+* Medium challenge = cooking "new" recipies 
+* Large challenge = "true mastery" of a subject, learn a language, become a chess expert etc
+
+## References
+* [1] [The Telegraph, April 2025: The controversial neurologist who believes you can dementia-proof your brain](https://www.telegraph.co.uk/health-fitness/conditions/dementia/four-ways-to-dementia-proof-your-brain)
+
+# Airborne Microplastics
+
+Researchers have found a high volume of microplastics in the lungs of birds studied as part of a research. They've called for urgent additional research to study the harmful effects these microplastics may be having on humans.
+
+Another set of researchers have found microplastics in vegetation, arising from absorption of microplastics in the atmosphere. 
+
+## References
+* [1] [Newsweek, Feb 2025: Warning over microplastics in the air we breathe after bird lung discovery](https://www.newsweek.com/microplastics-air-lungs-breathe-birds-nanoplastics-health-2037756)
+* [2] [Phys Org, Apr 2025: Airborne microplastics infiltrate plant leaves, raising environmental concerns](https://phys.org/news/2025-04-airborne-microplastics-infiltrate-environmental.html)
+
+# Quantum Theory: Centenary Year
+In recognition of the quantum centenary, the United Nations has designated 2025 as the International Year of Quantum Science and Technology.
+
+So what is Quantum Theory?
+Quantum theory, also known as quantum mechanics or quantum physics, is the fundamental framework in modern physics that describes the behavior of matter and energy at the smallest scales-typically at and below the level of atoms and subatomic particles. Quantum theory is essential for explaining phenomena that classical physics cannot, such as structure of atoms and molecules, behaviour of semiconductors and lasers, workings of nuclear reactions and radioactive decay, operation of quantum computers etc.
+
+Key principles:
+* Quantization: Energy, matter, and other physical properties exist in discrete units called "quanta" rather than being continuous
+* Wave–Particle Duality: Particles like electrons and photons exhibit both particle-like and wave-like properties, depending on how they are observed
+* Uncertainty Principle: There are fundamental limits to how precisely certain pairs of physical properties (like position and momentum) can be known at the same time. This is encapsulated in Heisenberg's uncertainty principle
+* Probability and Measurement: Quantum mechanics does not predict exact outcomes, but rather the probabilities of different outcomes. The act of measurement affects the system being observed, making it impossible to observe certain properties without disturbing them
+Superposition: Quantum systems can exist in multiple states at once until measured, at which point the system 'collapses' into one of the possible states
+
+## References
+* [1] [New Scientist, April 2025: Quantum theory at 100: Let’s celebrate its power and provocation](https://www.newscientist.com/article/mg26635393-400-quantum-theory-at-100-lets-celebrate-its-power-and-provocation/)
+* [2] [Science Exchance, Caltech: What is Quantum Computing?](https://scienceexchange.caltech.edu/topics/quantum-science-explained/quantum-physics)
+
 # US Trade Tarrifs and Liberation Day
 Trump announced new tariffs on US imports on 3/April, which was dubbed as “Liberation day”. A 10% baseline tariff applies to imports from all countries. Additional reciprocal higher tariffs would apply on the “60 worst offending countries” with which US has the largest trade deficits. This has meant of tariffs of up to 50% on some countries. UK will attract the baseline tariff only and no additional higher tariffs. 
 
@@ -45,6 +126,7 @@ US FTC ruled last year that Google holds a monopoly in Online search market, and
 
 # References
 * [1] [Financial Times, April 2025: The US ruled against Google’s monopoly — Europe should do the same](https://on.ft.com/4jNcGXw)
+* [2] [The Verge, April 2025: OpenAI tells judge it would buy Chrome from Google](https://www.theverge.com/news/653882/openai-chrome-google-us-judge)
 
 # Google's AI Agent Interoperability Initiative: Agent2Agent Protocol
 Google has announced the launch of the Agent2Agent (A2A) protocol, an open standard designed to enable seamless communication and collaboration between AI agents, regardless of their underlying technology, framework, or vendor. This initiative, developed with input from over 50 technology partners, aims to break down the silos that currently limit AI agents to isolated tasks within enterprises, unlocking new levels of automation, efficiency, and innovation
@@ -61,16 +143,6 @@ Google has announced the launch of the Agent2Agent (A2A) protocol, an open stand
 * [1] [Techcrunch, April 2025: Meta launches a stand-alone AI app to compete with ChatGPT](https://techcrunch.com/2025/04/29/meta-launches-a-standalone-ai-app-to-compete-with-chatgpt/)
 * [2] [Forbes, April 2025: Meta Enters The Token Business, Powered By Nvidia, Cerebras And Groq](https://www.forbes.com/sites/karlfreund/2025/04/29/meta-enters-the-token-business-powered-by-nvidia-cerebras-and-groq/)
 * [3] [Techcrunch, April 2025: Meta previews an API for its Llama AI models](https://techcrunch.com/2025/04/29/meta-previews-an-api-for-its-llama-ai-models/)
-
-
-# Quantum Theory: Centenary Year
-In recognition of the quantum centenary, the United Nations has designated 2025 as the International Year of Quantum Science and Technology.
-
-
-
-## References
-* [1] [New Scientist, April 2025: Quantum theory at 100: Let’s celebrate its power and provocation](https://www.newscientist.com/article/mg26635393-400-quantum-theory-at-100-lets-celebrate-its-power-and-provocation/)
-
 
 # What is this?
 Just trying to carve out time to read/watch/learn more when I can. Posting about it somewhat publicly is meant to nudge me when the motivation starts to dwindle.
