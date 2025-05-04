@@ -2,7 +2,7 @@
 layout: post
 title:  "Apr 2025: What I read this month"
 date:   2025-05-04 23:50:00 +0000
-lastUpdatedDate: 2025-02-28 23:50:00 +0000
+lastUpdatedDate: 2025-05-04 23:50:00 +0000
 categories: reading highlight
 tags: reading
 teaser: April'2025 casual reading highlights including Revertising Alzeimers, Airborne Microplastics, Quantum Theory at 100, Trump and Tariffs, FTC v Google, Meta.
