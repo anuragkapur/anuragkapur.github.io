@@ -18,7 +18,6 @@ Contents
 7. [FTC v Google](#ftc-v-google)
 8. [Google's AI Agent Interoperability Initiative: Agent2Agent Protocol](#googles-ai-agent-interoperability-initiative-agent2agent-protocol)
 9. [LlamaCon](#llamacon)
-10. [What is this?](#what-is-this)
 
 # The controversial neurologist who believes you can dementia-proof your brain
 Dr Dale Bredesen, a neurologist, is known for his claims that Alzheimers can be treated. The prevelant view in the wider community though is that there is no cure for any form of Dementia. That said, there certain diets (a diet based on traditional Mediterranean diet), and a good amount of exercise that is known to reduce the risk of brain degeneration.
